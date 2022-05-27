@@ -122,7 +122,7 @@ class WC_Shipping_Zone extends WC_Legacy_Shipping_Zone {
 		}
 
 		foreach ( $countries as $location ) {
-			$location_parts[] = $all_countries[ $location->code ];
+			$location_parts[] = @$all_countries[ $location->code ];
 		}
 
 		foreach ( $states as $location ) {
