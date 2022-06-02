@@ -1,0 +1,443 @@
+# Copyright (C) 2022 Barn2 Plugins
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Variation Prices 1.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-variation-prices\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-02-24T18:41:34+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: woocommerce-variation-prices\n"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Variation Prices"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://barn2.com/wordpress-plugins/woocommerce-variation-prices/"
+msgstr ""
+
+#. Description of the plugin
+#: src/Admin/Wizard/Steps/License_Verification.php:18
+msgid "Take control over the display of variation prices in your store."
+msgstr ""
+
+#. Author of the plugin
+msgid "Barn2 Plugins"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://barn2.com"
+msgstr ""
+
+#: lib/class-wc-settings-additional-field-types.php:51
+#: lib/WooCommerce/Admin/Custom_Settings_Fields.php:81
+msgid "Color"
+msgstr ""
+
+#: lib/class-wc-settings-additional-field-types.php:61
+#: lib/WooCommerce/Admin/Custom_Settings_Fields.php:92
+msgid "Size"
+msgstr ""
+
+#: lib/Plugin/Admin/Admin_Links.php:52
+msgid "Settings"
+msgstr ""
+
+#. translators: %s: The plugin name
+#: lib/Plugin/Admin/Admin_Links.php:72
+msgid "View %s documentation"
+msgstr ""
+
+#: lib/Plugin/Admin/Admin_Links.php:73
+msgid "Docs"
+msgstr ""
+
+#: lib/Plugin/Admin/Plugin_Updater.php:121
+msgid "Activate %1$syour license key%2$s to enable updates."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:65
+msgid "License key successfully activated."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:66
+msgid "There was an error activating your license key."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:74
+msgid "License key successfully deactivated."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:75
+msgid "There was an error deactivating your license key, please try again."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:82
+msgid "The license key looks good!"
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:83
+msgid "There's a problem with your license key."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:138
+msgid "License key"
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:146
+#: src/Admin/Wizard/Setup_Wizard.php:46
+msgid "The licence key is contained in your order confirmation email."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:149
+msgid "License Key"
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:175
+msgid "Check"
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:176
+msgid "Activate"
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:177
+msgid "Deactivate"
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Key_Setting.php:188
+msgid "License key deactivated."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Notices.php:91
+msgid "Thank you for installing %1$s. To get started, please %2$senter your license key%3$s."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Notices.php:108
+msgid "Your license key for %1$s has expired. %2$sClick here to renew for 20%% discount%3$s."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Notices.php:125
+msgid "You no longer have a valid license for %1$s. Please %2$spurchase a new license key%3$s to continue using the plugin."
+msgstr ""
+
+#: lib/Plugin/License/Admin/License_Notices.php:146
+msgid "%1$s - your site has moved to a new domain. Please %2$sreactivate your license key%3$s."
+msgstr ""
+
+#: lib/Plugin/License/EDD_Licensing.php:184
+msgid "An error has occurred, please try again."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:92
+msgid "Your license key is active."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:112
+msgid "Please enter your license key."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:114
+#: lib/Plugin/License/Plugin_License.php:383
+msgid "Your license key is invalid."
+msgstr ""
+
+#. translators: 1: account page link open, 2: account page link close
+#: lib/Plugin/License/Plugin_License.php:320
+msgid "Invalid license key - please check your order confirmation email or %1$sAccount%2$s."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:326
+msgid "No URL was supplied for activation, please contact support."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:329
+msgid "License key mismatch, please contact support."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:332
+msgid "This license is for a bundled product and cannot be activated."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:336
+msgid "Your license key is not valid for this plugin."
+msgstr ""
+
+#. translators: %s: The number of sites the license is activated on
+#: lib/Plugin/License/Plugin_License.php:343
+msgid "%s site active"
+msgid_plural "%s sites active"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: The sites active description, e.g. '2 sites active'
+#: lib/Plugin/License/Plugin_License.php:347
+msgid "Your license key has reached its activation limit (%s)."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:348
+#: lib/Util.php:39
+msgid "Read more"
+msgstr ""
+
+#. translators: support for RTL. 1: license limit error message, 2: a read more link
+#. translators: support for RTL. 1: expired license error message, 2: a renewal link
+#: lib/Plugin/License/Plugin_License.php:351
+#: lib/Plugin/License/Plugin_License.php:372
+msgid "%1$s %2$s"
+msgstr ""
+
+#. translators: %s: The license expiry date
+#: lib/Plugin/License/Plugin_License.php:365
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:369
+msgid "Renew now for 20% discount."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:624
+msgid "Your license key is not active. Please reactivate or save the settings."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:628
+msgid "Your license key has expired."
+msgstr ""
+
+#: lib/Plugin/License/Plugin_License.php:633
+msgid "Your license key has been disabled. Please %1$spurchase a new license key%2$s to continue using the plugin."
+msgstr ""
+
+#: src/Admin/Admin_Controller.php:49
+#: src/Admin/Settings_Page.php:37
+msgid "Variation Prices"
+msgstr ""
+
+#: src/Admin/Settings_Page.php:70
+#: src/Settings.php:45
+msgid "Variation prices"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Additional_Options.php:22
+#: src/Admin/Wizard/Steps/Additional_Options.php:24
+msgid "Additional Options"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Additional_Options.php:23
+msgid "Fine tune the way the plugin works"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Additional_Options.php:48
+msgid "No price will appear when the product page first loads. When the customer selects a variation, its price will then appear."
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Additional_Options.php:50
+msgid "Improve user experience by instantly updating the main product price with the price of the selected variation."
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Additional_Options.php:58
+msgid "Do not change the variation price format on the Shop and category pages."
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Additional_Options.php:72
+#: src/Admin/Wizard/Steps/Product_Types.php:61
+#: src/Admin/Wizard/Steps/Range_Format.php:72
+#: src/Admin/Wizard/Wizard.php:28
+msgid "You are not authorized."
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Completed.php:17
+msgid "Ready"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Completed.php:18
+msgid "Complete Setup"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Completed.php:19
+msgid "Congratulations, your configuration is now complete!"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/License_Verification.php:17
+msgid "Welcome"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/License_Verification.php:19
+msgid "Use this setup wizard to quickly configure the options of your variation prices. You can easily change these options later on the plugin settings page or by relaunching the setup wizard."
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Product_Types.php:22
+#: src/Admin/Wizard/Steps/Product_Types.php:24
+msgid "Product Types"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Product_Types.php:23
+msgid "Which type of product do you want to affect?"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Product_Types.php:79
+msgid "If you do not select at least one option, the plugin will have no effect on your products"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Range_Format.php:19
+msgid "Range Format"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Range_Format.php:20
+msgid "Customize the display format of the product price range."
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Range_Format.php:21
+msgid "Price range display format"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Upsell.php:17
+msgid "More"
+msgstr ""
+
+#. translators: 1: URL to All Access Pass page, 2: URL to the KB about the upgrading process
+#: src/Admin/Wizard/Steps/Upsell.php:21
+msgid "Enhance your store with these fantastic plugins from Barn2, or get them all by upgrading to an <a href=\"%1$s\" target=\"_blank\">All Access Pass<a/>! <a href=\"%2$s\" target=\"_blank\">(learn how here)</a>"
+msgstr ""
+
+#: src/Admin/Wizard/Steps/Upsell.php:26
+msgid "Extra features"
+msgstr ""
+
+#. translators: 1: minimum price
+#: src/Handlers/Price_Range.php:323
+msgid "From %1$s"
+msgstr ""
+
+#. translators: 1: minimum price
+#: src/Handlers/Price_Range.php:327
+msgid "%1$s+"
+msgstr ""
+
+#. translators: 2: maximum price
+#: src/Handlers/Price_Range.php:331
+msgid "Up to %2$s"
+msgstr ""
+
+#. translators: 1: opening anchor tag, 2: closing anchor tag
+#: src/Plugin.php:124
+msgid "Please %1$sinstall WooCommerce%2$s in order to use WooCommerce Variation Prices."
+msgstr ""
+
+#: src/Settings.php:46
+msgid "The following options control the WooCommerce Variation Prices extension."
+msgstr ""
+
+#: src/Settings.php:48
+msgid "Documentation"
+msgstr ""
+
+#: src/Settings.php:49
+msgid "Support"
+msgstr ""
+
+#: src/Settings.php:57
+msgid "Price display format"
+msgstr ""
+
+#. translators: 1: currency symbol 2: separator character
+#: src/Settings.php:62
+msgid "Price range e.g. %1$s50 %2$s %1$s100"
+msgstr ""
+
+#. translators: currency symbol
+#: src/Settings.php:64
+msgid "Starting price (long) e.g. From %s50"
+msgstr ""
+
+#. translators: currency symbol
+#: src/Settings.php:66
+msgid "Starting price (short) e.g. %s50+"
+msgstr ""
+
+#. translators: currency symbol
+#: src/Settings.php:68
+msgid "Maximum price e.g. Up to %s100"
+msgstr ""
+
+#: src/Settings.php:69
+msgid "List all variation prices"
+msgstr ""
+
+#: src/Settings.php:70
+msgid "Custom"
+msgstr ""
+
+#: src/Settings.php:79
+msgid "Price range separator"
+msgstr ""
+
+#: src/Settings.php:80
+msgid "Choose what to display between the high and low prices."
+msgstr ""
+
+#: src/Settings.php:87
+msgid "Custom format for products with different variation prices"
+msgstr ""
+
+#: src/Settings.php:88
+msgid "Use %min% and %max% for the minimum and maximum prices."
+msgstr ""
+
+#: src/Settings.php:95
+msgid "Custom format when all prices are the same"
+msgstr ""
+
+#: src/Settings.php:96
+msgid "Use either %min% or %max% for the price."
+msgstr ""
+
+#: src/Settings.php:103
+msgid "Product type"
+msgstr ""
+
+#: src/Settings.php:104
+msgid "Variable products"
+msgstr ""
+
+#: src/Settings.php:111
+msgid "Grouped products"
+msgstr ""
+
+#: src/Settings.php:118
+msgid "Hide the price until a variation is selected"
+msgstr ""
+
+#: src/Settings.php:119
+msgid "Hide the main price on the single product page until a variation is selected."
+msgstr ""
+
+#: src/Settings.php:130
+msgid "Show selected variation price"
+msgstr ""
+
+#: src/Settings.php:131
+msgid "Update the main price when a variation is selected."
+msgstr ""
+
+#: src/Settings.php:138
+msgid "Disable on Shop page"
+msgstr ""
+
+#: src/Settings.php:139
+msgid "Don't change the variation price format on the Shop and category pages."
+msgstr ""
+
+#: src/Settings.php:145
+msgid "Use in admin"
+msgstr ""
+
+#: src/Settings.php:146
+msgid "Also change the price display format in the WordPress admin."
+msgstr ""

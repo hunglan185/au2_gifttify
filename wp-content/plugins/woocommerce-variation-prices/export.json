@@ -1,0 +1,13 @@
+{
+  "files": [
+	  "vendor/autoload.php"
+  ],
+  "folders": [
+	  "languages",
+	  "src",
+	  "lib",
+	  "dependencies",
+	  "assets",
+	  "vendor/composer"
+  ]
+}

@@ -1,0 +1,42 @@
+.wvp-price-range {
+
+	span.price {
+	    display: inline-block;
+	}
+
+	.wvp-list {
+
+		border-collapse: collapse;
+		display: table!important;
+
+		.wvp-list-item {
+
+		    display: table-row!important;
+
+			> span {
+
+				display: table-cell!important;
+				padding: 0;
+				padding-right: 0.5em;
+				text-align: left;
+
+				&.wvp-list-item-price {
+
+					text-align: left;
+					white-space: nowrap;
+
+					&.price,
+					> .price {
+
+						margin-top: 0;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+}

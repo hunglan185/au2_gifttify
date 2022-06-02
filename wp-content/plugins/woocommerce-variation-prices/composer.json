@@ -1,0 +1,64 @@
+{
+    "name": "barn2/woocommerce-variation-prices",
+    "description": "WooCommerce Variation Prices plugin",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Barn2 Plugins",
+            "email": "support@barn2.com"
+        }
+    ],
+    "minimum-stability": "dev",
+	"prefer-stable": true,
+    "require": {
+        "barn2/setup-wizard": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Barn2\\Plugin\\WC_Variation_Prices\\": "src",
+            "Barn2\\WVP_Lib\\": "lib",
+            "WPTRT\\AdminNotices\\": "lib/vendor/admin-notices/src"
+        },
+        "files": [
+            "lib/class-wc-settings-plugin-promo.php"
+        ],
+		"classmap": [
+		    "dependencies/src"
+		]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:barn2plugins/php-standards.git"
+        },
+		{
+		    "type": "vcs",
+		    "url": "git@bitbucket.org:barn2plugins/setup-wizard.git"
+		}
+    ],
+    "require-dev": {
+        "barn2/php-standards": "dev-master",
+        "bamarni/composer-bin-plugin": "dev-master",
+		"barn2/setup-wizard": "9999999-dev",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+    },
+	"scripts": {
+		"lint": "phpcs .",
+        "lint-fix": "phpcbf .",
+		"no-dev": "composer update --prefer-dist --no-dev",
+		"install-scoper": [
+		    "composer bin php-scoper config minimum-stability dev",
+		    "composer bin php-scoper config prefer-stable true",
+		    "composer bin php-scoper require --dev humbug/php-scoper"
+		],
+		"scoper": "vendor/bin/php-scoper add-prefix --config .scoper.inc.php --output-dir dependencies/"
+	},
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/installers": true,
+            "bamarni/composer-bin-plugin": true
+        }
+    }
+}

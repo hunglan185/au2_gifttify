@@ -1,0 +1,1477 @@
+0000.000 (0) Opened log file at time: Wed, 01 Jun 2022 03:14:15 +0000 on https://australia.gifttify.com
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.22.8.25 WP: 6.0 PHP: 8.0.19 (fpm-fcgi, Linux ip-172-31-56-55 5.13.0-1023-aws #25~20.04.1-Ubuntu SMP Mon Apr 25 19:28:27 UTC 2022 x86_64) MySQL: 8.0.29-0ubuntu0.20.04.3 (max packet size=67108864) WPLANG: en_US Server: nginx/1.18.0 safe_mode: 0 max_execution_time: 900 memory_limit: 3000M (used: 30.2M | 32M) multisite: N openssl: OpenSSL 1.1.1f  31 Mar 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.010 (0) Free space on disk containing Updraft's temporary directory: 16839.2 MB
+0000.022 (0) Deleting old temporary file: log.c2e5fdc6bb93-browser.txt
+0000.028 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.034 (0) Semaphore (fd, wp_options) being initialised
+0000.051 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.066 (0) Set semaphore last lock (fd) time to 2022-06-01 03:14:15
+0000.071 (0) Semaphore lock (fd) complete
+0000.091 (0) Backup run: resumption=0, nonce=7b72933ef7e0, file_nonce=7b72933ef7e0 begun at=1654053255 (0s ago), job type=backup, label=First time all backup 1-6
+0000.103 (0) Scheduling a resumption (1) after 300 seconds (1654053555) in case this run gets aborted
+0000.124 (0) Checking if we have a zip executable available
+0000.150 (0) Creation of backups of directories: beginning
+0000.167 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.254 (0) Total entities for the zip file: 4342 directories, 22602 files (0 skipped as non-modified), 192.9 MB
+0001.262 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3806, wp-content/plugins/updraftplus/backup.php)
+0001.276 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.284 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.293 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.302 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.311 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.320 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0001.329 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0001.337 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0001.344 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0001.352 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0001.357 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (3.7 MB, 22602 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0001.834 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1100 files added (on-disk size: 2090.5 KB)
+0001.844 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1200 files added (on-disk size: 2090.5 KB)
+0001.852 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1300 files added (on-disk size: 2090.5 KB)
+0001.861 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1400 files added (on-disk size: 2090.5 KB)
+0001.869 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1500 files added (on-disk size: 2090.5 KB)
+0001.876 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1600 files added (on-disk size: 2090.5 KB)
+0001.885 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1700 files added (on-disk size: 2090.5 KB)
+0001.896 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1800 files added (on-disk size: 2090.5 KB)
+0001.906 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 1900 files added (on-disk size: 2090.5 KB)
+0001.912 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2000 files added (on-disk size: 2090.5 KB)
+0001.918 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.1 MB, 22602 files batched, 1001 (2002) added so far); re-opening (prior size: 2090.5 KB)
+0002.553 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2100 files added (on-disk size: 4335.4 KB)
+0002.562 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2200 files added (on-disk size: 4335.4 KB)
+0002.572 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2300 files added (on-disk size: 4335.4 KB)
+0002.580 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2400 files added (on-disk size: 4335.4 KB)
+0002.589 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2500 files added (on-disk size: 4335.4 KB)
+0002.598 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2600 files added (on-disk size: 4335.4 KB)
+0002.607 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2700 files added (on-disk size: 4335.4 KB)
+0002.616 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2800 files added (on-disk size: 4335.4 KB)
+0002.624 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 2900 files added (on-disk size: 4335.4 KB)
+0002.634 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3000 files added (on-disk size: 4335.4 KB)
+0002.640 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.4 MB, 22602 files batched, 1001 (3003) added so far); re-opening (prior size: 4335.4 KB)
+0002.954 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3100 files added (on-disk size: 6248.9 KB)
+0002.963 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3200 files added (on-disk size: 6248.9 KB)
+0002.974 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3300 files added (on-disk size: 6248.9 KB)
+0002.982 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3400 files added (on-disk size: 6248.9 KB)
+0002.990 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3500 files added (on-disk size: 6248.9 KB)
+0002.999 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3600 files added (on-disk size: 6248.9 KB)
+0003.007 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3700 files added (on-disk size: 6248.9 KB)
+0003.016 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3800 files added (on-disk size: 6248.9 KB)
+0003.024 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 3900 files added (on-disk size: 6248.9 KB)
+0003.032 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4000 files added (on-disk size: 6248.9 KB)
+0003.037 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (10.2 MB, 22602 files batched, 1001 (4004) added so far); re-opening (prior size: 6248.9 KB)
+0004.131 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4100 files added (on-disk size: 9782.2 KB)
+0004.141 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4200 files added (on-disk size: 9782.2 KB)
+0004.153 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4300 files added (on-disk size: 9782.2 KB)
+0004.159 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4400 files added (on-disk size: 9782.2 KB)
+0004.167 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4500 files added (on-disk size: 9782.2 KB)
+0004.177 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4600 files added (on-disk size: 9782.2 KB)
+0004.183 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4700 files added (on-disk size: 9782.2 KB)
+0004.192 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4800 files added (on-disk size: 9782.2 KB)
+0004.201 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 4900 files added (on-disk size: 9782.2 KB)
+0004.209 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5000 files added (on-disk size: 9782.2 KB)
+0004.213 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (12.4 MB, 22602 files batched, 1001 (5005) added so far); re-opening (prior size: 9782.2 KB)
+0005.159 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5100 files added (on-disk size: 14971.2 KB)
+0005.168 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5200 files added (on-disk size: 14971.2 KB)
+0005.176 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5300 files added (on-disk size: 14971.2 KB)
+0005.186 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5400 files added (on-disk size: 14971.2 KB)
+0005.194 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5500 files added (on-disk size: 14971.2 KB)
+0005.202 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5600 files added (on-disk size: 14971.2 KB)
+0005.211 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5700 files added (on-disk size: 14971.2 KB)
+0005.220 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5800 files added (on-disk size: 14971.2 KB)
+0005.229 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 5900 files added (on-disk size: 14971.2 KB)
+0005.237 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6000 files added (on-disk size: 14971.2 KB)
+0005.242 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (9.7 MB, 22602 files batched, 1001 (6006) added so far); re-opening (prior size: 14971.2 KB)
+0006.132 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6100 files added (on-disk size: 19354.5 KB)
+0006.142 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6200 files added (on-disk size: 19354.5 KB)
+0006.152 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6300 files added (on-disk size: 19354.5 KB)
+0006.160 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6400 files added (on-disk size: 19354.5 KB)
+0006.169 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6500 files added (on-disk size: 19354.5 KB)
+0006.177 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6600 files added (on-disk size: 19354.5 KB)
+0006.184 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6700 files added (on-disk size: 19354.5 KB)
+0006.194 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6800 files added (on-disk size: 19354.5 KB)
+0006.204 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 6900 files added (on-disk size: 19354.5 KB)
+0006.213 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7000 files added (on-disk size: 19354.5 KB)
+0006.218 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (14.9 MB, 22602 files batched, 1001 (7007) added so far); re-opening (prior size: 19354.5 KB)
+0007.924 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7100 files added (on-disk size: 25487.9 KB)
+0007.933 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7200 files added (on-disk size: 25487.9 KB)
+0007.942 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7300 files added (on-disk size: 25487.9 KB)
+0007.952 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7400 files added (on-disk size: 25487.9 KB)
+0007.965 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7500 files added (on-disk size: 25487.9 KB)
+0007.975 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7600 files added (on-disk size: 25487.9 KB)
+0007.985 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7700 files added (on-disk size: 25487.9 KB)
+0007.995 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7800 files added (on-disk size: 25487.9 KB)
+0008.004 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 7900 files added (on-disk size: 25487.9 KB)
+0008.014 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8000 files added (on-disk size: 25487.9 KB)
+0008.020 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (3.6 MB, 22602 files batched, 1001 (8008) added so far); re-opening (prior size: 25487.9 KB)
+0009.263 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8100 files added (on-disk size: 26814.3 KB)
+0009.273 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8200 files added (on-disk size: 26814.3 KB)
+0009.280 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8300 files added (on-disk size: 26814.3 KB)
+0009.291 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8400 files added (on-disk size: 26814.3 KB)
+0009.301 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8500 files added (on-disk size: 26814.3 KB)
+0009.311 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8600 files added (on-disk size: 26814.3 KB)
+0009.322 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8700 files added (on-disk size: 26814.3 KB)
+0009.331 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8800 files added (on-disk size: 26814.3 KB)
+0009.343 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 8900 files added (on-disk size: 26814.3 KB)
+0009.356 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9000 files added (on-disk size: 26814.3 KB)
+0009.362 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5 MB, 22602 files batched, 1001 (9009) added so far); re-opening (prior size: 26814.3 KB)
+0010.604 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9100 files added (on-disk size: 28097.7 KB)
+0010.614 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9200 files added (on-disk size: 28097.7 KB)
+0010.623 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9300 files added (on-disk size: 28097.7 KB)
+0010.632 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9400 files added (on-disk size: 28097.7 KB)
+0010.642 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9500 files added (on-disk size: 28097.7 KB)
+0010.651 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9600 files added (on-disk size: 28097.7 KB)
+0010.660 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9700 files added (on-disk size: 28097.7 KB)
+0010.670 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9800 files added (on-disk size: 28097.7 KB)
+0010.680 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 9900 files added (on-disk size: 28097.7 KB)
+0010.687 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10000 files added (on-disk size: 28097.7 KB)
+0010.692 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5 MB, 22602 files batched, 1001 (10010) added so far); re-opening (prior size: 28097.7 KB)
+0012.154 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10100 files added (on-disk size: 29716.7 KB)
+0012.165 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10200 files added (on-disk size: 29716.7 KB)
+0012.178 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10300 files added (on-disk size: 29716.7 KB)
+0012.187 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10400 files added (on-disk size: 29716.7 KB)
+0012.195 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10500 files added (on-disk size: 29716.7 KB)
+0012.204 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10600 files added (on-disk size: 29716.7 KB)
+0012.212 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10700 files added (on-disk size: 29716.7 KB)
+0012.220 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10800 files added (on-disk size: 29716.7 KB)
+0012.228 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 10900 files added (on-disk size: 29716.7 KB)
+0012.236 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11000 files added (on-disk size: 29716.7 KB)
+0012.242 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.1 MB, 22602 files batched, 1001 (11011) added so far); re-opening (prior size: 29716.7 KB)
+0013.442 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11100 files added (on-disk size: 32075.5 KB)
+0013.451 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11200 files added (on-disk size: 32075.5 KB)
+0013.462 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11300 files added (on-disk size: 32075.5 KB)
+0013.471 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11400 files added (on-disk size: 32075.5 KB)
+0013.481 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11500 files added (on-disk size: 32075.5 KB)
+0013.490 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11600 files added (on-disk size: 32075.5 KB)
+0013.499 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11700 files added (on-disk size: 32075.5 KB)
+0013.510 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11800 files added (on-disk size: 32075.5 KB)
+0013.521 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 11900 files added (on-disk size: 32075.5 KB)
+0013.530 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12000 files added (on-disk size: 32075.5 KB)
+0013.536 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (9.5 MB, 22602 files batched, 1001 (12012) added so far); re-opening (prior size: 32075.5 KB)
+0015.219 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12100 files added (on-disk size: 34182.8 KB)
+0015.230 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12200 files added (on-disk size: 34182.8 KB)
+0015.239 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12300 files added (on-disk size: 34182.8 KB)
+0015.248 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12400 files added (on-disk size: 34182.8 KB)
+0015.256 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12500 files added (on-disk size: 34182.8 KB)
+0015.263 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12600 files added (on-disk size: 34182.8 KB)
+0015.272 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12700 files added (on-disk size: 34182.8 KB)
+0015.281 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12800 files added (on-disk size: 34182.8 KB)
+0015.290 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 12900 files added (on-disk size: 34182.8 KB)
+0015.298 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13000 files added (on-disk size: 34182.8 KB)
+0015.307 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (17.6 MB, 22602 files batched, 1001 (13013) added so far); re-opening (prior size: 34182.8 KB)
+0018.875 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13100 files added (on-disk size: 38251 KB)
+0018.884 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13200 files added (on-disk size: 38251 KB)
+0018.895 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13300 files added (on-disk size: 38251 KB)
+0018.906 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13400 files added (on-disk size: 38251 KB)
+0018.912 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13500 files added (on-disk size: 38251 KB)
+0018.921 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13600 files added (on-disk size: 38251 KB)
+0018.928 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13700 files added (on-disk size: 38251 KB)
+0018.938 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13800 files added (on-disk size: 38251 KB)
+0018.947 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 13900 files added (on-disk size: 38251 KB)
+0018.957 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14000 files added (on-disk size: 38251 KB)
+0018.963 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (10.2 MB, 22602 files batched, 1001 (14014) added so far); re-opening (prior size: 38251 KB)
+0020.216 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14100 files added (on-disk size: 41597 KB)
+0020.225 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14200 files added (on-disk size: 41597 KB)
+0020.233 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14300 files added (on-disk size: 41597 KB)
+0020.241 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14400 files added (on-disk size: 41597 KB)
+0020.250 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14500 files added (on-disk size: 41597 KB)
+0020.259 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14600 files added (on-disk size: 41597 KB)
+0020.268 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14700 files added (on-disk size: 41597 KB)
+0020.277 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14800 files added (on-disk size: 41597 KB)
+0020.284 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 14900 files added (on-disk size: 41597 KB)
+0020.292 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15000 files added (on-disk size: 41597 KB)
+0020.299 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.2 MB, 22602 files batched, 1001 (15015) added so far); re-opening (prior size: 41597 KB)
+0021.453 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15100 files added (on-disk size: 44434.1 KB)
+0021.462 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15200 files added (on-disk size: 44434.1 KB)
+0021.471 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15300 files added (on-disk size: 44434.1 KB)
+0021.480 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15400 files added (on-disk size: 44434.1 KB)
+0021.488 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15500 files added (on-disk size: 44434.1 KB)
+0021.497 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15600 files added (on-disk size: 44434.1 KB)
+0021.506 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15700 files added (on-disk size: 44434.1 KB)
+0021.515 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15800 files added (on-disk size: 44434.1 KB)
+0021.523 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 15900 files added (on-disk size: 44434.1 KB)
+0021.532 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16000 files added (on-disk size: 44434.1 KB)
+0021.537 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.4 MB, 22602 files batched, 1001 (16016) added so far); re-opening (prior size: 44434.1 KB)
+0022.934 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16100 files added (on-disk size: 46536.9 KB)
+0022.944 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16200 files added (on-disk size: 46536.9 KB)
+0022.953 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16300 files added (on-disk size: 46536.9 KB)
+0022.963 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16400 files added (on-disk size: 46536.9 KB)
+0022.973 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16500 files added (on-disk size: 46536.9 KB)
+0022.981 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16600 files added (on-disk size: 46536.9 KB)
+0022.989 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16700 files added (on-disk size: 46536.9 KB)
+0022.995 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16800 files added (on-disk size: 46536.9 KB)
+0023.004 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 16900 files added (on-disk size: 46536.9 KB)
+0023.012 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17000 files added (on-disk size: 46536.9 KB)
+0023.018 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (11.1 MB, 22602 files batched, 1001 (17017) added so far); re-opening (prior size: 46536.9 KB)
+0024.455 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17100 files added (on-disk size: 50135.7 KB)
+0024.464 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17200 files added (on-disk size: 50135.7 KB)
+0024.473 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17300 files added (on-disk size: 50135.7 KB)
+0024.480 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17400 files added (on-disk size: 50135.7 KB)
+0024.489 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17500 files added (on-disk size: 50135.7 KB)
+0024.498 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17600 files added (on-disk size: 50135.7 KB)
+0024.509 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17700 files added (on-disk size: 50135.7 KB)
+0024.516 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17800 files added (on-disk size: 50135.7 KB)
+0024.527 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 17900 files added (on-disk size: 50135.7 KB)
+0024.537 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18000 files added (on-disk size: 50135.7 KB)
+0024.541 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (12.3 MB, 22602 files batched, 1001 (18018) added so far); re-opening (prior size: 50135.7 KB)
+0026.520 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18100 files added (on-disk size: 52192.2 KB)
+0026.529 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18200 files added (on-disk size: 52192.2 KB)
+0026.535 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18300 files added (on-disk size: 52192.2 KB)
+0026.544 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18400 files added (on-disk size: 52192.2 KB)
+0026.552 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18500 files added (on-disk size: 52192.2 KB)
+0026.560 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18600 files added (on-disk size: 52192.2 KB)
+0026.568 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18700 files added (on-disk size: 52192.2 KB)
+0026.578 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18800 files added (on-disk size: 52192.2 KB)
+0026.587 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 18900 files added (on-disk size: 52192.2 KB)
+0026.595 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19000 files added (on-disk size: 52192.2 KB)
+0026.601 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.9 MB, 22602 files batched, 1001 (19019) added so far); re-opening (prior size: 52192.2 KB)
+0027.619 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19100 files added (on-disk size: 53947.9 KB)
+0027.628 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19200 files added (on-disk size: 53947.9 KB)
+0027.637 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19300 files added (on-disk size: 53947.9 KB)
+0027.647 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19400 files added (on-disk size: 53947.9 KB)
+0027.656 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19500 files added (on-disk size: 53947.9 KB)
+0027.664 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19600 files added (on-disk size: 53947.9 KB)
+0027.671 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19700 files added (on-disk size: 53947.9 KB)
+0027.680 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19800 files added (on-disk size: 53947.9 KB)
+0027.690 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 19900 files added (on-disk size: 53947.9 KB)
+0027.697 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20000 files added (on-disk size: 53947.9 KB)
+0027.703 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.3 MB, 22602 files batched, 1001 (20020) added so far); re-opening (prior size: 53947.9 KB)
+0029.554 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20100 files added (on-disk size: 56197.3 KB)
+0029.563 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20200 files added (on-disk size: 56197.3 KB)
+0029.573 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20300 files added (on-disk size: 56197.3 KB)
+0029.581 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20400 files added (on-disk size: 56197.3 KB)
+0029.588 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20500 files added (on-disk size: 56197.3 KB)
+0029.595 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20600 files added (on-disk size: 56197.3 KB)
+0029.604 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20700 files added (on-disk size: 56197.3 KB)
+0029.614 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20800 files added (on-disk size: 56197.3 KB)
+0029.622 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 20900 files added (on-disk size: 56197.3 KB)
+0029.631 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21000 files added (on-disk size: 56197.3 KB)
+0029.637 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.9 MB, 22602 files batched, 1001 (21021) added so far); re-opening (prior size: 56197.3 KB)
+0031.067 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21100 files added (on-disk size: 58217.1 KB)
+0031.078 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21200 files added (on-disk size: 58217.1 KB)
+0031.089 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21300 files added (on-disk size: 58217.1 KB)
+0031.097 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21400 files added (on-disk size: 58217.1 KB)
+0031.105 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21500 files added (on-disk size: 58217.1 KB)
+0031.113 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21600 files added (on-disk size: 58217.1 KB)
+0031.120 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21700 files added (on-disk size: 58217.1 KB)
+0031.129 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21800 files added (on-disk size: 58217.1 KB)
+0031.135 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 21900 files added (on-disk size: 58217.1 KB)
+0031.144 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22000 files added (on-disk size: 58217.1 KB)
+0031.151 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (7.8 MB, 22602 files batched, 1001 (22022) added so far); re-opening (prior size: 58217.1 KB)
+0032.130 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22100 files added (on-disk size: 60082.7 KB)
+0032.140 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22200 files added (on-disk size: 60082.7 KB)
+0032.149 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22300 files added (on-disk size: 60082.7 KB)
+0032.158 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22400 files added (on-disk size: 60082.7 KB)
+0032.167 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22500 files added (on-disk size: 60082.7 KB)
+0032.176 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.tmp: 22600 files added (on-disk size: 60082.7 KB)
+0033.483 (0) Creating zip file manifest (/var/www/au2.gifttify.com/wp-content/updraft/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.list-temp.tmp)
+0033.546 (0) Successfully created zip file manifest (size: 2326998)
+0034.271 (0) Created plugins zip (0) - 63893.5 KB in 34.1 s (1873.8 KB/s) (sha1: 120db64009436e1c2acf79ae49cdf57ac1caae8d, sha256: 2a9cfcea4962824ea94e0fec027e2cb489b319b74a7be8033fd7d4b3d56dfda4)
+0034.285 (0) Beginning creation of dump of themes (split every: 400 MB)
+0034.334 (0) Total entities for the zip file: 292 directories, 2185 files (0 skipped as non-modified), 22.7 MB
+0034.340 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3806, wp-content/plugins/updraftplus/backup.php)
+0034.349 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0034.359 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0034.375 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0034.385 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0034.391 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0034.400 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0034.409 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0034.416 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0034.424 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0034.433 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0034.437 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (12.7 MB, 2185 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0035.110 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1100 files added (on-disk size: 7981.6 KB)
+0035.119 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1200 files added (on-disk size: 7981.6 KB)
+0035.130 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1300 files added (on-disk size: 7981.6 KB)
+0035.139 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1400 files added (on-disk size: 7981.6 KB)
+0035.147 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1500 files added (on-disk size: 7981.6 KB)
+0035.154 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1600 files added (on-disk size: 7981.6 KB)
+0035.162 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1700 files added (on-disk size: 7981.6 KB)
+0035.170 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1800 files added (on-disk size: 7981.6 KB)
+0035.179 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 1900 files added (on-disk size: 7981.6 KB)
+0035.188 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 2000 files added (on-disk size: 7981.6 KB)
+0035.193 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.5 MB, 2185 files batched, 1001 (2002) added so far); re-opening (prior size: 7981.6 KB)
+0035.635 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.tmp: 2100 files added (on-disk size: 11502.9 KB)
+0035.782 (0) Creating zip file manifest (/var/www/au2.gifttify.com/wp-content/updraft/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.list-temp.tmp)
+0035.793 (0) Successfully created zip file manifest (size: 166883)
+0035.962 (0) Created themes zip (0) - 14155 KB in 1.7 s (8469.6 KB/s) (sha1: 4a8baf8e615cf02195dd19313262a43761cb6903, sha256: 019e9e093a22526da81679b2750f9ffd1e4065b5f9893e0c9a920495efdb6b06)
+0035.977 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0035.984 (0) Looking for candidates to backup in: /var/www/au2.gifttify.com/wp-content/uploads
+0035.992 (0) finding files: wcpa_uploads: adding to list (1)
+0035.997 (0) finding files: 2022: adding to list (2)
+0036.004 (0) finding files: wpcf7_uploads: adding to list (3)
+0036.010 (0) finding files: 2016: adding to list (4)
+0036.016 (0) finding files: wc-logs: adding to list (5)
+0036.022 (0) finding files: ithemes-security: adding to list (6)
+0036.028 (0) finding files: wpforms: adding to list (7)
+0036.033 (0) finding files: mailpoet: adding to list (8)
+0036.039 (0) finding files: woocommerce_uploads: adding to list (9)
+0036.045 (0) finding files: thwepo_uploads: adding to list (10)
+0036.050 (0) finding files: elementor: adding to list (11)
+0036.056 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0036.107 (0) Total entities for the zip file: 29 directories, 2864 files (0 skipped as non-modified), 90.3 MB
+0036.113 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3806, wp-content/plugins/updraftplus/backup.php)
+0036.121 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0036.129 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0036.138 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0036.146 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0036.155 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0036.164 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 600 files added (on-disk size: 0 KB)
+0036.173 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 700 files added (on-disk size: 0 KB)
+0036.180 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 800 files added (on-disk size: 0 KB)
+0036.188 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.2 MB, 2864 files batched, 875 (875) added so far); re-opening (prior size: 0 KB)
+0036.849 (0) A useful amount of data was added after this amount of zip processing: 1.3 s (normalised: 1.3 s, rate: 19932.9 KB/s)
+0036.862 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.2953019142151, normalised_time=1.2843112603013, max_time=36.85525894165, data points known=1, old_max_bytes=26214400, new_max_bytes=209715200)
+0036.878 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 900 files added (on-disk size: 25703.9 KB)
+0036.886 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1000 files added (on-disk size: 25703.9 KB)
+0036.894 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1100 files added (on-disk size: 25703.9 KB)
+0036.902 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1200 files added (on-disk size: 25703.9 KB)
+0036.910 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1300 files added (on-disk size: 25703.9 KB)
+0036.919 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1400 files added (on-disk size: 25703.9 KB)
+0036.927 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1500 files added (on-disk size: 25703.9 KB)
+0036.935 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1600 files added (on-disk size: 25703.9 KB)
+0036.942 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1700 files added (on-disk size: 25703.9 KB)
+0036.951 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1800 files added (on-disk size: 25703.9 KB)
+0036.959 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (29.1 MB, 2864 files batched, 1001 (1876) added so far); re-opening (prior size: 25703.9 KB)
+0037.791 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 1900 files added (on-disk size: 55686.3 KB)
+0037.799 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2000 files added (on-disk size: 55686.3 KB)
+0037.807 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2100 files added (on-disk size: 55686.3 KB)
+0037.818 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2200 files added (on-disk size: 55686.3 KB)
+0037.826 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2300 files added (on-disk size: 55686.3 KB)
+0037.834 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2400 files added (on-disk size: 55686.3 KB)
+0037.843 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2500 files added (on-disk size: 55686.3 KB)
+0037.851 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2600 files added (on-disk size: 55686.3 KB)
+0037.859 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2700 files added (on-disk size: 55686.3 KB)
+0037.868 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.tmp: 2800 files added (on-disk size: 55686.3 KB)
+0042.944 (0) Creating zip file manifest (/var/www/au2.gifttify.com/wp-content/updraft/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.list-temp.tmp)
+0042.958 (0) Successfully created zip file manifest (size: 264465)
+0043.916 (0) Created uploads zip (0) - 88390.9 KB in 7.9 s (11256 KB/s) (sha1: ea8939d7612e78993a2d960ed1a57a9a9c913b2a, sha256: 1b4c8b711639ad5a45e5378cff9a29508e46038b5732b4f611802ecec44cbeaf)
+0043.928 (0) Exclusion option setting (wpcore): 
+0043.933 (0) Looking for candidates to backup in: /var/www/au2.gifttify.com
+0043.938 (0) finding files: wp-config-sample.php: adding to list (1)
+0043.944 (0) finding files: .DS_Store: adding to list (2)
+0043.950 (0) finding files: xmlrpc.php: adding to list (3)
+0043.955 (0) finding files: wp-settings.php: adding to list (4)
+0043.961 (0) finding files: index.php: adding to list (5)
+0043.967 (0) finding files: wp-trackback.php: adding to list (6)
+0043.973 (0) finding files: wp-login.php: adding to list (7)
+0043.979 (0) finding files: wp-mail.php: adding to list (8)
+0043.985 (0) finding files: wp-config.php: adding to list (9)
+0043.992 (0) finding files: wp-blog-header.php: adding to list (10)
+0043.997 (0) finding files: wp-load.php: adding to list (11)
+0044.005 (0) finding files: adminer.php: adding to list (12)
+0044.011 (0) finding files: wp-cron.php: adding to list (13)
+0044.017 (0) finding files: wp-php-hung.php: adding to list (14)
+0044.024 (0) finding files: .gitignore: adding to list (15)
+0044.030 (0) finding files: wp-links-opml.php: adding to list (16)
+0044.037 (0) finding files: wp-comments-post.php: adding to list (17)
+0044.042 (0) finding files: wp-activate.php: adding to list (18)
+0044.049 (0) finding files: .git: adding to list (19)
+0044.054 (0) finding files: wp-content: skipping: this is the wp-content directory
+0044.060 (0) finding files: readme.html: adding to list (20)
+0044.066 (0) finding files: wp-admin: adding to list (21)
+0044.075 (0) finding files: phpinfo.php: adding to list (22)
+0044.081 (0) finding files: wp-includes: adding to list (23)
+0044.087 (0) finding files: license.txt: adding to list (24)
+0044.095 (0) finding files: wp-signup.php: adding to list (25)
+0044.103 (0) Beginning creation of dump of wpcore (split every: 400 MB)
+0044.437 (0) Total entities for the zip file: 522 directories, 31098 files (0 skipped as non-modified), 247.6 MB
+0044.444 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3806, wp-content/plugins/updraftplus/backup.php)
+0044.454 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 100 files added (on-disk size: 0 KB)
+0044.461 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 200 files added (on-disk size: 0 KB)
+0044.470 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 300 files added (on-disk size: 0 KB)
+0044.481 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 400 files added (on-disk size: 0 KB)
+0044.488 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 500 files added (on-disk size: 0 KB)
+0044.496 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 600 files added (on-disk size: 0 KB)
+0044.505 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 700 files added (on-disk size: 0 KB)
+0044.512 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 800 files added (on-disk size: 0 KB)
+0044.520 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 900 files added (on-disk size: 0 KB)
+0044.529 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0044.534 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.3 MB, 31098 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0045.207 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1100 files added (on-disk size: 7895 KB)
+0045.216 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1200 files added (on-disk size: 7895 KB)
+0045.231 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1300 files added (on-disk size: 7895 KB)
+0045.240 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1400 files added (on-disk size: 7895 KB)
+0045.248 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1500 files added (on-disk size: 7895 KB)
+0045.257 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1600 files added (on-disk size: 7895 KB)
+0045.266 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1700 files added (on-disk size: 7895 KB)
+0045.275 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1800 files added (on-disk size: 7895 KB)
+0045.283 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 1900 files added (on-disk size: 7895 KB)
+0045.292 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2000 files added (on-disk size: 7895 KB)
+0045.298 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.1 MB, 31098 files batched, 1001 (2002) added so far); re-opening (prior size: 7895 KB)
+0045.797 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2100 files added (on-disk size: 13291.2 KB)
+0045.805 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2200 files added (on-disk size: 13291.2 KB)
+0045.814 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2300 files added (on-disk size: 13291.2 KB)
+0045.823 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2400 files added (on-disk size: 13291.2 KB)
+0045.831 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2500 files added (on-disk size: 13291.2 KB)
+0045.841 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2600 files added (on-disk size: 13291.2 KB)
+0045.848 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2700 files added (on-disk size: 13291.2 KB)
+0045.856 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2800 files added (on-disk size: 13291.2 KB)
+0045.865 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 2900 files added (on-disk size: 13291.2 KB)
+0045.876 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3000 files added (on-disk size: 13291.2 KB)
+0045.882 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.7 MB, 31098 files batched, 1001 (3003) added so far); re-opening (prior size: 13291.2 KB)
+0046.464 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3100 files added (on-disk size: 19262.6 KB)
+0046.473 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3200 files added (on-disk size: 19262.6 KB)
+0046.480 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3300 files added (on-disk size: 19262.6 KB)
+0046.487 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3400 files added (on-disk size: 19262.6 KB)
+0046.496 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3500 files added (on-disk size: 19262.6 KB)
+0046.504 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3600 files added (on-disk size: 19262.6 KB)
+0046.512 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3700 files added (on-disk size: 19262.6 KB)
+0046.521 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3800 files added (on-disk size: 19262.6 KB)
+0046.528 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 3900 files added (on-disk size: 19262.6 KB)
+0046.537 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4000 files added (on-disk size: 19262.6 KB)
+0046.542 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.2 MB, 31098 files batched, 1001 (4004) added so far); re-opening (prior size: 19262.6 KB)
+0047.190 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4100 files added (on-disk size: 24785.6 KB)
+0047.199 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4200 files added (on-disk size: 24785.6 KB)
+0047.213 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4300 files added (on-disk size: 24785.6 KB)
+0047.220 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4400 files added (on-disk size: 24785.6 KB)
+0047.228 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4500 files added (on-disk size: 24785.6 KB)
+0047.237 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4600 files added (on-disk size: 24785.6 KB)
+0047.246 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4700 files added (on-disk size: 24785.6 KB)
+0047.254 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4800 files added (on-disk size: 24785.6 KB)
+0047.263 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 4900 files added (on-disk size: 24785.6 KB)
+0047.272 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5000 files added (on-disk size: 24785.6 KB)
+0047.279 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.4 MB, 31098 files batched, 1001 (5005) added so far); re-opening (prior size: 24785.6 KB)
+0048.007 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5100 files added (on-disk size: 31533.4 KB)
+0048.019 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5200 files added (on-disk size: 31533.4 KB)
+0048.030 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5300 files added (on-disk size: 31533.4 KB)
+0048.040 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5400 files added (on-disk size: 31533.4 KB)
+0048.049 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5500 files added (on-disk size: 31533.4 KB)
+0048.060 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5600 files added (on-disk size: 31533.4 KB)
+0048.069 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5700 files added (on-disk size: 31533.4 KB)
+0048.078 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5800 files added (on-disk size: 31533.4 KB)
+0048.087 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 5900 files added (on-disk size: 31533.4 KB)
+0048.097 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6000 files added (on-disk size: 31533.4 KB)
+0048.103 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.3 MB, 31098 files batched, 1001 (6006) added so far); re-opening (prior size: 31533.4 KB)
+0048.899 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6100 files added (on-disk size: 37103.8 KB)
+0048.907 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6200 files added (on-disk size: 37103.8 KB)
+0048.915 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6300 files added (on-disk size: 37103.8 KB)
+0048.924 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6400 files added (on-disk size: 37103.8 KB)
+0048.933 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6500 files added (on-disk size: 37103.8 KB)
+0048.943 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6600 files added (on-disk size: 37103.8 KB)
+0048.952 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6700 files added (on-disk size: 37103.8 KB)
+0048.961 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6800 files added (on-disk size: 37103.8 KB)
+0048.968 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 6900 files added (on-disk size: 37103.8 KB)
+0048.976 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7000 files added (on-disk size: 37103.8 KB)
+0048.984 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.8 MB, 31098 files batched, 1001 (7007) added so far); re-opening (prior size: 37103.8 KB)
+0049.733 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7100 files added (on-disk size: 43260.9 KB)
+0049.742 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7200 files added (on-disk size: 43260.9 KB)
+0049.751 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7300 files added (on-disk size: 43260.9 KB)
+0049.760 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7400 files added (on-disk size: 43260.9 KB)
+0049.768 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7500 files added (on-disk size: 43260.9 KB)
+0049.776 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7600 files added (on-disk size: 43260.9 KB)
+0049.782 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7700 files added (on-disk size: 43260.9 KB)
+0049.792 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7800 files added (on-disk size: 43260.9 KB)
+0049.799 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 7900 files added (on-disk size: 43260.9 KB)
+0049.808 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8000 files added (on-disk size: 43260.9 KB)
+0049.813 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.4 MB, 31098 files batched, 1001 (8008) added so far); re-opening (prior size: 43260.9 KB)
+0050.647 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8100 files added (on-disk size: 49001.4 KB)
+0050.656 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8200 files added (on-disk size: 49001.4 KB)
+0050.663 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8300 files added (on-disk size: 49001.4 KB)
+0050.670 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8400 files added (on-disk size: 49001.4 KB)
+0050.679 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8500 files added (on-disk size: 49001.4 KB)
+0050.688 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8600 files added (on-disk size: 49001.4 KB)
+0050.696 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8700 files added (on-disk size: 49001.4 KB)
+0050.705 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8800 files added (on-disk size: 49001.4 KB)
+0050.714 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 8900 files added (on-disk size: 49001.4 KB)
+0050.722 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9000 files added (on-disk size: 49001.4 KB)
+0050.732 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (38.6 MB, 31098 files batched, 1001 (9009) added so far); re-opening (prior size: 49001.4 KB)
+0053.295 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9100 files added (on-disk size: 88573.3 KB)
+0053.304 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9200 files added (on-disk size: 88573.3 KB)
+0053.313 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9300 files added (on-disk size: 88573.3 KB)
+0053.324 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9400 files added (on-disk size: 88573.3 KB)
+0053.335 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9500 files added (on-disk size: 88573.3 KB)
+0053.344 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9600 files added (on-disk size: 88573.3 KB)
+0053.353 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9700 files added (on-disk size: 88573.3 KB)
+0053.361 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9800 files added (on-disk size: 88573.3 KB)
+0053.369 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 9900 files added (on-disk size: 88573.3 KB)
+0053.377 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10000 files added (on-disk size: 88573.3 KB)
+0053.383 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.3 MB, 31098 files batched, 1001 (10010) added so far); re-opening (prior size: 88573.3 KB)
+0054.411 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10100 files added (on-disk size: 95235.6 KB)
+0054.418 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10200 files added (on-disk size: 95235.6 KB)
+0054.427 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10300 files added (on-disk size: 95235.6 KB)
+0054.436 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10400 files added (on-disk size: 95235.6 KB)
+0054.445 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10500 files added (on-disk size: 95235.6 KB)
+0054.451 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10600 files added (on-disk size: 95235.6 KB)
+0054.460 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10700 files added (on-disk size: 95235.6 KB)
+0054.468 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10800 files added (on-disk size: 95235.6 KB)
+0054.477 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 10900 files added (on-disk size: 95235.6 KB)
+0054.485 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11000 files added (on-disk size: 95235.6 KB)
+0054.491 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8 MB, 31098 files batched, 1001 (11011) added so far); re-opening (prior size: 95235.6 KB)
+0055.595 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11100 files added (on-disk size: 103558.8 KB)
+0055.604 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11200 files added (on-disk size: 103558.8 KB)
+0055.612 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11300 files added (on-disk size: 103558.8 KB)
+0055.619 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11400 files added (on-disk size: 103558.8 KB)
+0055.627 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11500 files added (on-disk size: 103558.8 KB)
+0055.636 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11600 files added (on-disk size: 103558.8 KB)
+0055.643 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11700 files added (on-disk size: 103558.8 KB)
+0055.653 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11800 files added (on-disk size: 103558.8 KB)
+0055.661 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 11900 files added (on-disk size: 103558.8 KB)
+0055.668 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12000 files added (on-disk size: 103558.8 KB)
+0055.675 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.2 MB, 31098 files batched, 1001 (12012) added so far); re-opening (prior size: 103558.8 KB)
+0056.685 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12100 files added (on-disk size: 110072.5 KB)
+0056.695 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12200 files added (on-disk size: 110072.5 KB)
+0056.704 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12300 files added (on-disk size: 110072.5 KB)
+0056.712 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12400 files added (on-disk size: 110072.5 KB)
+0056.721 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12500 files added (on-disk size: 110072.5 KB)
+0056.729 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12600 files added (on-disk size: 110072.5 KB)
+0056.737 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12700 files added (on-disk size: 110072.5 KB)
+0056.744 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12800 files added (on-disk size: 110072.5 KB)
+0056.752 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 12900 files added (on-disk size: 110072.5 KB)
+0056.761 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13000 files added (on-disk size: 110072.5 KB)
+0056.767 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.3 MB, 31098 files batched, 1001 (13013) added so far); re-opening (prior size: 110072.5 KB)
+0057.807 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13100 files added (on-disk size: 115675.8 KB)
+0057.815 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13200 files added (on-disk size: 115675.8 KB)
+0057.824 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13300 files added (on-disk size: 115675.8 KB)
+0057.832 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13400 files added (on-disk size: 115675.8 KB)
+0057.841 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13500 files added (on-disk size: 115675.8 KB)
+0057.850 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13600 files added (on-disk size: 115675.8 KB)
+0057.858 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13700 files added (on-disk size: 115675.8 KB)
+0057.867 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13800 files added (on-disk size: 115675.8 KB)
+0057.874 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 13900 files added (on-disk size: 115675.8 KB)
+0057.883 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14000 files added (on-disk size: 115675.8 KB)
+0057.888 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.5 MB, 31098 files batched, 1001 (14014) added so far); re-opening (prior size: 115675.8 KB)
+0059.023 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14100 files added (on-disk size: 122539 KB)
+0059.032 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14200 files added (on-disk size: 122539 KB)
+0059.041 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14300 files added (on-disk size: 122539 KB)
+0059.047 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14400 files added (on-disk size: 122539 KB)
+0059.055 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14500 files added (on-disk size: 122539 KB)
+0059.063 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14600 files added (on-disk size: 122539 KB)
+0059.072 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14700 files added (on-disk size: 122539 KB)
+0059.080 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14800 files added (on-disk size: 122539 KB)
+0059.086 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 14900 files added (on-disk size: 122539 KB)
+0059.095 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15000 files added (on-disk size: 122539 KB)
+0059.100 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.3 MB, 31098 files batched, 1001 (15015) added so far); re-opening (prior size: 122539 KB)
+0060.186 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15100 files added (on-disk size: 128184.7 KB)
+0060.196 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15200 files added (on-disk size: 128184.7 KB)
+0060.203 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15300 files added (on-disk size: 128184.7 KB)
+0060.211 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15400 files added (on-disk size: 128184.7 KB)
+0060.220 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15500 files added (on-disk size: 128184.7 KB)
+0060.230 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15600 files added (on-disk size: 128184.7 KB)
+0060.238 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15700 files added (on-disk size: 128184.7 KB)
+0060.247 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15800 files added (on-disk size: 128184.7 KB)
+0060.256 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 15900 files added (on-disk size: 128184.7 KB)
+0060.265 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16000 files added (on-disk size: 128184.7 KB)
+0060.271 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.1 MB, 31098 files batched, 1001 (16016) added so far); re-opening (prior size: 128184.7 KB)
+0061.389 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16100 files added (on-disk size: 134572.8 KB)
+0061.399 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16200 files added (on-disk size: 134572.8 KB)
+0061.407 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16300 files added (on-disk size: 134572.8 KB)
+0061.415 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16400 files added (on-disk size: 134572.8 KB)
+0061.423 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16500 files added (on-disk size: 134572.8 KB)
+0061.432 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16600 files added (on-disk size: 134572.8 KB)
+0061.439 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16700 files added (on-disk size: 134572.8 KB)
+0061.447 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16800 files added (on-disk size: 134572.8 KB)
+0061.456 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 16900 files added (on-disk size: 134572.8 KB)
+0061.465 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17000 files added (on-disk size: 134572.8 KB)
+0061.469 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5 MB, 31098 files batched, 1001 (17017) added so far); re-opening (prior size: 134572.8 KB)
+0062.588 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17100 files added (on-disk size: 139903.9 KB)
+0062.597 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17200 files added (on-disk size: 139903.9 KB)
+0062.603 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17300 files added (on-disk size: 139903.9 KB)
+0062.611 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17400 files added (on-disk size: 139903.9 KB)
+0062.621 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17500 files added (on-disk size: 139903.9 KB)
+0062.627 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17600 files added (on-disk size: 139903.9 KB)
+0062.636 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17700 files added (on-disk size: 139903.9 KB)
+0062.644 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17800 files added (on-disk size: 139903.9 KB)
+0062.651 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 17900 files added (on-disk size: 139903.9 KB)
+0062.660 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18000 files added (on-disk size: 139903.9 KB)
+0062.665 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.1 MB, 31098 files batched, 1001 (18018) added so far); re-opening (prior size: 139903.9 KB)
+0063.828 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18100 files added (on-disk size: 145288.2 KB)
+0063.837 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18200 files added (on-disk size: 145288.2 KB)
+0063.844 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18300 files added (on-disk size: 145288.2 KB)
+0063.852 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18400 files added (on-disk size: 145288.2 KB)
+0063.861 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18500 files added (on-disk size: 145288.2 KB)
+0063.868 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18600 files added (on-disk size: 145288.2 KB)
+0063.876 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18700 files added (on-disk size: 145288.2 KB)
+0063.885 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18800 files added (on-disk size: 145288.2 KB)
+0063.892 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 18900 files added (on-disk size: 145288.2 KB)
+0063.901 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19000 files added (on-disk size: 145288.2 KB)
+0063.906 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.3 MB, 31098 files batched, 1001 (19019) added so far); re-opening (prior size: 145288.2 KB)
+0065.187 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19100 files added (on-disk size: 150894.8 KB)
+0065.196 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19200 files added (on-disk size: 150894.8 KB)
+0065.204 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19300 files added (on-disk size: 150894.8 KB)
+0065.212 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19400 files added (on-disk size: 150894.8 KB)
+0065.220 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19500 files added (on-disk size: 150894.8 KB)
+0065.227 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19600 files added (on-disk size: 150894.8 KB)
+0065.234 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19700 files added (on-disk size: 150894.8 KB)
+0065.243 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19800 files added (on-disk size: 150894.8 KB)
+0065.251 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 19900 files added (on-disk size: 150894.8 KB)
+0065.261 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20000 files added (on-disk size: 150894.8 KB)
+0065.266 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5 MB, 31098 files batched, 1001 (20020) added so far); re-opening (prior size: 150894.8 KB)
+0066.499 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20100 files added (on-disk size: 156185.5 KB)
+0066.508 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20200 files added (on-disk size: 156185.5 KB)
+0066.516 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20300 files added (on-disk size: 156185.5 KB)
+0066.524 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20400 files added (on-disk size: 156185.5 KB)
+0066.531 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20500 files added (on-disk size: 156185.5 KB)
+0066.538 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20600 files added (on-disk size: 156185.5 KB)
+0066.547 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20700 files added (on-disk size: 156185.5 KB)
+0066.556 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20800 files added (on-disk size: 156185.5 KB)
+0066.565 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 20900 files added (on-disk size: 156185.5 KB)
+0066.574 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21000 files added (on-disk size: 156185.5 KB)
+0066.580 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.3 MB, 31098 files batched, 1001 (21021) added so far); re-opening (prior size: 156185.5 KB)
+0067.827 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21100 files added (on-disk size: 162763.3 KB)
+0067.835 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21200 files added (on-disk size: 162763.3 KB)
+0067.847 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21300 files added (on-disk size: 162763.3 KB)
+0067.856 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21400 files added (on-disk size: 162763.3 KB)
+0067.864 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21500 files added (on-disk size: 162763.3 KB)
+0067.872 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21600 files added (on-disk size: 162763.3 KB)
+0067.881 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21700 files added (on-disk size: 162763.3 KB)
+0067.888 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21800 files added (on-disk size: 162763.3 KB)
+0067.895 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 21900 files added (on-disk size: 162763.3 KB)
+0067.902 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22000 files added (on-disk size: 162763.3 KB)
+0067.907 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.4 MB, 31098 files batched, 1001 (22022) added so far); re-opening (prior size: 162763.3 KB)
+0069.368 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22100 files added (on-disk size: 169434.9 KB)
+0069.378 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22200 files added (on-disk size: 169434.9 KB)
+0069.385 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22300 files added (on-disk size: 169434.9 KB)
+0069.392 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22400 files added (on-disk size: 169434.9 KB)
+0069.401 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22500 files added (on-disk size: 169434.9 KB)
+0069.407 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22600 files added (on-disk size: 169434.9 KB)
+0069.416 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22700 files added (on-disk size: 169434.9 KB)
+0069.424 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22800 files added (on-disk size: 169434.9 KB)
+0069.433 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 22900 files added (on-disk size: 169434.9 KB)
+0069.442 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23000 files added (on-disk size: 169434.9 KB)
+0069.449 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5 MB, 31098 files batched, 1001 (23023) added so far); re-opening (prior size: 169434.9 KB)
+0070.879 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23100 files added (on-disk size: 174756.7 KB)
+0070.888 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23200 files added (on-disk size: 174756.7 KB)
+0070.896 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23300 files added (on-disk size: 174756.7 KB)
+0070.904 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23400 files added (on-disk size: 174756.7 KB)
+0070.912 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23500 files added (on-disk size: 174756.7 KB)
+0070.921 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23600 files added (on-disk size: 174756.7 KB)
+0070.929 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23700 files added (on-disk size: 174756.7 KB)
+0070.936 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23800 files added (on-disk size: 174756.7 KB)
+0070.944 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 23900 files added (on-disk size: 174756.7 KB)
+0070.952 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24000 files added (on-disk size: 174756.7 KB)
+0070.957 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.5 MB, 31098 files batched, 1001 (24024) added so far); re-opening (prior size: 174756.7 KB)
+0072.364 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24100 files added (on-disk size: 180540.7 KB)
+0072.374 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24200 files added (on-disk size: 180540.7 KB)
+0072.384 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24300 files added (on-disk size: 180540.7 KB)
+0072.393 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24400 files added (on-disk size: 180540.7 KB)
+0072.402 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24500 files added (on-disk size: 180540.7 KB)
+0072.411 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24600 files added (on-disk size: 180540.7 KB)
+0072.419 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24700 files added (on-disk size: 180540.7 KB)
+0072.428 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24800 files added (on-disk size: 180540.7 KB)
+0072.439 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 24900 files added (on-disk size: 180540.7 KB)
+0072.448 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25000 files added (on-disk size: 180540.7 KB)
+0072.456 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (4.8 MB, 31098 files batched, 1001 (25025) added so far); re-opening (prior size: 180540.7 KB)
+0073.841 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25100 files added (on-disk size: 185607.5 KB)
+0073.850 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25200 files added (on-disk size: 185607.5 KB)
+0073.858 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25300 files added (on-disk size: 185607.5 KB)
+0073.867 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25400 files added (on-disk size: 185607.5 KB)
+0073.875 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25500 files added (on-disk size: 185607.5 KB)
+0073.883 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25600 files added (on-disk size: 185607.5 KB)
+0073.892 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25700 files added (on-disk size: 185607.5 KB)
+0073.901 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25800 files added (on-disk size: 185607.5 KB)
+0073.907 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 25900 files added (on-disk size: 185607.5 KB)
+0073.915 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26000 files added (on-disk size: 185607.5 KB)
+0073.922 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.8 MB, 31098 files batched, 1001 (26026) added so far); re-opening (prior size: 185607.5 KB)
+0075.497 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26100 files added (on-disk size: 192639.9 KB)
+0075.507 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26200 files added (on-disk size: 192639.9 KB)
+0075.516 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26300 files added (on-disk size: 192639.9 KB)
+0075.525 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26400 files added (on-disk size: 192639.9 KB)
+0075.532 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26500 files added (on-disk size: 192639.9 KB)
+0075.541 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26600 files added (on-disk size: 192639.9 KB)
+0075.550 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26700 files added (on-disk size: 192639.9 KB)
+0075.559 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26800 files added (on-disk size: 192639.9 KB)
+0075.568 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 26900 files added (on-disk size: 192639.9 KB)
+0075.577 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27000 files added (on-disk size: 192639.9 KB)
+0075.593 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (6.6 MB, 31098 files batched, 1001 (27027) added so far); re-opening (prior size: 192639.9 KB)
+0077.318 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27100 files added (on-disk size: 199601.7 KB)
+0077.327 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27200 files added (on-disk size: 199601.7 KB)
+0077.336 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27300 files added (on-disk size: 199601.7 KB)
+0077.345 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27400 files added (on-disk size: 199601.7 KB)
+0077.352 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27500 files added (on-disk size: 199601.7 KB)
+0077.359 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27600 files added (on-disk size: 199601.7 KB)
+0077.367 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27700 files added (on-disk size: 199601.7 KB)
+0077.376 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27800 files added (on-disk size: 199601.7 KB)
+0077.383 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 27900 files added (on-disk size: 199601.7 KB)
+0077.392 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28000 files added (on-disk size: 199601.7 KB)
+0077.399 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.9 MB, 31098 files batched, 1001 (28028) added so far); re-opening (prior size: 199601.7 KB)
+0079.204 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28100 files added (on-disk size: 205776.1 KB)
+0079.214 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28200 files added (on-disk size: 205776.1 KB)
+0079.224 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28300 files added (on-disk size: 205776.1 KB)
+0079.233 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28400 files added (on-disk size: 205776.1 KB)
+0079.241 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28500 files added (on-disk size: 205776.1 KB)
+0079.249 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28600 files added (on-disk size: 205776.1 KB)
+0079.257 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28700 files added (on-disk size: 205776.1 KB)
+0079.265 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28800 files added (on-disk size: 205776.1 KB)
+0079.274 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 28900 files added (on-disk size: 205776.1 KB)
+0079.288 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29000 files added (on-disk size: 205776.1 KB)
+0079.298 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (8.5 MB, 31098 files batched, 1001 (29029) added so far); re-opening (prior size: 205776.1 KB)
+0081.332 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29100 files added (on-disk size: 210791.1 KB)
+0081.342 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29200 files added (on-disk size: 210791.1 KB)
+0081.349 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29300 files added (on-disk size: 210791.1 KB)
+0081.358 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29400 files added (on-disk size: 210791.1 KB)
+0081.367 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29500 files added (on-disk size: 210791.1 KB)
+0081.376 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29600 files added (on-disk size: 210791.1 KB)
+0081.385 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29700 files added (on-disk size: 210791.1 KB)
+0081.398 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29800 files added (on-disk size: 210791.1 KB)
+0081.414 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 29900 files added (on-disk size: 210791.1 KB)
+0081.420 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30000 files added (on-disk size: 210791.1 KB)
+0081.428 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (34.1 MB, 31098 files batched, 1001 (30030) added so far); re-opening (prior size: 210791.1 KB)
+0085.809 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30100 files added (on-disk size: 219611.4 KB)
+0085.819 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30200 files added (on-disk size: 219611.4 KB)
+0085.827 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30300 files added (on-disk size: 219611.4 KB)
+0085.836 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30400 files added (on-disk size: 219611.4 KB)
+0085.845 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30500 files added (on-disk size: 219611.4 KB)
+0085.854 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30600 files added (on-disk size: 219611.4 KB)
+0085.863 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30700 files added (on-disk size: 219611.4 KB)
+0085.874 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30800 files added (on-disk size: 219611.4 KB)
+0085.883 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 30900 files added (on-disk size: 219611.4 KB)
+0085.893 (0) Zip: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.tmp: 31000 files added (on-disk size: 219611.4 KB)
+0085.899 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 1000 files added on this batch (5.8 MB, 31098 files batched, 1001 (31031) added so far); re-opening (prior size: 219611.4 KB)
+0090.125 (0) Creating zip file manifest (/var/www/au2.gifttify.com/wp-content/updraft/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.list-temp.tmp)
+0090.199 (0) Successfully created zip file manifest (size: 2032465)
+0092.581 (0) Created wpcore zip (0) - 221889.5 KB in 48.5 s (4577.9 KB/s) (sha1: 8ef544a0fbebc3a90a49e6e547dc1e4cc065587f, sha256: 06403f63c9c39e062c0540ef8f415558ac9e1a598edab98cf69d1a5caf5671b4)
+0092.592 (0) Beginning backup of other directories found in the content directory (index: 0)
+0092.597 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0092.603 (0) Looking for candidates to backup in: /var/www/au2.gifttify.com/wp-content
+0092.608 (0) finding files: .DS_Store: adding to list (1)
+0092.613 (0) finding files: plugins: skipping: this is the plugins directory
+0092.618 (0) finding files: upgrade: skipping: excluded by options
+0092.623 (0) finding files: advanced-cache.php: adding to list (2)
+0092.628 (0) finding files: index.php: adding to list (3)
+0092.634 (0) finding files: themes: skipping: this is the themes directory
+0092.639 (0) finding files: uploads: skipping: this is the uploads directory
+0092.644 (0) finding files: updraft: skipping: this is the updraft directory
+0092.649 (0) finding files: cache: skipping: excluded by options
+0092.654 (0) finding files: wp-rocket-config: adding to list (4)
+0092.666 (0) Total entities for the zip file: 1 directories, 5 files (0 skipped as non-modified), 0 MB
+0092.671 (0) PHP event: code E_DEPRECATED: ZipArchive::open(): Using empty file as ZipArchive is deprecated (line 3806, wp-content/plugins/updraftplus/backup.php)
+0092.687 (0) Creating zip file manifest (/var/www/au2.gifttify.com/wp-content/updraft/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip.list-temp.tmp)
+0092.691 (0) Successfully created zip file manifest (size: 179)
+0092.711 (0) Created others zip (0) - 2.7 KB in 0.1 s (52.8 KB/s) (sha1: 5e408ab4a9cf8462186e761c3c5114fca67ef435, sha256: 939f1dc291fe1303b5869ef5d8da79732bb9a218ec88df402db797c4a1a04380)
+0092.717 (0) No backup of more: excluded by user's options
+0092.742 (0) Saving backup status to database (elements: 10)
+0092.754 (0) Beginning creation of database dump (WordPress DB)
+0092.759 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0092.771 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0092.808 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8mb4 */;\n (truncated - 1614 bytes total)
+0092.814 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0092.835 (0) Table wp_options: Total expected rows (approximate): 19482
+0093.159 (0) Table wp_options: binary mysqldump finished (writes: 41, bytes 8944667, return code 0) in 0.32 seconds
+0093.176 (0) Table wp_options: finishing file(s) (1, 1053.6 KB)
+0093.192 (0) Table wp_users: Total expected rows (approximate): 9561
+0093.308 (0) Table wp_users: binary mysqldump finished (writes: 40, bytes 1417649, return code 0) in 0.11 seconds
+0093.321 (0) Table wp_users: finishing file(s) (1, 557 KB)
+0093.334 (0) Table wp_usermeta: Total expected rows (approximate): 314630
+0093.344 (0) [Warning] Table wp_usermeta has very many rows (314630) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0094.290 (0) Table wp_usermeta: binary mysqldump finished (writes: 44, bytes 13199809, return code 0) in 0.94 seconds
+0094.309 (0) Table wp_usermeta: finishing file(s) (1, 2389.6 KB)
+0094.323 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 72915
+0094.916 (0) Table wp_actionscheduler_actions: binary mysqldump finished (writes: 70, bytes 25227029, return code 0) in 0.59 seconds
+0094.929 (0) Table wp_actionscheduler_actions: finishing file(s) (1, 1192.4 KB)
+0094.944 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 2
+0094.949 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.960 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: 18319): 2 (uncompressed bytes in this segment=735) in 0.02 seconds
+0094.978 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0094.993 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 10
+0094.997 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0095.002 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=952) in 0.01 seconds
+0095.021 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.5 KB)
+0095.039 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 223692
+0095.051 (0) [Warning] Table wp_actionscheduler_logs has very many rows (223692) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0095.789 (0) Table wp_actionscheduler_logs: binary mysqldump finished (writes: 51, bytes 19489102, return code 0) in 0.73 seconds
+0095.810 (0) Table wp_actionscheduler_logs: finishing file(s) (1, 1587.8 KB)
+0095.830 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0095.841 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=721) in 0.02 seconds
+0095.865 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0095.878 (0) Table wp_comments: Total expected rows (approximate): 10736
+0095.957 (0) Table wp_comments: binary mysqldump finished (writes: 49, bytes 2562437, return code 0) in 0.07 seconds
+0095.970 (0) Table wp_comments: finishing file(s) (1, 118.5 KB)
+0095.985 (0) Table wp_itsec_bans: Total expected rows (via COUNT): 0
+0095.995 (0) Table wp_itsec_bans: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=982) in 0.01 seconds
+0096.012 (0) Table wp_itsec_bans: finishing file(s) (2, 0.4 KB)
+0096.030 (0) Table wp_itsec_dashboard_events: Total expected rows (via COUNT): 2
+0096.036 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0096.049 (0) Table wp_itsec_dashboard_events: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1006) in 0.02 seconds
+0096.066 (0) Table wp_itsec_dashboard_events: finishing file(s) (2, 0.5 KB)
+0096.088 (0) Table wp_itsec_distributed_storage: Total expected rows (via COUNT): 0
+0096.101 (0) Table wp_itsec_distributed_storage: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=973) in 0.02 seconds
+0096.126 (0) Table wp_itsec_distributed_storage: finishing file(s) (2, 0.4 KB)
+0096.148 (0) Table wp_itsec_fingerprints: Total expected rows (via COUNT): 0
+0096.155 (0) Table wp_itsec_fingerprints: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1321) in 0.02 seconds
+0096.178 (0) Table wp_itsec_fingerprints: finishing file(s) (2, 0.5 KB)
+0096.194 (0) Table wp_itsec_geolocation_cache: Total expected rows (via COUNT): 0
+0096.199 (0) Table wp_itsec_geolocation_cache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=999) in 0.01 seconds
+0096.215 (0) Table wp_itsec_geolocation_cache: finishing file(s) (2, 0.4 KB)
+0096.230 (0) Table wp_itsec_lockouts: Total expected rows (via COUNT): 0
+0096.237 (0) Table wp_itsec_lockouts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1286) in 0.01 seconds
+0096.255 (0) Table wp_itsec_lockouts: finishing file(s) (2, 0.5 KB)
+0096.275 (0) Table wp_itsec_logs: Total expected rows (via COUNT): 22
+0096.281 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0096.295 (0) Table wp_itsec_logs: Rows added in this batch (next record: 22): 22 (uncompressed bytes in this segment=106879) in 0.03 seconds
+0096.320 (0) Table wp_itsec_logs: finishing file(s) (2, 12 KB)
+0096.334 (0) Table wp_itsec_mutexes: Total expected rows (via COUNT): 0
+0096.346 (0) Table wp_itsec_mutexes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=631) in 0.01 seconds
+0096.363 (0) Table wp_itsec_mutexes: finishing file(s) (2, 0.4 KB)
+0096.379 (0) Table wp_itsec_opaque_tokens: Total expected rows (approximate): 0
+0096.385 (0) Table wp_itsec_opaque_tokens: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=855) in 0.01 seconds
+0096.409 (0) Table wp_itsec_opaque_tokens: finishing file(s) (2, 0.4 KB)
+0096.427 (0) Table wp_itsec_temp: Total expected rows (via COUNT): 6
+0096.434 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0096.446 (0) Table wp_itsec_temp: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=1594) in 0.02 seconds
+0096.467 (0) Table wp_itsec_temp: finishing file(s) (2, 0.6 KB)
+0096.482 (0) Table wp_itsec_user_groups: Total expected rows (approximate): 0
+0096.497 (0) Table wp_itsec_user_groups: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=1126) in 0.02 seconds
+0096.517 (0) Table wp_itsec_user_groups: finishing file(s) (2, 0.5 KB)
+0096.534 (0) Table wp_links: Total expected rows (via COUNT): 0
+0096.540 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1496) in 0.01 seconds
+0096.559 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0096.572 (0) Table wp_postmeta: Total expected rows (approximate): 1622318
+0096.582 (0) [Warning] Table wp_postmeta has very many rows (1622318) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0101.839 (0) Table wp_postmeta: binary mysqldump finished (writes: 163, bytes 136385778, return code 0) in 5.25 seconds
+0101.857 (0) Table wp_postmeta: finishing file(s) (1, 14319.7 KB)
+0101.869 (0) Table wp_posts: Total expected rows (approximate): 73466
+0103.361 (0) Table wp_posts: binary mysqldump finished (writes: 98, bytes 47203215, return code 0) in 1.49 seconds
+0103.374 (0) Table wp_posts: finishing file(s) (1, 5257.9 KB)
+0103.394 (0) Table wp_snippets: Total expected rows (via COUNT): 8
+0103.399 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0103.410 (0) Table wp_snippets: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=5201) in 0.02 seconds
+0103.434 (0) Table wp_snippets: finishing file(s) (2, 1.9 KB)
+0103.447 (0) Table wp_term_relationships: Total expected rows (approximate): 69138
+0103.539 (0) Table wp_term_relationships: binary mysqldump finished (writes: 30, bytes 914303, return code 0) in 0.09 seconds
+0103.553 (0) Table wp_term_relationships: finishing file(s) (1, 194 KB)
+0103.578 (0) Table wp_term_taxonomy: Total expected rows (approximate): 5415
+0103.618 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 5301): 5286 (uncompressed bytes in this segment=217502) in 0.05 seconds
+0103.641 (0) Table wp_term_taxonomy: finishing file(s) (2, 31.6 KB)
+0103.668 (0) Table wp_termmeta: Total expected rows (approximate): 5642
+0103.712 (0) Table wp_termmeta: Rows added in this batch (next record: 5486): 5484 (uncompressed bytes in this segment=264042) in 0.06 seconds
+0103.736 (0) Table wp_termmeta: finishing file(s) (2, 32.5 KB)
+0103.751 (0) Table wp_terms: Total expected rows (approximate): 5331
+0103.791 (0) Table wp_terms: Rows added in this batch (next record: 5301): 5286 (uncompressed bytes in this segment=349277) in 0.04 seconds
+0103.809 (0) Table wp_terms: finishing file(s) (2, 60.1 KB)
+0103.825 (0) Table wp_wc_category_lookup: Total expected rows (approximate): 127
+0103.831 (0) Table wp_wc_category_lookup: Rows added in this batch (next record: 1000): 127 (uncompressed bytes in this segment=2169) in 0.01 seconds
+0103.850 (0) Table wp_wc_category_lookup: finishing file(s) (2, 0.9 KB)
+0103.863 (0) Table wp_wc_product_meta_lookup: Total expected rows (approximate): 43292
+0104.020 (0) Table wp_wc_product_meta_lookup: binary mysqldump finished (writes: 50, bytes 4278490, return code 0) in 0.15 seconds
+0104.035 (0) Table wp_wc_product_meta_lookup: finishing file(s) (1, 382.1 KB)
+0104.050 (0) Table wp_wc_reserved_stock: Total expected rows (approximate): 0
+0104.057 (0) Table wp_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=657) in 0.01 seconds
+0104.079 (0) Table wp_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0104.097 (0) Table wp_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0104.102 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0104.116 (0) Table wp_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=852) in 0.02 seconds
+0104.144 (0) Table wp_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0104.165 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 185949
+0104.183 (0) [Warning] Table wp_woocommerce_order_itemmeta has very many rows (185949) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0104.732 (0) Table wp_woocommerce_order_itemmeta: binary mysqldump finished (writes: 38, bytes 7021830, return code 0) in 0.54 seconds
+0104.750 (0) Table wp_woocommerce_order_itemmeta: finishing file(s) (1, 1032.3 KB)
+0104.772 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0104.785 (0) Table wp_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=834) in 0.02 seconds
+0104.808 (0) Table wp_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0104.830 (0) Table wp_wpr_rucss_resources: Total expected rows (via COUNT): 0
+0104.841 (0) Table wp_wpr_rucss_resources: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1241) in 0.02 seconds
+0104.864 (0) Table wp_wpr_rucss_resources: finishing file(s) (2, 0.5 KB)
+0104.884 (0) Table wp_wpr_rucss_used_css: Total expected rows (via COUNT): 0
+0104.890 (0) Table wp_wpr_rucss_used_css: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1379) in 0.01 seconds
+0104.915 (0) Table wp_wpr_rucss_used_css: finishing file(s) (2, 0.5 KB)
+0104.929 (0) Table wp_as3cf_items: Total expected rows (approximate): 18974
+0105.202 (0) Table wp_as3cf_items: binary mysqldump finished (writes: 54, bytes 8315350, return code 0) in 0.27 seconds
+0105.215 (0) Table wp_as3cf_items: finishing file(s) (1, 820.8 KB)
+0105.231 (0) Table wp_e_events: Total expected rows (via COUNT): 0
+0105.238 (0) Table wp_e_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=547) in 0.01 seconds
+0105.257 (0) Table wp_e_events: finishing file(s) (2, 0.4 KB)
+0105.272 (0) Table wp_gla_budget_recommendations: Total expected rows (approximate): 4230
+0105.300 (0) Table wp_gla_budget_recommendations: Rows added in this batch (next record: 4230): 4230 (uncompressed bytes in this segment=129866) in 0.03 seconds
+0105.319 (0) Table wp_gla_budget_recommendations: finishing file(s) (2, 31.4 KB)
+0105.337 (0) Table wp_gla_merchant_issues: Total expected rows (via COUNT): 0
+0105.342 (0) Table wp_gla_merchant_issues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1359) in 0.01 seconds
+0105.361 (0) Table wp_gla_merchant_issues: finishing file(s) (2, 0.5 KB)
+0105.376 (0) Table wp_gla_shipping_rates: Total expected rows (via COUNT): 0
+0105.381 (0) Table wp_gla_shipping_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=924) in 0.01 seconds
+0105.409 (0) Table wp_gla_shipping_rates: finishing file(s) (2, 0.4 KB)
+0105.425 (0) Table wp_gla_shipping_times: Total expected rows (via COUNT): 0
+0105.430 (0) Table wp_gla_shipping_times: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=602) in 0.01 seconds
+0105.448 (0) Table wp_gla_shipping_times: finishing file(s) (2, 0.4 KB)
+0105.469 (0) Table wp_mailpoet_custom_fields: Total expected rows (via COUNT): 0
+0105.475 (0) Table wp_mailpoet_custom_fields: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=893) in 0.01 seconds
+0105.499 (0) Table wp_mailpoet_custom_fields: finishing file(s) (2, 0.4 KB)
+0105.514 (0) Table wp_mailpoet_dynamic_segment_filters: Total expected rows (via COUNT): 0
+0105.519 (0) Table wp_mailpoet_dynamic_segment_filters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=958) in 0.01 seconds
+0105.539 (0) Table wp_mailpoet_dynamic_segment_filters: finishing file(s) (2, 0.4 KB)
+0105.553 (0) Table wp_mailpoet_feature_flags: Total expected rows (via COUNT): 0
+0105.559 (0) Table wp_mailpoet_feature_flags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=762) in 0.01 seconds
+0105.577 (0) Table wp_mailpoet_feature_flags: finishing file(s) (2, 0.4 KB)
+0105.600 (0) Table wp_mailpoet_forms: Total expected rows (via COUNT): 0
+0105.606 (0) Table wp_mailpoet_forms: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1018) in 0.01 seconds
+0105.630 (0) Table wp_mailpoet_forms: finishing file(s) (2, 0.4 KB)
+0105.652 (0) Table wp_mailpoet_log: Total expected rows (via COUNT): 0
+0105.658 (0) Table wp_mailpoet_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=671) in 0.01 seconds
+0105.683 (0) Table wp_mailpoet_log: finishing file(s) (2, 0.4 KB)
+0105.699 (0) Table wp_mailpoet_mapping_to_external_entities: Total expected rows (approximate): 0
+0105.706 (0) Table wp_mailpoet_mapping_to_external_entities: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=775) in 0.01 seconds
+0105.726 (0) Table wp_mailpoet_mapping_to_external_entities: finishing file(s) (2, 0.4 KB)
+0105.742 (0) Table wp_mailpoet_newsletter_links: Total expected rows (via COUNT): 0
+0105.748 (0) Table wp_mailpoet_newsletter_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=974) in 0.01 seconds
+0105.767 (0) Table wp_mailpoet_newsletter_links: finishing file(s) (2, 0.4 KB)
+0105.788 (0) Table wp_mailpoet_newsletter_option: Total expected rows (via COUNT): 0
+0105.795 (0) Table wp_mailpoet_newsletter_option: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=875) in 0.02 seconds
+0105.823 (0) Table wp_mailpoet_newsletter_option: finishing file(s) (2, 0.4 KB)
+0105.852 (0) Table wp_mailpoet_newsletter_option_fields: Total expected rows (via COUNT): 22
+0105.857 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0105.870 (0) Table wp_mailpoet_newsletter_option_fields: Rows added in this batch (next record: 22): 22 (uncompressed bytes in this segment=2430) in 0.02 seconds
+0105.891 (0) Table wp_mailpoet_newsletter_option_fields: finishing file(s) (2, 0.7 KB)
+0105.906 (0) Table wp_mailpoet_newsletter_posts: Total expected rows (via COUNT): 0
+0105.920 (0) Table wp_mailpoet_newsletter_posts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=747) in 0.02 seconds
+0105.940 (0) Table wp_mailpoet_newsletter_posts: finishing file(s) (2, 0.4 KB)
+0105.957 (0) Table wp_mailpoet_newsletter_segment: Total expected rows (via COUNT): 0
+0105.962 (0) Table wp_mailpoet_newsletter_segment: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=787) in 0.01 seconds
+0105.983 (0) Table wp_mailpoet_newsletter_segment: finishing file(s) (2, 0.4 KB)
+0106.008 (0) Table wp_mailpoet_newsletter_templates: Total expected rows (via COUNT): 76
+0106.014 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0106.046 (0) Table wp_mailpoet_newsletter_templates: Rows added in this batch (next record: 76): 76 (uncompressed bytes in this segment=1114937) in 0.05 seconds
+0106.072 (0) Table wp_mailpoet_newsletter_templates: finishing file(s) (2, 67 KB)
+0106.096 (0) Table wp_mailpoet_newsletters: Total expected rows (via COUNT): 0
+0106.109 (0) Table wp_mailpoet_newsletters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2010) in 0.02 seconds
+0106.138 (0) Table wp_mailpoet_newsletters: finishing file(s) (2, 0.6 KB)
+0106.155 (0) Table wp_mailpoet_scheduled_task_subscribers: Total expected rows (approximate): 0
+0106.163 (0) Table wp_mailpoet_scheduled_task_subscribers: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=922) in 0.01 seconds
+0106.187 (0) Table wp_mailpoet_scheduled_task_subscribers: finishing file(s) (2, 0.4 KB)
+0106.213 (0) Table wp_mailpoet_scheduled_tasks: Total expected rows (via COUNT): 201
+0106.219 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0106.236 (0) Table wp_mailpoet_scheduled_tasks: Rows added in this batch (next record: 201): 201 (uncompressed bytes in this segment=34653) in 0.03 seconds
+0106.271 (0) Table wp_mailpoet_scheduled_tasks: finishing file(s) (2, 3.7 KB)
+0106.292 (0) Table wp_mailpoet_segments: Total expected rows (via COUNT): 3
+0106.299 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0106.314 (0) Table wp_mailpoet_segments: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1765) in 0.02 seconds
+0106.342 (0) Table wp_mailpoet_segments: finishing file(s) (2, 0.7 KB)
+0106.367 (0) Table wp_mailpoet_sending_queues: Total expected rows (via COUNT): 0
+0106.381 (0) Table wp_mailpoet_sending_queues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1325) in 0.03 seconds
+0106.411 (0) Table wp_mailpoet_sending_queues: finishing file(s) (2, 0.5 KB)
+0106.449 (0) Table wp_mailpoet_settings: Total expected rows (via COUNT): 20
+0106.457 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0106.473 (0) Table wp_mailpoet_settings: Rows added in this batch (next record: 1215): 20 (uncompressed bytes in this segment=3964) in 0.04 seconds
+0106.501 (0) Table wp_mailpoet_settings: finishing file(s) (2, 1.4 KB)
+0106.517 (0) Table wp_mailpoet_statistics_bounces: Total expected rows (via COUNT): 0
+0106.529 (0) Table wp_mailpoet_statistics_bounces: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=688) in 0.01 seconds
+0106.553 (0) Table wp_mailpoet_statistics_bounces: finishing file(s) (2, 0.4 KB)
+0106.575 (0) Table wp_mailpoet_statistics_clicks: Total expected rows (via COUNT): 0
+0106.582 (0) Table wp_mailpoet_statistics_clicks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1097) in 0.01 seconds
+0106.607 (0) Table wp_mailpoet_statistics_clicks: finishing file(s) (2, 0.5 KB)
+0106.625 (0) Table wp_mailpoet_statistics_forms: Total expected rows (via COUNT): 0
+0106.630 (0) Table wp_mailpoet_statistics_forms: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=694) in 0.01 seconds
+0106.681 (0) Table wp_mailpoet_statistics_forms: finishing file(s) (2, 0.4 KB)
+0106.699 (0) Table wp_mailpoet_statistics_newsletters: Total expected rows (via COUNT): 0
+0106.706 (0) Table wp_mailpoet_statistics_newsletters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=815) in 0.01 seconds
+0106.729 (0) Table wp_mailpoet_statistics_newsletters: finishing file(s) (2, 0.4 KB)
+0106.747 (0) Table wp_mailpoet_statistics_opens: Total expected rows (via COUNT): 0
+0106.755 (0) Table wp_mailpoet_statistics_opens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1051) in 0.01 seconds
+0106.778 (0) Table wp_mailpoet_statistics_opens: finishing file(s) (2, 0.5 KB)
+0106.815 (0) Table wp_mailpoet_statistics_unsubscribes: Total expected rows (via COUNT): 0
+0106.822 (0) Table wp_mailpoet_statistics_unsubscribes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1054) in 0.01 seconds
+0106.844 (0) Table wp_mailpoet_statistics_unsubscribes: finishing file(s) (2, 0.5 KB)
+0106.863 (0) Table wp_mailpoet_statistics_woocommerce_purchases: Total expected rows (via COUNT): 0
+0106.871 (0) Table wp_mailpoet_statistics_woocommerce_purchases: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1270) in 0.01 seconds
+0106.895 (0) Table wp_mailpoet_statistics_woocommerce_purchases: finishing file(s) (2, 0.5 KB)
+0106.911 (0) Table wp_mailpoet_stats_notifications: Total expected rows (via COUNT): 0
+0106.917 (0) Table wp_mailpoet_stats_notifications: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=819) in 0.01 seconds
+0106.936 (0) Table wp_mailpoet_stats_notifications: finishing file(s) (2, 0.4 KB)
+0106.953 (0) Table wp_mailpoet_subscriber_custom_field: Total expected rows (via COUNT): 0
+0106.959 (0) Table wp_mailpoet_subscriber_custom_field: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=916) in 0.01 seconds
+0106.979 (0) Table wp_mailpoet_subscriber_custom_field: finishing file(s) (2, 0.4 KB)
+0106.995 (0) Table wp_mailpoet_subscriber_ips: Total expected rows (approximate): 0
+0107.001 (0) Table wp_mailpoet_subscriber_ips: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=615) in 0.01 seconds
+0107.019 (0) Table wp_mailpoet_subscriber_ips: finishing file(s) (2, 0.4 KB)
+0107.032 (0) Table wp_mailpoet_subscriber_segment: Total expected rows (approximate): 19009
+0107.104 (0) Table wp_mailpoet_subscriber_segment: binary mysqldump finished (writes: 35, bytes 1367979, return code 0) in 0.07 seconds
+0107.139 (0) Table wp_mailpoet_subscriber_segment: finishing file(s) (1, 121 KB)
+0107.152 (0) Table wp_mailpoet_subscribers: Total expected rows (approximate): 9603
+0107.290 (0) Table wp_mailpoet_subscribers: binary mysqldump finished (writes: 60, bytes 2608564, return code 0) in 0.13 seconds
+0107.309 (0) Table wp_mailpoet_subscribers: finishing file(s) (1, 631.2 KB)
+0107.328 (0) Table wp_mailpoet_user_agents: Total expected rows (via COUNT): 0
+0107.335 (0) Table wp_mailpoet_user_agents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=797) in 0.01 seconds
+0107.355 (0) Table wp_mailpoet_user_agents: finishing file(s) (2, 0.4 KB)
+0107.370 (0) Table wp_mailpoet_user_flags: Total expected rows (via COUNT): 0
+0107.377 (0) Table wp_mailpoet_user_flags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=845) in 0.01 seconds
+0107.396 (0) Table wp_mailpoet_user_flags: finishing file(s) (2, 0.4 KB)
+0107.417 (0) Table wp_s2w_error_product_images: Total expected rows (via COUNT): 0
+0107.422 (0) Table wp_s2w_error_product_images: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=910) in 0.01 seconds
+0107.447 (0) Table wp_s2w_error_product_images: finishing file(s) (2, 0.4 KB)
+0107.464 (0) Table wp_social_users: Total expected rows (via COUNT): 0
+0107.470 (0) Table wp_social_users: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=809) in 0.01 seconds
+0107.489 (0) Table wp_social_users: finishing file(s) (2, 0.4 KB)
+0107.513 (0) Table wp_wc_admin_note_actions: Total expected rows (via COUNT): 56
+0107.519 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0107.532 (0) Table wp_wc_admin_note_actions: Rows added in this batch (next record: 3204): 56 (uncompressed bytes in this segment=10415) in 0.03 seconds
+0107.558 (0) Table wp_wc_admin_note_actions: finishing file(s) (2, 2.5 KB)
+0107.581 (0) Table wp_wc_admin_notes: Total expected rows (via COUNT): 50
+0107.587 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0107.594 (0) Table wp_wc_admin_notes: Rows added in this batch (next record: 71): 50 (uncompressed bytes in this segment=23651) in 0.02 seconds
+0107.621 (0) Table wp_wc_admin_notes: finishing file(s) (2, 6.1 KB)
+0107.639 (0) Table wp_wc_customer_lookup: Total expected rows (approximate): 9438
+0107.731 (0) Table wp_wc_customer_lookup: binary mysqldump finished (writes: 41, bytes 1221485, return code 0) in 0.09 seconds
+0107.746 (0) Table wp_wc_customer_lookup: finishing file(s) (1, 346.1 KB)
+0107.764 (0) Table wp_wc_download_log: Total expected rows (via COUNT): 0
+0107.777 (0) Table wp_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=936) in 0.02 seconds
+0107.800 (0) Table wp_wc_download_log: finishing file(s) (2, 0.5 KB)
+0107.822 (0) Table wp_wc_gpf_render_cache: Total expected rows (via COUNT): 0
+0107.830 (0) Table wp_wc_gpf_render_cache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=723) in 0.02 seconds
+0107.860 (0) Table wp_wc_gpf_render_cache: finishing file(s) (2, 0.4 KB)
+0107.878 (0) Table wp_wc_order_coupon_lookup: Total expected rows (approximate): 395
+0107.887 (0) Table wp_wc_order_coupon_lookup: Rows added in this batch (next record: 1000): 395 (uncompressed bytes in this segment=18784) in 0.01 seconds
+0107.906 (0) Table wp_wc_order_coupon_lookup: finishing file(s) (2, 4.5 KB)
+0107.919 (0) Table wp_wc_order_product_lookup: Total expected rows (approximate): 14190
+0108.012 (0) Table wp_wc_order_product_lookup: binary mysqldump finished (writes: 43, bytes 999587, return code 0) in 0.09 seconds
+0108.027 (0) Table wp_wc_order_product_lookup: finishing file(s) (1, 168.3 KB)
+0108.049 (0) Table wp_wc_order_stats: Total expected rows (approximate): 10950
+0108.133 (0) Table wp_wc_order_stats: binary mysqldump finished (writes: 42, bytes 1042331, return code 0) in 0.07 seconds
+0108.155 (0) Table wp_wc_order_stats: finishing file(s) (1, 164.2 KB)
+0108.171 (0) Table wp_wc_order_tax_lookup: Total expected rows (approximate): 0
+0108.178 (0) Table wp_wc_order_tax_lookup: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=791) in 0.01 seconds
+0108.197 (0) Table wp_wc_order_tax_lookup: finishing file(s) (2, 0.4 KB)
+0108.212 (0) Table wp_wc_product_attributes_lookup: Total expected rows (approximate): 38
+0108.230 (0) Table wp_wc_product_attributes_lookup: Rows added in this batch (next record: 1000): 38 (uncompressed bytes in this segment=2188) in 0.02 seconds
+0108.250 (0) Table wp_wc_product_attributes_lookup: finishing file(s) (2, 0.6 KB)
+0108.283 (0) Table wp_wc_product_download_directories: Total expected rows (via COUNT): 3
+0108.290 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0108.303 (0) Table wp_wc_product_download_directories: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1021) in 0.04 seconds
+0108.323 (0) Table wp_wc_product_download_directories: finishing file(s) (2, 0.5 KB)
+0108.341 (0) Table wp_wc_rate_limits: Total expected rows (via COUNT): 0
+0108.352 (0) Table wp_wc_rate_limits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=710) in 0.01 seconds
+0108.379 (0) Table wp_wc_rate_limits: finishing file(s) (2, 0.4 KB)
+0108.399 (0) Table wp_wc_webhooks: Total expected rows (via COUNT): 0
+0108.406 (0) Table wp_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1325) in 0.01 seconds
+0108.425 (0) Table wp_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0108.464 (0) Table wp_woocommerce_api_keys: Total expected rows (via COUNT): 1
+0108.470 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0108.484 (0) Table wp_woocommerce_api_keys: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1432) in 0.05 seconds
+0108.512 (0) Table wp_woocommerce_api_keys: finishing file(s) (2, 0.6 KB)
+0108.528 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 2
+0108.537 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0108.543 (0) Table wp_woocommerce_attribute_taxonomies: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1216) in 0.02 seconds
+0108.562 (0) Table wp_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.5 KB)
+0108.577 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0108.587 (0) Table wp_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1606) in 0.01 seconds
+0108.617 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0108.632 (0) Table wp_woocommerce_gpf_google_taxonomy: Total expected rows (approximate): 5562
+0108.698 (0) Table wp_woocommerce_gpf_google_taxonomy: Rows added in this batch (next record: 6000): 5595 (uncompressed bytes in this segment=987295) in 0.07 seconds
+0108.717 (0) Table wp_woocommerce_gpf_google_taxonomy: finishing file(s) (2, 87.1 KB)
+0108.741 (0) Table wp_woocommerce_log: Total expected rows (via COUNT): 0
+0108.749 (0) Table wp_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=781) in 0.02 seconds
+0108.778 (0) Table wp_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0108.791 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 25203
+0108.880 (0) Table wp_woocommerce_order_items: binary mysqldump finished (writes: 32, bytes 1826709, return code 0) in 0.08 seconds
+0108.892 (0) Table wp_woocommerce_order_items: finishing file(s) (1, 155.2 KB)
+0108.910 (0) Table wp_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0108.916 (0) Table wp_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=899) in 0.01 seconds
+0108.937 (0) Table wp_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0108.964 (0) Table wp_woocommerce_sessions: Total expected rows (via COUNT): 10
+0108.973 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0108.990 (0) Table wp_woocommerce_sessions: Rows added in this batch (next record: 512): 10 (uncompressed bytes in this segment=64035) in 0.04 seconds
+0109.024 (0) Table wp_woocommerce_sessions: finishing file(s) (2, 8.4 KB)
+0109.046 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 7
+0109.053 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.060 (0) Table wp_woocommerce_shipping_zone_locations: Rows added in this batch (next record: 1279): 7 (uncompressed bytes in this segment=1197) in 0.02 seconds
+0109.081 (0) Table wp_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.5 KB)
+0109.101 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 4
+0109.107 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.115 (0) Table wp_woocommerce_shipping_zone_methods: Rows added in this batch (next record: 6): 4 (uncompressed bytes in this segment=976) in 0.02 seconds
+0109.138 (0) Table wp_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.5 KB)
+0109.153 (0) Table wp_woocommerce_shipping_zones: Total expected rows (via COUNT): 1
+0109.178 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.186 (0) Table wp_woocommerce_shipping_zones: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=738) in 0.03 seconds
+0109.207 (0) Table wp_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0109.223 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0109.236 (0) Table wp_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=884) in 0.02 seconds
+0109.256 (0) Table wp_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0109.271 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 1265
+0109.286 (0) Table wp_woocommerce_tax_rates: Rows added in this batch (next record: 1265): 1265 (uncompressed bytes in this segment=70124) in 0.02 seconds
+0109.309 (0) Table wp_woocommerce_tax_rates: finishing file(s) (2, 8.6 KB)
+0109.327 (0) Table wp_woot_tables: Total expected rows (via COUNT): 0
+0109.333 (0) Table wp_woot_tables: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1355) in 0.01 seconds
+0109.353 (0) Table wp_woot_tables: finishing file(s) (2, 0.5 KB)
+0109.369 (0) Table wp_woot_tables_columns: Total expected rows (via COUNT): 0
+0109.374 (0) Table wp_woot_tables_columns: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1212) in 0.01 seconds
+0109.395 (0) Table wp_woot_tables_columns: finishing file(s) (2, 0.5 KB)
+0109.414 (0) Table wp_woot_tables_meta: Total expected rows (via COUNT): 0
+0109.428 (0) Table wp_woot_tables_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=866) in 0.02 seconds
+0109.450 (0) Table wp_woot_tables_meta: finishing file(s) (2, 0.4 KB)
+0109.465 (0) Table wp_woot_vocabulary: Total expected rows (via COUNT): 0
+0109.477 (0) Table wp_woot_vocabulary: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=607) in 0.01 seconds
+0109.496 (0) Table wp_woot_vocabulary: finishing file(s) (2, 0.4 KB)
+0109.517 (0) Table wp_wpforms_tasks_meta: Total expected rows (via COUNT): 4
+0109.523 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.535 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1014) in 0.03 seconds
+0109.561 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.5 KB)
+0109.579 (0) Table wp_wpmailsmtp_debug_events: Total expected rows (via COUNT): 8
+0109.589 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.595 (0) Table wp_wpmailsmtp_debug_events: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=2611) in 0.02 seconds
+0109.616 (0) Table wp_wpmailsmtp_debug_events: finishing file(s) (2, 0.7 KB)
+0109.642 (0) Table wp_wpmailsmtp_emails_log: Total expected rows (via COUNT): 25
+0109.650 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.667 (0) Table wp_wpmailsmtp_emails_log: Rows added in this batch (next record: 25): 25 (uncompressed bytes in this segment=18627) in 0.04 seconds
+0109.701 (0) Table wp_wpmailsmtp_emails_log: finishing file(s) (2, 2.7 KB)
+0109.724 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 10
+0109.730 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.744 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=1520) in 0.03 seconds
+0109.774 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.6 KB)
+0109.790 (0) Table wp_yith_wcwl: Total expected rows (via COUNT): 2
+0109.795 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.801 (0) Table wp_yith_wcwl: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=924) in 0.01 seconds
+0109.820 (0) Table wp_yith_wcwl: finishing file(s) (2, 0.5 KB)
+0109.837 (0) Table wp_yith_wcwl_lists: Total expected rows (via COUNT): 2
+0109.844 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0109.851 (0) Table wp_yith_wcwl_lists: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1083) in 0.02 seconds
+0109.875 (0) Table wp_yith_wcwl_lists: finishing file(s) (2, 0.5 KB)
+0109.881 (0) PHP event: code E_WARNING: filemtime(): stat failed for /var/www/au2.gifttify.com/wp-content/updraft/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz (line 1836, wp-content/plugins/updraftplus/backup.php)
+0109.889 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_options.table.gz (1/112/fopen): adding to final database dump
+0109.908 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_users.table.gz (2/112/fopen): adding to final database dump
+0109.922 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_usermeta.table.gz (3/112/fopen): adding to final database dump
+0109.958 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_actionscheduler_actions.table.gz (4/112/fopen): adding to final database dump
+0109.982 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_actionscheduler_claims.table.tmpr18320.gz (5/112/fopen): adding to final database dump
+0109.990 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_actionscheduler_claims.table.gz (6/112/fopen): adding to final database dump
+0109.997 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_actionscheduler_groups.table.tmpr11.gz (7/112/fopen): adding to final database dump
+0110.005 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_actionscheduler_groups.table.gz (8/112/fopen): adding to final database dump
+0110.012 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_actionscheduler_logs.table.gz (9/112/fopen): adding to final database dump
+0110.036 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_commentmeta.table.tmpr0.gz (10/112/fopen): adding to final database dump
+0110.044 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_commentmeta.table.gz (11/112/fopen): adding to final database dump
+0110.051 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_comments.table.gz (12/112/fopen): adding to final database dump
+0110.059 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_bans.table.tmpr0.gz (13/112/fopen): adding to final database dump
+0110.067 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_bans.table.gz (14/112/fopen): adding to final database dump
+0110.073 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_dashboard_events.table.tmpr3.gz (15/112/fopen): adding to final database dump
+0110.079 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_dashboard_events.table.gz (16/112/fopen): adding to final database dump
+0110.087 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_distributed_storage.table.tmpr0.gz (17/112/fopen): adding to final database dump
+0110.093 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_distributed_storage.table.gz (18/112/fopen): adding to final database dump
+0110.100 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_fingerprints.table.tmpr0.gz (19/112/fopen): adding to final database dump
+0110.106 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_fingerprints.table.gz (20/112/fopen): adding to final database dump
+0110.112 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_geolocation_cache.table.tmpr0.gz (21/112/fopen): adding to final database dump
+0110.119 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_geolocation_cache.table.gz (22/112/fopen): adding to final database dump
+0110.125 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_lockouts.table.tmpr0.gz (23/112/fopen): adding to final database dump
+0110.130 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_lockouts.table.gz (24/112/fopen): adding to final database dump
+0110.147 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_logs.table.tmpr23.gz (25/112/fopen): adding to final database dump
+0110.153 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_logs.table.gz (26/112/fopen): adding to final database dump
+0110.159 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_mutexes.table.tmpr0.gz (27/112/fopen): adding to final database dump
+0110.165 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_mutexes.table.gz (28/112/fopen): adding to final database dump
+0110.172 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_opaque_tokens.table.tmpr1.gz (29/112/fopen): adding to final database dump
+0110.178 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_opaque_tokens.table.gz (30/112/fopen): adding to final database dump
+0110.183 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_temp.table.tmpr7.gz (31/112/fopen): adding to final database dump
+0110.188 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_temp.table.gz (32/112/fopen): adding to final database dump
+0110.195 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_user_groups.table.tmpr1001.gz (33/112/fopen): adding to final database dump
+0110.200 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_itsec_user_groups.table.gz (34/112/fopen): adding to final database dump
+0110.206 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_links.table.tmpr0.gz (35/112/fopen): adding to final database dump
+0110.211 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_links.table.gz (36/112/fopen): adding to final database dump
+0110.216 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_postmeta.table.gz (37/112/fopen): adding to final database dump
+0110.357 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_posts.table.gz (38/112/fopen): adding to final database dump
+0110.415 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_snippets.table.tmpr9.gz (39/112/fopen): adding to final database dump
+0110.421 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_snippets.table.gz (40/112/fopen): adding to final database dump
+0110.427 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_term_relationships.table.gz (41/112/fopen): adding to final database dump
+0110.435 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_term_taxonomy.table.tmpr5302.gz (42/112/fopen): adding to final database dump
+0110.440 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_term_taxonomy.table.gz (43/112/fopen): adding to final database dump
+0110.446 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_termmeta.table.tmpr5487.gz (44/112/fopen): adding to final database dump
+0110.452 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_termmeta.table.gz (45/112/fopen): adding to final database dump
+0110.457 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_terms.table.tmpr5302.gz (46/112/fopen): adding to final database dump
+0110.463 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_terms.table.gz (47/112/fopen): adding to final database dump
+0110.469 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_category_lookup.table.tmpr1001.gz (48/112/fopen): adding to final database dump
+0110.475 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_category_lookup.table.gz (49/112/fopen): adding to final database dump
+0110.481 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_product_meta_lookup.table.gz (50/112/fopen): adding to final database dump
+0110.491 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_reserved_stock.table.tmpr1.gz (51/112/fopen): adding to final database dump
+0110.497 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_reserved_stock.table.gz (52/112/fopen): adding to final database dump
+0110.502 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_tax_rate_classes.table.tmpr3.gz (53/112/fopen): adding to final database dump
+0110.507 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_tax_rate_classes.table.gz (54/112/fopen): adding to final database dump
+0110.512 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_order_itemmeta.table.gz (55/112/fopen): adding to final database dump
+0110.529 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_payment_tokenmeta.table.tmpr0.gz (56/112/fopen): adding to final database dump
+0110.534 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_payment_tokenmeta.table.gz (57/112/fopen): adding to final database dump
+0110.539 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpr_rucss_resources.table.tmpr0.gz (58/112/fopen): adding to final database dump
+0110.544 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpr_rucss_resources.table.gz (59/112/fopen): adding to final database dump
+0110.550 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpr_rucss_used_css.table.tmpr0.gz (60/112/fopen): adding to final database dump
+0110.555 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpr_rucss_used_css.table.gz (61/112/fopen): adding to final database dump
+0110.560 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_as3cf_items.table.gz (62/112/fopen): adding to final database dump
+0110.573 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_e_events.table.tmpr0.gz (63/112/fopen): adding to final database dump
+0110.580 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_e_events.table.gz (64/112/fopen): adding to final database dump
+0110.586 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_budget_recommendations.table.tmpr4231.gz (65/112/fopen): adding to final database dump
+0110.592 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_budget_recommendations.table.gz (66/112/fopen): adding to final database dump
+0110.598 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_merchant_issues.table.tmpr0.gz (67/112/fopen): adding to final database dump
+0110.603 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_merchant_issues.table.gz (68/112/fopen): adding to final database dump
+0110.609 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_shipping_rates.table.tmpr0.gz (69/112/fopen): adding to final database dump
+0110.615 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_shipping_rates.table.gz (70/112/fopen): adding to final database dump
+0110.620 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_shipping_times.table.tmpr0.gz (71/112/fopen): adding to final database dump
+0110.625 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_gla_shipping_times.table.gz (72/112/fopen): adding to final database dump
+0110.631 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_custom_fields.table.tmpr0.gz (73/112/fopen): adding to final database dump
+0110.637 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_custom_fields.table.gz (74/112/fopen): adding to final database dump
+0110.641 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_dynamic_segment_filters.table.tmpr0.gz (75/112/fopen): adding to final database dump
+0110.646 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_dynamic_segment_filters.table.gz (76/112/fopen): adding to final database dump
+0110.652 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_feature_flags.table.tmpr0.gz (77/112/fopen): adding to final database dump
+0110.657 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_feature_flags.table.gz (78/112/fopen): adding to final database dump
+0110.662 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_forms.table.tmpr0.gz (79/112/fopen): adding to final database dump
+0110.667 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_forms.table.gz (80/112/fopen): adding to final database dump
+0110.673 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_log.table.tmpr0.gz (81/112/fopen): adding to final database dump
+0110.678 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_log.table.gz (82/112/fopen): adding to final database dump
+0110.683 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_mapping_to_external_entities.table.tmpr1.gz (83/112/fopen): adding to final database dump
+0110.688 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_mapping_to_external_entities.table.gz (84/112/fopen): adding to final database dump
+0110.695 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_links.table.tmpr0.gz (85/112/fopen): adding to final database dump
+0110.700 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_links.table.gz (86/112/fopen): adding to final database dump
+0110.706 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_option.table.tmpr0.gz (87/112/fopen): adding to final database dump
+0110.713 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_option.table.gz (88/112/fopen): adding to final database dump
+0110.719 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_option_fields.table.tmpr23.gz (89/112/fopen): adding to final database dump
+0110.725 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_option_fields.table.gz (90/112/fopen): adding to final database dump
+0110.730 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_posts.table.tmpr0.gz (91/112/fopen): adding to final database dump
+0110.736 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_posts.table.gz (92/112/fopen): adding to final database dump
+0110.741 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_segment.table.tmpr0.gz (93/112/fopen): adding to final database dump
+0110.746 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_segment.table.gz (94/112/fopen): adding to final database dump
+0110.752 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_templates.table.tmpr77.gz (95/112/fopen): adding to final database dump
+0110.758 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletter_templates.table.gz (96/112/fopen): adding to final database dump
+0110.765 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletters.table.tmpr0.gz (97/112/fopen): adding to final database dump
+0110.771 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_newsletters.table.gz (98/112/fopen): adding to final database dump
+0110.776 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_scheduled_task_subscribers.table.tmpr1.gz (99/112/fopen): adding to final database dump
+0110.788 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_scheduled_task_subscribers.table.gz (100/112/fopen): adding to final database dump
+0110.794 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_scheduled_tasks.table.tmpr202.gz (101/112/fopen): adding to final database dump
+0110.800 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_scheduled_tasks.table.gz (102/112/fopen): adding to final database dump
+0110.806 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_segments.table.tmpr4.gz (103/112/fopen): adding to final database dump
+0110.811 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_segments.table.gz (104/112/fopen): adding to final database dump
+0110.816 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_sending_queues.table.tmpr0.gz (105/112/fopen): adding to final database dump
+0110.822 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_sending_queues.table.gz (106/112/fopen): adding to final database dump
+0110.827 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_settings.table.tmpr1216.gz (107/112/fopen): adding to final database dump
+0110.832 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_settings.table.gz (108/112/fopen): adding to final database dump
+0110.840 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_bounces.table.tmpr0.gz (109/112/fopen): adding to final database dump
+0110.847 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_bounces.table.gz (110/112/fopen): adding to final database dump
+0110.852 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_clicks.table.tmpr0.gz (111/112/fopen): adding to final database dump
+0110.856 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_clicks.table.gz (112/112/fopen): adding to final database dump
+0110.862 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_forms.table.tmpr0.gz (113/112/fopen): adding to final database dump
+0110.868 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_forms.table.gz (114/112/fopen): adding to final database dump
+0110.874 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_newsletters.table.tmpr0.gz (115/112/fopen): adding to final database dump
+0110.880 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_newsletters.table.gz (116/112/fopen): adding to final database dump
+0110.886 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_opens.table.tmpr0.gz (117/112/fopen): adding to final database dump
+0110.893 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_opens.table.gz (118/112/fopen): adding to final database dump
+0110.898 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_unsubscribes.table.tmpr0.gz (119/112/fopen): adding to final database dump
+0110.904 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_unsubscribes.table.gz (120/112/fopen): adding to final database dump
+0110.910 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_woocommerce_purchases.table.tmpr0.gz (121/112/fopen): adding to final database dump
+0110.917 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_statistics_woocommerce_purchases.table.gz (122/112/fopen): adding to final database dump
+0110.924 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_stats_notifications.table.tmpr0.gz (123/112/fopen): adding to final database dump
+0110.929 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_stats_notifications.table.gz (124/112/fopen): adding to final database dump
+0110.934 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_subscriber_custom_field.table.tmpr0.gz (125/112/fopen): adding to final database dump
+0110.940 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_subscriber_custom_field.table.gz (126/112/fopen): adding to final database dump
+0110.947 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_subscriber_ips.table.tmpr1.gz (127/112/fopen): adding to final database dump
+0110.952 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_subscriber_ips.table.gz (128/112/fopen): adding to final database dump
+0110.960 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_subscriber_segment.table.gz (129/112/fopen): adding to final database dump
+0110.967 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_subscribers.table.gz (130/112/fopen): adding to final database dump
+0110.980 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_user_agents.table.tmpr0.gz (131/112/fopen): adding to final database dump
+0110.986 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_user_agents.table.gz (132/112/fopen): adding to final database dump
+0110.992 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_user_flags.table.tmpr0.gz (133/112/fopen): adding to final database dump
+0110.999 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_mailpoet_user_flags.table.gz (134/112/fopen): adding to final database dump
+0111.005 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_s2w_error_product_images.table.tmpr0.gz (135/112/fopen): adding to final database dump
+0111.013 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_s2w_error_product_images.table.gz (136/112/fopen): adding to final database dump
+0111.020 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_social_users.table.tmpr0.gz (137/112/fopen): adding to final database dump
+0111.029 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_social_users.table.gz (138/112/fopen): adding to final database dump
+0111.037 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_admin_note_actions.table.tmpr3205.gz (139/112/fopen): adding to final database dump
+0111.042 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_admin_note_actions.table.gz (140/112/fopen): adding to final database dump
+0111.049 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_admin_notes.table.tmpr72.gz (141/112/fopen): adding to final database dump
+0111.054 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_admin_notes.table.gz (142/112/fopen): adding to final database dump
+0111.061 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_customer_lookup.table.gz (143/112/fopen): adding to final database dump
+0111.071 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_download_log.table.tmpr0.gz (144/112/fopen): adding to final database dump
+0111.077 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_download_log.table.gz (145/112/fopen): adding to final database dump
+0111.083 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_gpf_render_cache.table.tmpr0.gz (146/112/fopen): adding to final database dump
+0111.089 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_gpf_render_cache.table.gz (147/112/fopen): adding to final database dump
+0111.095 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_order_coupon_lookup.table.tmpr1001.gz (148/112/fopen): adding to final database dump
+0111.101 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_order_coupon_lookup.table.gz (149/112/fopen): adding to final database dump
+0111.107 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_order_product_lookup.table.gz (150/112/fopen): adding to final database dump
+0111.114 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_order_stats.table.gz (151/112/fopen): adding to final database dump
+0111.123 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_order_tax_lookup.table.tmpr1.gz (152/112/fopen): adding to final database dump
+0111.129 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_order_tax_lookup.table.gz (153/112/fopen): adding to final database dump
+0111.134 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_product_attributes_lookup.table.tmpr1001.gz (154/112/fopen): adding to final database dump
+0111.140 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_product_attributes_lookup.table.gz (155/112/fopen): adding to final database dump
+0111.145 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_product_download_directories.table.tmpr4.gz (156/112/fopen): adding to final database dump
+0111.150 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_product_download_directories.table.gz (157/112/fopen): adding to final database dump
+0111.156 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_rate_limits.table.tmpr0.gz (158/112/fopen): adding to final database dump
+0111.163 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_rate_limits.table.gz (159/112/fopen): adding to final database dump
+0111.169 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_webhooks.table.tmpr0.gz (160/112/fopen): adding to final database dump
+0111.174 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wc_webhooks.table.gz (161/112/fopen): adding to final database dump
+0111.181 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_api_keys.table.tmpr2.gz (162/112/fopen): adding to final database dump
+0111.186 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_api_keys.table.gz (163/112/fopen): adding to final database dump
+0111.193 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_attribute_taxonomies.table.tmpr3.gz (164/112/fopen): adding to final database dump
+0111.199 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_attribute_taxonomies.table.gz (165/112/fopen): adding to final database dump
+0111.207 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_downloadable_product_permissions.table.tmpr0.gz (166/112/fopen): adding to final database dump
+0111.212 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (167/112/fopen): adding to final database dump
+0111.218 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_gpf_google_taxonomy.table.tmpr6001.gz (168/112/fopen): adding to final database dump
+0111.226 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_gpf_google_taxonomy.table.gz (169/112/fopen): adding to final database dump
+0111.232 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_log.table.tmpr0.gz (170/112/fopen): adding to final database dump
+0111.240 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_log.table.gz (171/112/fopen): adding to final database dump
+0111.246 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_order_items.table.gz (172/112/fopen): adding to final database dump
+0111.254 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_payment_tokens.table.tmpr0.gz (173/112/fopen): adding to final database dump
+0111.261 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_payment_tokens.table.gz (174/112/fopen): adding to final database dump
+0111.266 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_sessions.table.tmpr513.gz (175/112/fopen): adding to final database dump
+0111.272 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_sessions.table.gz (176/112/fopen): adding to final database dump
+0111.278 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_shipping_zone_locations.table.tmpr1280.gz (177/112/fopen): adding to final database dump
+0111.283 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_shipping_zone_locations.table.gz (178/112/fopen): adding to final database dump
+0111.288 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_shipping_zone_methods.table.tmpr7.gz (179/112/fopen): adding to final database dump
+0111.294 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_shipping_zone_methods.table.gz (180/112/fopen): adding to final database dump
+0111.299 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_shipping_zones.table.tmpr2.gz (181/112/fopen): adding to final database dump
+0111.304 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_shipping_zones.table.gz (182/112/fopen): adding to final database dump
+0111.310 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_tax_rate_locations.table.tmpr0.gz (183/112/fopen): adding to final database dump
+0111.315 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_tax_rate_locations.table.gz (184/112/fopen): adding to final database dump
+0111.320 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_tax_rates.table.tmpr1266.gz (185/112/fopen): adding to final database dump
+0111.326 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woocommerce_tax_rates.table.gz (186/112/fopen): adding to final database dump
+0111.332 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_tables.table.tmpr0.gz (187/112/fopen): adding to final database dump
+0111.337 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_tables.table.gz (188/112/fopen): adding to final database dump
+0111.342 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_tables_columns.table.tmpr0.gz (189/112/fopen): adding to final database dump
+0111.347 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_tables_columns.table.gz (190/112/fopen): adding to final database dump
+0111.353 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_tables_meta.table.tmpr0.gz (191/112/fopen): adding to final database dump
+0111.359 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_tables_meta.table.gz (192/112/fopen): adding to final database dump
+0111.365 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_vocabulary.table.tmpr0.gz (193/112/fopen): adding to final database dump
+0111.371 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_woot_vocabulary.table.gz (194/112/fopen): adding to final database dump
+0111.376 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpforms_tasks_meta.table.tmpr5.gz (195/112/fopen): adding to final database dump
+0111.382 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpforms_tasks_meta.table.gz (196/112/fopen): adding to final database dump
+0111.387 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpmailsmtp_debug_events.table.tmpr9.gz (197/112/fopen): adding to final database dump
+0111.393 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpmailsmtp_debug_events.table.gz (198/112/fopen): adding to final database dump
+0111.398 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpmailsmtp_emails_log.table.tmpr26.gz (199/112/fopen): adding to final database dump
+0111.410 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpmailsmtp_emails_log.table.gz (200/112/fopen): adding to final database dump
+0111.416 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr11.gz (201/112/fopen): adding to final database dump
+0111.422 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_wpmailsmtp_tasks_meta.table.gz (202/112/fopen): adding to final database dump
+0111.428 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_yith_wcwl.table.tmpr3.gz (203/112/fopen): adding to final database dump
+0111.434 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_yith_wcwl.table.gz (204/112/fopen): adding to final database dump
+0111.440 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_yith_wcwl_lists.table.tmpr3.gz (205/112/fopen): adding to final database dump
+0111.446 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db-table-wp_yith_wcwl_lists.table.gz (206/112/fopen): adding to final database dump
+0111.454 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz: finished writing out complete database file (30888.1 KB)
+0111.816 (0) Total database tables backed up: 112 (backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz, size: 31629532, sha1: 0405f37f12ed84d9816a76209ee5a220941ff2e9, sha256: 5c2240cd464a60e9da2f96d500b28dea2a94cd1f5627cb3180db0b1cf73d0358)
+0111.840 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0111.846 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0111.851 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0111.857 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip: wpcore: This file has not yet been successfully uploaded: will queue
+0111.874 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip: others: This file has not yet been successfully uploaded: will queue
+0111.880 (0) backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz: db: This file has not yet been successfully uploaded: will queue
+0111.887 (0) Saving backup history. Total backup size: 409.4 MB
+0111.898 (0) Requesting upload of the files that have not yet been successfully uploaded (6)
+0111.917 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0111.923 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-4c70371fce46fbf6dc0c75c0eaaaa18a)
+0111.959 (0) Amazon S3: upload (US): backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip (chunks: 13) -> s3://backup.au.gifttify.com/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip
+0112.015 (0) Amazon S3: chunked upload: got multipart ID: .OtAk2mK1NfD5jFRm1QqvNSAbYsy09O5Cd6UyB95gSGrt8Q96ntOJ9CoKpLvvx1fUiRPLwzqXV7UwT_r7BsLtBCjGBbPdhMffUtVcLjXUbi8Cviothkj0VU85aVHc.tj
+0112.278 (0) S3 chunked upload: 7.7 % uploaded (1, 279e0bc39637dea25134da48a88eb9f2)
+0112.536 (0) S3 chunked upload: 15.4 % uploaded (2, 23c378eb606c43c3e3bb2c3239ca0904)
+0112.746 (0) S3 chunked upload: 23.1 % uploaded (3, aa2c36226e5ad86371b64d63bb1b26d1)
+0112.974 (0) S3 chunked upload: 30.8 % uploaded (4, 733768ad0c9697fdc1e6cc2afe5fd10f)
+0113.232 (0) S3 chunked upload: 38.5 % uploaded (5, 37f32fc9a22e0587bd497cfc0462cffb)
+0113.456 (0) S3 chunked upload: 46.2 % uploaded (6, d0ac5b9d5248d68b0046a2e6e025cb07)
+0113.706 (0) S3 chunked upload: 53.8 % uploaded (7, 39e0217d8f3ae1ba292db4790187b20a)
+0113.927 (0) S3 chunked upload: 61.5 % uploaded (8, dc9ade062f781a3553aa40d465377d65)
+0114.174 (0) S3 chunked upload: 69.2 % uploaded (9, e9f6710780bc9dde0dbe9ab37360042b)
+0114.403 (0) S3 chunked upload: 76.9 % uploaded (10, 1dafa2aa1d661465269d020f8096d996)
+0114.661 (0) S3 chunked upload: 84.6 % uploaded (11, ebe1fa88d2bc77def7b0f598ed546f96)
+0114.933 (0) S3 chunked upload: 92.3 % uploaded (12, 195abe682cbc2902cfa5824bd66f9f31)
+0115.113 (0) S3 chunked upload: 100 % uploaded (13, 1fe74ecad57013097ac207f1db503f87)
+0115.130 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0115.248 (0) Amazon S3: upload (plugins0): re-assembly succeeded
+0115.255 (0) Recording as successfully uploaded: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip
+0115.277 (0) Deleting local file: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip: OK
+0115.282 (0) Deleting zip manifest (backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-plugins.zip.list.tmp)
+0115.288 (0) Amazon S3: upload (US): backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip (chunks: 3) -> s3://backup.au.gifttify.com/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip
+0115.334 (0) Amazon S3: chunked upload: got multipart ID: DDGBQffFQC6uDJHuQ0VVge9IptRTIJUZX.rWpkXMuziXBJJ3Sc08oq_iZwpfxkz0kh2e5Kjcmavmr6FDN8QXAjYPCVq6LDFwtcqv7sSjx568.Osl6ZnjQMcvv_L.4aUM
+0115.544 (0) S3 chunked upload: 33.3 % uploaded (1, 536bd72b9aecbcf4b9b4c81a677fd9f0)
+0115.778 (0) S3 chunked upload: 66.7 % uploaded (2, 7f58fae8076092a0b81b056ad77a9a55)
+0116.001 (0) S3 chunked upload: 100 % uploaded (3, d48fa07768452747df3e6e5842416dae)
+0116.023 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0116.151 (0) Amazon S3: upload (themes0): re-assembly succeeded
+0116.157 (0) Recording as successfully uploaded: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip
+0116.171 (0) Deleting local file: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip: OK
+0116.177 (0) Deleting zip manifest (backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-themes.zip.list.tmp)
+0116.184 (0) Amazon S3: upload (US): backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip (chunks: 18) -> s3://backup.au.gifttify.com/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip
+0116.217 (0) Amazon S3: chunked upload: got multipart ID: 1h_SwOaIy7dhTpnsJTPenE.w1c1OCuJOud893q253cZqf9UAM3fbWTdR3sw4DO5xtypk4Ygz_Jq_oSrGzoG4_TCV9diAJMR1GchsLI.8YVHfNdZr1tK8K9B0wlee1c8D
+0116.503 (0) S3 chunked upload: 5.6 % uploaded (1, 1502d7fc1185be88b0fd66f912c06579)
+0116.727 (0) S3 chunked upload: 11.1 % uploaded (2, 483c504f96a7ce8548b92233d865e3da)
+0117.016 (0) S3 chunked upload: 16.7 % uploaded (3, a97b5d4dd573e4ef36c05912f9e9c9cd)
+0117.269 (0) S3 chunked upload: 22.2 % uploaded (4, 8a78096b9a92305a2bcec1ef9a28e1d5)
+0117.525 (0) S3 chunked upload: 27.8 % uploaded (5, 012072c7355d4ea54c957f040ecb0393)
+0117.779 (0) S3 chunked upload: 33.3 % uploaded (6, ff12e3accfbaa298fe62b5d927be8bcd)
+0117.948 (0) S3 chunked upload: 38.9 % uploaded (7, 45bb1c67756850a3fba3b9d700ad4c10)
+0118.200 (0) S3 chunked upload: 44.4 % uploaded (8, 0ae0c0f8b7d723258cb10fc32c4ab35c)
+0118.463 (0) S3 chunked upload: 50 % uploaded (9, c696a95e50fac746e40a457e155e8edc)
+0118.643 (0) S3 chunked upload: 55.6 % uploaded (10, 0adeda271ca49beb28970bc3777248e4)
+0118.888 (0) S3 chunked upload: 61.1 % uploaded (11, 4006bdd8eaa6ed619c92730a28b71280)
+0119.135 (0) S3 chunked upload: 66.7 % uploaded (12, d51020e7d5427d834f77170c0160e74f)
+0119.378 (0) S3 chunked upload: 72.2 % uploaded (13, 61892d18a8fd666aa024f00fd2d37aa1)
+0119.634 (0) S3 chunked upload: 77.8 % uploaded (14, 59d9b955efb31f70a1e5ebe8e78140e5)
+0119.863 (0) S3 chunked upload: 83.3 % uploaded (15, b36d49d6d2afd3bf95dbe03077616ace)
+0120.088 (0) S3 chunked upload: 88.9 % uploaded (16, c0252704b05b66309f7bec9c80a81b33)
+0120.326 (0) S3 chunked upload: 94.4 % uploaded (17, 215349f584ea27f6c0dcb878b311c71b)
+0120.468 (0) S3 chunked upload: 100 % uploaded (18, 893768f706107e9b62ef421af424620a)
+0120.487 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0120.606 (0) Amazon S3: upload (uploads0): re-assembly succeeded
+0120.612 (0) Recording as successfully uploaded: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip
+0120.638 (0) Deleting local file: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip: OK
+0120.644 (0) Deleting zip manifest (backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-uploads.zip.list.tmp)
+0120.651 (0) Amazon S3: upload (US): backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip (chunks: 44) -> s3://backup.au.gifttify.com/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip
+0120.692 (0) Amazon S3: chunked upload: got multipart ID: PL2NIZojLg1NzTzp_0jUXDa1qsPQIaIIHsEZRZ2XeqyWqAobAg2UXV9r.UrXCZWO3_Nv6FIzgJCvhxHN2dIfVDTGSa0UyxZUX2awEFoRCYjlWhlGBIRgLhj8pCSe5LIY
+0120.915 (0) S3 chunked upload: 2.3 % uploaded (1, 50c2f048d86fd4ec7d5d85dea56b4c77)
+0121.142 (0) S3 chunked upload: 4.5 % uploaded (2, 5017a2f477de4c4e1b0df9da775a3a1a)
+0121.389 (0) S3 chunked upload: 6.8 % uploaded (3, 65d6ef826859eecc32e2c05c31983d74)
+0121.616 (0) S3 chunked upload: 9.1 % uploaded (4, 406873c438445d7afd2c59854d01545a)
+0121.834 (0) S3 chunked upload: 11.4 % uploaded (5, 3fb129e8b036e89f729ea845424f23e7)
+0122.054 (0) S3 chunked upload: 13.6 % uploaded (6, ca796c1d084ea6015984331ac787481f)
+0122.306 (0) S3 chunked upload: 15.9 % uploaded (7, 601665221c84cfff6a571b64e682d098)
+0122.564 (0) S3 chunked upload: 18.2 % uploaded (8, 46d95ea7bf7b2a1681373752adb9588c)
+0122.821 (0) S3 chunked upload: 20.5 % uploaded (9, d661f778b4f57fa90c8953ca413ae1be)
+0123.095 (0) S3 chunked upload: 22.7 % uploaded (10, e29f3cf22af70edd67195d5d1f9e0020)
+0123.324 (0) S3 chunked upload: 25 % uploaded (11, ca4e67ab2d0973a3352eaf9a43be6a86)
+0123.553 (0) S3 chunked upload: 27.3 % uploaded (12, bc2f5d20d091e8f9959dc30b9e7af309)
+0123.793 (0) S3 chunked upload: 29.5 % uploaded (13, cb68e5754550213656f74b9299e9ee59)
+0124.052 (0) S3 chunked upload: 31.8 % uploaded (14, 89707516d7883ddb90583451637f442b)
+0124.323 (0) S3 chunked upload: 34.1 % uploaded (15, 5176a90afc1848a4477c07d2befdc81d)
+0124.607 (0) S3 chunked upload: 36.4 % uploaded (16, 6bc6630e79d65cd841e4d384d89ef563)
+0124.853 (0) S3 chunked upload: 38.6 % uploaded (17, 6d38b3d245904d198a94caabee477c05)
+0125.132 (0) S3 chunked upload: 40.9 % uploaded (18, 7fec63b474027fd9c0dd7f7f99cce9d7)
+0125.345 (0) S3 chunked upload: 43.2 % uploaded (19, 58e6fa1be59c3a102af0c8384e46a7d5)
+0125.563 (0) S3 chunked upload: 45.5 % uploaded (20, 1412cf674e7df55c835d331737708566)
+0125.796 (0) S3 chunked upload: 47.7 % uploaded (21, fe16edd0e05788b0c681abdbcedd0151)
+0126.025 (0) S3 chunked upload: 50 % uploaded (22, bf59eeabf223696426d51f152144ba92)
+0126.293 (0) S3 chunked upload: 52.3 % uploaded (23, 42688ee62397ce41f134d6c170e9df50)
+0126.557 (0) S3 chunked upload: 54.5 % uploaded (24, e83103589f2eb58610bfebb2b61d800c)
+0126.809 (0) S3 chunked upload: 56.8 % uploaded (25, 49443a912ba8598a374c4fadd614c5f8)
+0127.093 (0) S3 chunked upload: 59.1 % uploaded (26, 481865ba3774e85f9883b63c6cd009ef)
+0127.305 (0) S3 chunked upload: 61.4 % uploaded (27, 3943bb66ccc637b2187f4d7b7985bb27)
+0127.565 (0) S3 chunked upload: 63.6 % uploaded (28, c8f8e003a70534a98c40e5bb29ad6d4d)
+0127.771 (0) S3 chunked upload: 65.9 % uploaded (29, ff1d48bb4645ab50cbae2269a7c2ab38)
+0128.032 (0) S3 chunked upload: 68.2 % uploaded (30, fb438f700af56ac21e1a01f721de2f36)
+0128.267 (0) S3 chunked upload: 70.5 % uploaded (31, 2e42cf652481be961d213fb8ed698d24)
+0128.519 (0) S3 chunked upload: 72.7 % uploaded (32, abf5acc1d49ccc4916f03a0f35b96653)
+0128.924 (0) S3 chunked upload: 75 % uploaded (33, 0cf8c8fbd17b7c4458ff8bf8b412422f)
+0129.177 (0) S3 chunked upload: 77.3 % uploaded (34, 0bc1937ea22f32723e2aea4ae7791f6d)
+0129.409 (0) S3 chunked upload: 79.5 % uploaded (35, c0fdca644afcc1b4b1e4927d24e7fa4d)
+0129.619 (0) S3 chunked upload: 81.8 % uploaded (36, 4813d0db173476c1b8432365a5f1a950)
+0129.813 (0) S3 chunked upload: 84.1 % uploaded (37, 94adb9781861620591ebc4bf55f42370)
+0130.081 (0) S3 chunked upload: 86.4 % uploaded (38, 84d78df6c7f9ddda94fa68a4665d961a)
+0130.295 (0) S3 chunked upload: 88.6 % uploaded (39, dc85a979670a92a2ea0022f21dbbbfd9)
+0130.551 (0) S3 chunked upload: 90.9 % uploaded (40, 78fc270f197d086587fbb097a9fe35d4)
+0130.792 (0) S3 chunked upload: 93.2 % uploaded (41, 38290b0db27df87e045a09c116929a33)
+0131.023 (0) S3 chunked upload: 95.5 % uploaded (42, deadb404c169afe8ec4524003ec1d7b4)
+0131.287 (0) S3 chunked upload: 97.7 % uploaded (43, f347fc0a15acbbfa7b6dee2dcb359ff6)
+0131.577 (0) S3 chunked upload: 100 % uploaded (44, 4b50ffc2d135e29a9c22b3acac5771e9)
+0131.597 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0131.754 (0) Amazon S3: upload (wpcore0): re-assembly succeeded
+0131.761 (0) Recording as successfully uploaded: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip
+0131.808 (0) Deleting local file: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip: OK
+0131.816 (0) Deleting zip manifest (backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-wpcore.zip.list.tmp)
+0131.824 (0) Amazon S3: upload (US): backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip (chunks: 1) -> s3://backup.au.gifttify.com/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip
+0131.917 (0) Amazon S3: regular upload: success
+0131.924 (0) Recording as successfully uploaded: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip
+0131.940 (0) Deleting local file: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip: OK
+0131.947 (0) Deleting zip manifest (backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-others.zip.list.tmp)
+0131.954 (0) Amazon S3: upload (US): backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz (chunks: 7) -> s3://backup.au.gifttify.com/backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz
+0132.003 (0) Amazon S3: chunked upload: got multipart ID: F3ucO4wDq.SvQGKJmlFUphSuek6tAV6H5gmHSLCGLWOAxEKb2IfTl.F_p6hbMf9bQsbeU9JuLekPsZDvL8eZ51JORh4_ANV7i0HyDVJQ3uB9SYBM.gPkTgfqXgB63SqS
+0132.239 (0) S3 chunked upload: 14.3 % uploaded (1, 062765205ee40e78df89b1245712d270)
+0132.501 (0) S3 chunked upload: 28.6 % uploaded (2, ad33e8cdc3d5a181ab19580fa51f41ab)
+0132.774 (0) S3 chunked upload: 42.9 % uploaded (3, dc5a45012b2acf8c60e10fbbe1196db2)
+0133.039 (0) S3 chunked upload: 57.1 % uploaded (4, 423c0a3c81b71588122179b10c54ca99)
+0133.293 (0) S3 chunked upload: 71.4 % uploaded (5, 595fd82b1a52188f458a6345dd013f60)
+0133.544 (0) S3 chunked upload: 85.7 % uploaded (6, 021107a5c469f5a8c4edd3f832ec5425)
+0133.666 (0) S3 chunked upload: 100 % uploaded (7, 08f7b191eb7dc5204e57e4b1c50ba03b)
+0133.685 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0133.811 (0) Amazon S3: upload (db0): re-assembly succeeded
+0133.817 (0) Recording as successfully uploaded: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz
+0133.834 (0) Deleting local file: backup_2022-06-01-1314_Gifttify_Australia_7b72933ef7e0-db.gz: OK
+0133.853 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0133.859 (0) These backup set(s) were imported from a remote location, so will not be counted or pruned. Skipping: 1653563820
+0133.865 (0) Number of backup sets in history: 2; groups (db): 1
+0133.870 (0) Examining (for databases) backup set with group_id=0, nonce=7b72933ef7e0, datestamp=1654053255 (Jun 01 2022 03:14:15)
+0133.875 (0) This backup set is the backup set just made, so will not be deleted.
+0133.875 (0) Number of backup sets in history: 2; groups (files): 1
+0133.881 (0) Examining (for files) backup set with nonce=7b72933ef7e0, datestamp=1654053255 (Jun 01 2022 03:14:15)
+0133.881 (0) This backup set is the backup set just made, so will not be deleted.
+0133.886 (0) This backup set is the backup set just made, so will not be deleted.
+0133.886 (0) This backup set is the backup set just made, so will not be deleted.
+0133.886 (0) This backup set is the backup set just made, so will not be deleted.
+0133.886 (0) This backup set is the backup set just made, so will not be deleted.
+0133.886 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0133.892 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0133.906 (0) Resume backup (7b72933ef7e0, 0): finish run
+0133.923 (0) Decremented the semaphore (fd) by 1
+0133.934 (0) Semaphore (fd) unlocked
+0133.939 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0133.959 (0) No report will be sent to this address, as it is configured to receive them only when there are errors or warnings: accou...
+0133.966 (0) The backup apparently succeeded and is now complete

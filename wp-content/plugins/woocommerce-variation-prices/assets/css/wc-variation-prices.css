@@ -1,0 +1,24 @@
+.wvp-price-range span.price {
+  display: inline-block;
+}
+.wvp-price-range .wvp-list {
+  border-collapse: collapse;
+  display: table !important;
+}
+.wvp-price-range .wvp-list .wvp-list-item {
+  display: table-row !important;
+}
+.wvp-price-range .wvp-list .wvp-list-item > span {
+  display: table-cell !important;
+  padding: 0;
+  padding-right: 0.5em;
+  text-align: left;
+}
+.wvp-price-range .wvp-list .wvp-list-item > span.wvp-list-item-price {
+  text-align: left;
+  white-space: nowrap;
+}
+.wvp-price-range .wvp-list .wvp-list-item > span.wvp-list-item-price.price,
+.wvp-price-range .wvp-list .wvp-list-item > span.wvp-list-item-price > .price {
+  margin-top: 0;
+}
