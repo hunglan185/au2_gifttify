@@ -1,11 +1,11 @@
 === Variation Swatches for WooCommerce ===
 Contributors: EmranAhmed, getwooplugins
 Tags: woocommerce variation swatches, woocommerce variation, woocommerce, variation swatches, woocommerce attributes, product attributes, product color, product size, variable product attributes, variation product swatches, color variation swatch, image variation swatch, printful color swatches
-Requires PHP: 5.6
-Requires at least: 4.8
-WC requires at least: 4.5
-Tested up to: 5.8
-WC tested up to: 5.6
+Requires PHP: 7.0
+Requires at least: 5.5
+Tested up to: 6.0
+WC requires at least: 5.5
+WC tested up to: 6.5
 Stable tag: trunk
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -188,6 +188,8 @@ There are many other useful plugins that serve different purposes, and many user
 
 [youtube https://www.youtube.com/watch?v=1IhEZiGzJHs]
 
+Besides adding swatches on the product page, you can show [WooCommerce variation swatches on shop page](https://getwooplugins.com/plugins/woocommerce-variation-swatches/)
+
 👉 Auto Convert All Dropdowns to Image Swatch If Variation Has a Featured Image Set
 
 If you have already set featured images for variations, then it will automatically convert all dropdowns to image swatch. That means you don’t need the hassle to do it manually which in return will save your valuable time. 
@@ -352,6 +354,14 @@ The Variation Swatches for WooCommerce plugin converts filter products by attrib
 
  [Live Demo & Documentation](http://bit.ly/filter-widget-link-doc)
 <hr />
+
+👉 Create Categoried & Grouped Variation Swatches
+
+Users may feel confused to select desired variation swatches among many options. Category and Group swatches feature makes it easy to select the right product variation with ease.
+
+ [Live Demo & Documentation](https://getwooplugins.com/documentation/woocommerce-variation-swatches/#category-group-swatches)
+<hr />
+
 👉 Compatible with Printful, Alidrop, and Multivendor Plugins
 
 This Variation Swatches plugin is compatible with major themes and most popular plugins for WooCommerce. On top of that, it is also compatible with printful, alidrop and multi-vendor plugins.
@@ -384,7 +394,7 @@ Clear button allows you to clear the selected attribute variation. The Woocommer
 👉 Customize swatches colors, background and border sizes
 👉 Automatic updates
 
-Keeping your plugin updated is crucial for security and stability of your site. We update this plugin regularly. You can enable auto update for this swatch plugin directly from your WordPress dashboard.
+Keeping your plugin updated is crucial for security and stability of your site. We try to update our [variation swatches for woocommerce pro](https://wordpress.org/support/topic/the-best-support-ever-thank-you-guys/) plugin regularly. You can enable auto update for this swatch plugin directly from your WordPress dashboard.
 
 👉 Exclusive technical support
 
@@ -507,11 +517,25 @@ We provide exclusive technical support to our customers. Our plugin has plenty o
 </ul>
 </blockquote>
 
+= Featured on Poular Blog Sites =
+
+<blockquote>
+
+<ul>
+<li><a target="_blank" href="https://wpcred.com">wpcred.com</a></li>
+</ul>
+<ul>
+<li><a target="_blank" href="https://storepress.com">storepress.com</a></li>
+</ul>
+
+</blockquote>
+
+
 == Installation ==
 
 ### Automatic Install From WordPress Dashboard
 
-1. Login to your the admin panel
+1. Login to your admin panel
 2. Navigate to Plugins -> Add New
 3. Search **Variation Swatches for WooCommerce**
 4. Click install and activate respectively.
@@ -592,6 +616,10 @@ And your are ready to go.
 12. Global Variation Color Swatches Attribute List Preview
 
 == Changelog ==
+
+= 2.0.0 - 13-06-2022 =
+
+* Update: plugin structure change and add more features.
 
 = 1.1.19 - 07-09-2021 =
 
@@ -1093,3 +1121,6 @@ And your are ready to go.
 * Initial release
 
 == Upgrade Notice ==
+
+= 2.0 =
+If you are using PRO version of this plugin please disable it first. This version has a lot of update.

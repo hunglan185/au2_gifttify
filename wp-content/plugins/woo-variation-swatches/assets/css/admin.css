@@ -1,74 +1,49 @@
 /*!
- * Variation Swatches for WooCommerce v1.1.19 
+ * Variation Swatches for WooCommerce 
  * 
  * Author: Emran Ahmed ( emran.bd.08@gmail.com ) 
- * Date: 07/09/2021
+ * Date: 6/13/2022, 4:04:45 PM
  * Released under the GPLv3 license.
  */
 .button.button-danger {
   color: #FFFFFF;
   background-color: #AF2D2B;
   border-color: #A62D2B;
-  box-shadow: 0 1px 0 #A72D2B;
+  -webkit-box-shadow: 0 1px 0 #A72D2B;
+          box-shadow: 0 1px 0 #A72D2B;
   vertical-align: top;
 }
-
-.button.button-danger:hover,
-.button.button-danger:focus,
-.button.button-danger:active,
-.button.button-danger.active {
+.button.button-danger:hover, .button.button-danger:focus, .button.button-danger:active, .button.button-danger.active {
   color: #FFFFFF;
   background: #C9302C;
 }
 
-[data-wvsdepends] {
-  display: none;
+[data-dependency]:not(.dependency-show) {
+  display: none !important;
 }
 
 .meta-image-field-wrapper {
   display: table;
 }
-
 .meta-image-field-wrapper .button {
   margin: 5px 0;
   display: block;
 }
-
 .meta-image-field-wrapper .image-preview {
   display: table-cell;
   width: 60px;
   padding-right: 10px;
 }
-
 .meta-image-field-wrapper .button-wrapper {
   display: table-cell;
   vertical-align: top;
 }
 
-.gwp-rate-stars {
-  display: inline-block;
-  color: #FFB900;
-  position: relative;
-  top: 3px;
-}
-
-.gwp-rate-stars svg,
-.gwp-rate-stars svg a {
-  fill: #FFB900;
-  stroke: #FFB900;
-  cursor: pointer;
-}
-
-.gwp-rate-stars svg:hover,
-.gwp-rate-stars svg a:hover {
-  fill: #FFB900;
-}
-
-.gwp-rate-stars svg:hover ~ svg,
-.gwp-rate-stars svg:hover ~ svg a,
-.gwp-rate-stars svg a:hover ~ svg,
-.gwp-rate-stars svg a:hover ~ svg a {
-  fill: none;
+.wvs-go-pro-action-link > a {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #9c27b0;
+  text-shadow: 1px 1px 1px #eee;
 }
 
 #wvs-meta-preview {
@@ -81,144 +56,49 @@
   border: #000000 1px solid;
 }
 
-#woo-variation-swatches-settings-wrap #settings-tabs {
-  margin-top: 30px;
+.woo-variation-swatches-pro_tab.pro-inactive a {
+  background-color: var(--wc-primary);
+  color: var(--wc-content-bg);
 }
 
-#woo-variation-swatches-settings-wrap #settings-tabs h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-#woo-variation-swatches-settings-wrap #settings-tabs .form-table {
-  margin-top: 15px;
-  background: #FFFFFF;
+#woo-variation-swatches-tutorials-wrapper {
+  background: #fff;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 1px 1px rgba(0, 0, 0, 0.04);
+  border: 1px solid #DDDDDD;
 }
-
-#woo-variation-swatches-settings-wrap #settings-tabs .form-table tr {
-  border-bottom: 1px solid #EEEEEE;
-  display: block;
-}
-
-#woo-variation-swatches-settings-wrap #settings-tabs .form-table tr:last-child {
-  border: 0;
-}
-
-#woo-variation-swatches-settings-wrap #settings-tabs .form-table th {
-  padding: 20px 10px 20px 20px;
-}
-
-#woo-variation-swatches-settings-wrap #settings-tabs #style .form-table,
-#woo-variation-swatches-settings-wrap #settings-tabs #special .form-table {
-  margin-bottom: 30px;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .form-table tr {
-  padding: 0 !important;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper img {
+#woo-variation-swatches-tutorials-wrapper img {
   width: 100%;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper ul {
+#woo-variation-swatches-tutorials-wrapper ul {
   margin: 0;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper li {
+#woo-variation-swatches-tutorials-wrapper li {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 50px 30px;
   margin: 0;
   border-bottom: 1px solid #DDDDDD;
   position: relative;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper li:last-child {
+#woo-variation-swatches-tutorials-wrapper li:last-child {
   border: 0;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper,
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper {
+#woo-variation-swatches-tutorials-wrapper .tutorial-image-wrapper, #woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper {
   float: left;
   padding: 0 20px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper {
+#woo-variation-swatches-tutorials-wrapper .tutorial-image-wrapper {
+  position: relative;
   width: 60%;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper {
-  width: 40%;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper h3 {
-  margin: 0 0 20px;
-  font-size: 1.5em;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-contents {
-  font-size: 15px;
-  line-height: 1.5em;
-  margin-bottom: 20px;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button {
-  border-radius: 3px;
-  line-height: 1;
-  padding: 13px 20px;
-  font-size: 13px;
-  height: 40px;
-  box-shadow: none;
-  text-shadow: none;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button:active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-live-demo {
-  background-color: #F44336;
-  color: #fff;
-  border: 0;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-live-demo:hover {
-  background: #c71609;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-docs {
-  background-color: #36373A;
-  color: #FFFFFF;
-  border: 0;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-docs:hover {
-  background: #5D5E61;
-  border-color: #5D5E61;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-pro {
-  background-color: #39B54A;
-  color: #FFFFFF;
-  border: 1px solid #39B54A;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-pro:hover {
-  background: #3FC851;
-  border-color: #3FC851;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper {
-  position: relative;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper .ribbon {
+#woo-variation-swatches-tutorials-wrapper .tutorial-image-wrapper .ribbon {
   position: absolute;
   left: -5px;
   top: -5px;
@@ -229,8 +109,7 @@
   text-align: right;
   margin: 1px 22px;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper .ribbon span {
+#woo-variation-swatches-tutorials-wrapper .tutorial-image-wrapper .ribbon span {
   font-size: 10px;
   font-weight: bold;
   color: #FFFFFF;
@@ -238,123 +117,230 @@
   text-align: center;
   line-height: 20px;
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 100px;
   display: block;
   background: #BC0808;
-  box-shadow: 0 3px 10px -5px black;
+  -webkit-box-shadow: 0 3px 10px -5px black;
+          box-shadow: 0 3px 10px -5px black;
   position: absolute;
   top: 19px;
   left: -21px;
 }
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper .ribbon span::before {
+#woo-variation-swatches-tutorials-wrapper .tutorial-image-wrapper .ribbon span::after {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 100%;
-  z-index: -1;
-  border-width: 3px;
-  border-style: solid;
-  border-color: #8f0808 transparent transparent #8f0808;
-}
-
-#woo-variation-swatches-settings-wrap #tutorial .gwp-tutorials-wrapper .tutorial-image-wrapper .ribbon span::after {
-  content: "";
-  position: absolute;
-  right: 0px;
+  right: 0;
   top: 100%;
   z-index: -1;
   border-width: 3px;
   border-style: solid;
   border-color: #8f0808 #8f0808 transparent transparent;
 }
-
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-pro-text],
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-new-text] {
-  position: relative;
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper {
+  width: 40%;
 }
-
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-pro-text]::before,
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-pro-text]::after,
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-new-text]::before,
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-new-text]::after {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  position: absolute;
-  right: 5px;
-  top: 0;
-  color: #FFFFFF;
-  font-size: 8px;
-  font-weight: normal;
-  text-transform: uppercase;
-  padding: 3px 5px;
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper h3 {
+  margin: 0 0 20px;
+  font-size: 1.5em;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-contents {
+  font-size: 15px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button {
+  border-radius: 3px;
   line-height: 1;
-  border-radius: 10px;
+  padding: 13px 20px;
+  font-size: 13px;
+  height: 40px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
 }
-
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-pro-text]::before {
-  content: attr(data-pro-text);
-  background: #F44336;
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button:active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
-
-#woo-variation-swatches-settings-wrap .nav-tab-wrapper [data-new-text]::after {
-  content: attr(data-new-text);
-  background: #2196F3;
-}
-
-#woo-variation-swatches-settings-wrap .wvs-setting-tab .wvs-new-feature-tick {
-  position: relative;
-  /*transform: translateY(-50%);*/
-  right: -5px;
-  top: -2px;
-  color: #FFFFFF;
-  background: #FF5722;
-  font-size: 8px;
-  font-weight: normal;
-  text-transform: uppercase;
-  padding: 3px 5px;
-  line-height: 1;
-  border-radius: 10px;
-}
-
-#woo-variation-swatches-settings-wrap .wvs-setting-tab .description {
-  font-size: small;
-  font-style: italic;
-}
-
-.woo-variation-swatches-pro_tab.pro-inactive a {
-  background-color: var(--wc-primary);
-  color: var(--wc-content-bg);
-}
-
-.wvs-settings-field-content {
-  position: relative;
-}
-
-.wvs-show-pro-label {
-  display: block;
-}
-
-.wvs-show-pro-label span {
-  padding: 2px 4px;
-  background: #fa0000;
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-live-demo {
+  background-color: #F44336;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 9px;
-  border-radius: 2px;
+  border: 0;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-live-demo:hover {
+  background: #c71609;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-docs {
+  background-color: #36373A;
+  color: #FFFFFF;
+  border: 0;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-docs:hover {
+  background: #5D5E61;
+  border-color: #5D5E61;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-pro {
+  background-color: #39B54A;
+  color: #FFFFFF;
+  border: 1px solid #39B54A;
+}
+#woo-variation-swatches-tutorials-wrapper .tutorial-description-wrapper .tutorial-buttons .button.button-pro:hover {
+  background: #3FC851;
+  border-color: #3FC851;
 }
 
-.wvs-show-pro-contents {
+.woo-variation-swatches-group-table-list tbody > :nth-child(odd) {
+  background-color: #f6f7f7;
+}
+
+.woo-variation-swatches-group-section-wrapper .woocommerce-BlankState-message::before {
+  font-family: "Dashicons";
+  content: "\F307";
+}
+
+.woo-variation-swatches-variation-product-options-wrapper {
+  /*.woo-variation-swatches-settings-heading {
+    font-weight: 600 !important;
+    color: #252a2e;
+    font-size: 14px;
+    !*border-top: 1px solid #c3c4c7;
+    border-bottom: 1px solid #c3c4c7;*!
+    padding: 15px 10px !important;
+  }*/
+}
+.woo-variation-swatches-variation-product-options-wrapper .woocommerce-message {
+  margin: 10px;
+}
+.woo-variation-swatches-variation-product-options-wrapper #saved-message {
+  display: none;
+}
+.woo-variation-swatches-variation-product-options-wrapper h4 {
+  margin: 0 !important;
+  padding: 10px 18px;
+  font-size: 1em !important;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.woo-variation-swatches-variation-product-options-wrapper .woocommerce-help-tip {
+  margin: 0 5px !important;
+}
+.woo-variation-swatches-variation-product-options-wrapper [data-gwpdepends].has-dependent-data.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.woo-variation-swatches-variation-product-options-wrapper .product-label-settings {
+  background-color: #fff;
+}
+.woo-variation-swatches-variation-product-options-wrapper .form-settings-group {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.woo-variation-swatches-variation-product-options-wrapper .form-settings-group .form-label {
+  vertical-align: middle;
+  line-height: 2;
+  width: 280px;
+  margin: 5px 10px;
+  font-weight: bold;
+}
+.woo-variation-swatches-variation-product-options-wrapper .form-settings-group .form-field {
+  vertical-align: middle;
+  line-height: 2;
+  margin: 5px 10px;
+}
+.woo-variation-swatches-variation-product-options-wrapper .form-settings-group .form-field .description {
   display: inline-block;
-  color: #fa0000;
-  font-size: 11px;
-  text-transform: uppercase;
-  font-style: italic;
-  text-decoration: underline;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.woo-variation-swatches-variation-product-options-wrapper .form-settings-group:last-child {
+  /*border-bottom: 0;*/
+}
+.woo-variation-swatches-variation-product-options-wrapper .form-settings-group-inline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.woo-variation-swatches-variation-product-options-wrapper .wc-metabox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*border: 1px solid #eeeeee;*/
+  border-bottom: none !important;
+  border-radius: 0 !important;
+}
+.woo-variation-swatches-variation-product-options-wrapper .wc-metabox > h4 {
+  cursor: pointer;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+.woo-variation-swatches-variation-product-options-wrapper .wc-metabox > h4 .attribute-label {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.woo-variation-swatches-variation-product-options-wrapper .wc-metabox.open > h4 {
+  background-color: #eeeeee;
+}
+.woo-variation-swatches-variation-product-options-wrapper .wc-metabox .wc-metabox {
+  border: 1px solid #eeeeee;
+}
+.woo-variation-swatches-variation-product-options-wrapper .woo-variation-swatches-attribute-data {
+  background-color: #fff;
+}
+.woo-variation-swatches-variation-product-options-wrapper .woo-variation-swatches-attribute-data-inner {
+  margin: 5px 0;
   padding: 0 5px;
 }
-
-.wvs-button-wrapper .reset {
-  color: #a00;
+.woo-variation-swatches-variation-product-options-wrapper .product-term-label-settings {
+  margin: 15px;
+}
+.woo-variation-swatches-variation-product-options-wrapper .product-term-label-settings-contents {
+  /* border-left: 1px solid #c3c4c7;
+   border-right: 1px solid #c3c4c7;*/
+}
+.woo-variation-swatches-variation-product-options-wrapper .product-term-label-settings-pagination {
+  /*border-top: 1px solid #eeeeee;*/
+  margin: 10px 0;
+}
+.woo-variation-swatches-variation-product-options-wrapper .product-term-label-settings-pagination .tablenav-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 2;
+  vertical-align: center;
+}
+.woo-variation-swatches-variation-product-options-wrapper .product-term-label-settings-pagination .tablenav-pages .displaying-num {
+  padding: 0 2px;
 }

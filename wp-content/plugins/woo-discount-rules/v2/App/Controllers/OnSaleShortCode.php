@@ -398,11 +398,13 @@ class OnSaleShortCode extends ManageDiscount
             $data = get_term($taxonomy_id);
             if (!empty($data)) {
                 $taxonomy = $data->taxonomy;
-                $query_arguments['tax_query'][$query_type][$taxonomy] = array(
-                    'taxonomy' => $taxonomy,
-                    'field' => 'term_id',
-                    'operator' => $operator
-                );
+                if (!isset($query_arguments['tax_query'][$query_type][$taxonomy])) { // to avoid override
+                    $query_arguments['tax_query'][$query_type][$taxonomy] = array(
+                        'taxonomy' => $taxonomy,
+                        'field' => 'term_id',
+                        'operator' => $operator
+                    );
+                }
                 $query_arguments['tax_query'][$query_type][$taxonomy]['terms'][] = $taxonomy_id;
             }
         }

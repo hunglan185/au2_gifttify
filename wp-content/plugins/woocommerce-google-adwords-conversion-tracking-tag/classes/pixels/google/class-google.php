@@ -15,6 +15,18 @@ class Google extends Pixel
 {
     use  Trait_Shop ;
     private  $google_ads_conversion_identifiers ;
+    public function is_ga4_debug_mode_active()
+    {
+        $debug_mode = apply_filters_deprecated(
+            'wooptpm_enable_ga_4_mp_event_debug_mode',
+            [ false ],
+            '1.13.0',
+            'wpm_enable_ga_4_mp_event_debug_mode'
+        );
+        $debug_mode = apply_filters( 'wpm_enable_ga_4_mp_event_debug_mode', $debug_mode );
+        return $debug_mode;
+    }
+    
     public function __construct( $options )
     {
         parent::__construct( $options );
@@ -230,7 +242,7 @@ class Google extends Pixel
         $this->google_ads_conversion_identifiers = apply_filters( 'wpm_google_ads_conversion_identifiers', $this->google_ads_conversion_identifiers );
         $formatted_conversion_ids = [];
         
-        if ( $purchase ) {
+        if ( ( new Environment_Check( $this->options ) )->is_woocommerce_active() && is_order_received_page() ) {
             foreach ( $this->google_ads_conversion_identifiers as $conversion_id => $conversion_label ) {
                 $conversion_id = $this->extract_google_ads_id( $conversion_id );
                 if ( $conversion_id ) {

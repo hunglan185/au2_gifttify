@@ -57,19 +57,18 @@ class Export {
 		/* Build the export filename */
 		if ( 1 === count( $this->snippets_list ) ) {
 			/* If there is only snippet to export, use its name instead of the site name */
-			$first_snippet = new Snippet( $this->snippets_list[0] );
-			$title = strtolower( $first_snippet->name );
+			$title = strtolower( $this->snippets_list[0]->name );
 		} else {
 			/* Otherwise, use the site name as set in Settings > General */
 			$title = strtolower( get_bloginfo( 'name' ) );
 		}
 
 		$filename = "$title.code-snippets.$format";
-		$filename = apply_filters( 'code_snippets/export/filename', $filename, $title );
+		$filename = apply_filters( 'code_snippets/export/filename', $filename, $title, $this->snippets_list );
 
 		/* Set HTTP headers */
 		header( 'Content-Disposition: attachment; filename=' . sanitize_file_name( $filename ) );
-		header( "Content-Type: $mime_type; charset=" . get_bloginfo( 'charset' ) );
+		header( sprintf( "Content-Type: %s; charset=%s", sanitize_mime_type( $mime_type ), get_bloginfo( 'charset' ) ) );
 	}
 
 	/**
@@ -120,22 +119,16 @@ class Export {
 	 */
 	public function download_php_snippets() {
 		$this->do_headers( 'php', 'text/php' );
-		$last_type = '';
+		echo "<?php\n";
 
-		/* Loop through the snippets */
+		/** Loop through the snippets
+		 * @var Snippet $snippet
+		 */
 		foreach ( $this->snippets_list as $snippet ) {
-			$snippet = new Snippet( $snippet );
+			$code = trim( $snippet->code );
 
-			if ( 'php' !== $snippet->type && 'html' !== $snippet->type ) {
+			if ( 'php' !== $snippet->type && 'html' !== $snippet->type || ! $code ) {
 				continue;
-			}
-
-			if ( 'html' === $last_type ) {
-				echo "\n?>\n";
-			}
-
-			if ( ! $last_type || 'html' === $last_type ) {
-				echo "<?php\n";
 			}
 
 			echo "\n/**\n * $snippet->display_name\n";
@@ -146,9 +139,19 @@ class Export {
 				echo " *\n * ", wp_strip_all_tags( $desc ), "\n";
 			}
 
-			printf( " */\n\n%s\n%s\n", 'html' === $snippet->type ? '?>' : '', trim( $snippet->code ) );
+			echo " */\n";
 
-			$last_type = $snippet->type;
+			if ( 'content' === $snippet->scope ) {
+				$shortcode_tag = apply_filters( 'code_snippets_export_shortcode_tag', "code_snippets_export_$snippet->id", $snippet );
+
+				$code = sprintf(
+					"add_shortcode( '%s', function () {\n\tob_start();\n\t?>\n\n\t%s\n\n\t<?php\n\treturn ob_get_clean();\n} );",
+					$shortcode_tag,
+					str_replace( "\n", "\n\t", $code )
+				);
+			}
+
+			echo $code, "\n";
 		}
 
 		exit;

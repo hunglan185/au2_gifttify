@@ -108,13 +108,13 @@ class DBTable
                  `extra` longtext DEFAULT NULL,
                  PRIMARY KEY (`id`)
 			) $charset_collate;";
-        if($wpdb->get_var("show tables like '$rules_table_name'") != $rules_table_name){
+        if(strtolower($wpdb->get_var("show tables like '$rules_table_name'")) != strtolower($rules_table_name)){
             dbDelta($rules_table_query);
         }
-        if($wpdb->get_var("show tables like '$order_discount_table_name'") != $order_discount_table_name){
+        if(strtolower($wpdb->get_var("show tables like '$order_discount_table_name'")) != strtolower($order_discount_table_name)){
             dbDelta($order_discount_table_query);
         }
-        if($wpdb->get_var("show tables like '$order_item_discount_table_name'") != $order_item_discount_table_name){
+        if(strtolower($wpdb->get_var("show tables like '$order_item_discount_table_name'")) != strtolower($order_item_discount_table_name)){
             dbDelta($order_item_discount_table_query);
         }
     }
@@ -177,7 +177,7 @@ class DBTable
             if(isset(self::$rules['front_end']) && $cache === true){
                 return self::$rules['front_end'];
             }
-            if($wpdb->get_var("show tables like '$rules_table_name'") != $rules_table_name){
+            if(strtolower($wpdb->get_var("show tables like '$rules_table_name'")) != strtolower($rules_table_name)){
                 return false;
             }
             $current_time = current_time('timestamp');
@@ -198,7 +198,7 @@ class DBTable
                 if(isset(self::$rules['admin_based_on_rule_id']) && $cache === true){
                     return self::$rules['admin_based_on_rule_id'];
                 }
-                if($wpdb->get_var("show tables like '$rules_table_name'") != $rules_table_name){
+                if(strtolower($wpdb->get_var("show tables like '$rules_table_name'")) != strtolower($rules_table_name)){
                     return false;
                 }
                 if(is_array($rule_id)){
@@ -213,7 +213,7 @@ class DBTable
                 if(isset(self::$rules['admin_based_on_rule_name']) && $cache === true){
                     return self::$rules['admin_based_on_rule_name'];
                 }
-                if($wpdb->get_var("show tables like '$rules_table_name'") != $rules_table_name){
+                if(strtolower($wpdb->get_var("show tables like '$rules_table_name'")) != strtolower($rules_table_name)){
                     return false;
                 }
                 $rule_name = esc_sql($rule_name);
@@ -222,7 +222,7 @@ class DBTable
                 if(isset(self::$rules['admin_all']) && $cache === true){
                     return self::$rules['admin_all'];
                 }
-                if($wpdb->get_var("show tables like '$rules_table_name'") != $rules_table_name){
+                if(strtolower($wpdb->get_var("show tables like '$rules_table_name'")) != strtolower($rules_table_name)){
                     return false;
                 }
                 return self::$rules['admin_all'] = $wpdb->get_results("SELECT * FROM {$rules_table_name} WHERE deleted = 0 ORDER BY priority ASC");

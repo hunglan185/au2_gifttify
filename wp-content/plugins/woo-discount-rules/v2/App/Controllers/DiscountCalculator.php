@@ -339,7 +339,10 @@ class DiscountCalculator extends Base
             case 'fixed_set_price':
                 if (!empty($value) && !empty($min) && !empty($product_price)) {
                     $value = Woocommerce::getConvertedFixedPrice($value, 'fixed_set_price');
-                    $discounted_price = $value / $min;
+                    $discounted_price = 0;
+                    if($min > 0){
+                        $discounted_price = $value / $min;
+                    }
                     if($discounted_price < 0){
                         $discounted_price = 0;
                     }
@@ -640,7 +643,7 @@ class DiscountCalculator extends Base
                                             if(!empty($cart_item)) {
                                                 $price_as_cart_discount[$rule_id][$product_id] = array(
                                                     'discount_type' => 'wdr_simple_discount',
-                                                    'discount_label' => $simple_discount->cart_label,
+                                                    'discount_label' => wp_unslash($simple_discount->cart_label),
                                                     'discount_value' => $simple_discount->value,
                                                     'discounted_price' => $cart_discounted_price,
                                                     'rule_name' => $rule->getTitle(),
@@ -660,7 +663,7 @@ class DiscountCalculator extends Base
                                             $price_as_cart_discount[$rule_id][$product_id] = array(
                                                 'discount_type' => 'wdr_cart_discount',
                                                 'apply_type' => $cart_discount->type,
-                                                'discount_label' => $discount_label,
+                                                'discount_label' => wp_unslash($discount_label),
                                                 'discount_value' => $cart_discount->value,
                                                 'discounted_price' => $discounted_price,
                                                 'rule_name' => $rule->getTitle(),
@@ -679,7 +682,7 @@ class DiscountCalculator extends Base
                                             if(!empty($cart_item)) {
                                                 $price_as_cart_discount[$rule_id][$product_id] = array(
                                                     'discount_type' => 'wdr_bulk_discount',
-                                                    'discount_label' => $bulk_discount->cart_label,
+                                                    'discount_label' => wp_unslash($bulk_discount->cart_label),
                                                     'discount_value' => 0,
                                                     'discounted_price' => $cart_discounted_price,
                                                     'rule_name' => $rule->getTitle(),
@@ -954,7 +957,10 @@ class DiscountCalculator extends Base
         foreach ($discount_lines as $discount_line){
             $discount_amount += $discount_line['discount']*$discount_line['quantity'];
         }
-        $discount_price = $discount_amount/$quantity;
+        if($quantity > 0){
+            $discount_price = $discount_amount/$quantity;
+        }
+
 
         return array('discount_price' => $discount_price, 'discount_lines' => $discount_lines);
     }

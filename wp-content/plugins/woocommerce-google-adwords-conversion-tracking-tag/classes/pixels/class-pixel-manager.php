@@ -2,6 +2,7 @@
 
 namespace WCPM\Classes\Pixels;
 
+use  WCPM\Classes\Admin\Environment_Check ;
 use  WCPM\Classes\Http\Facebook_CAPI ;
 use  WCPM\Classes\Http\Google_MP ;
 use  WCPM\Classes\Pixels\Facebook\Facebook_Microdata ;
@@ -23,8 +24,6 @@ class Pixel_Manager
     protected  $cart ;
     protected  $facebook_active ;
     protected  $google_active ;
-    protected  $dyn_r_ids ;
-    protected  $transaction_deduper_timeout = 1000 ;
     protected  $position = 1 ;
     protected  $google ;
     protected  $microdata_product_id ;
@@ -35,7 +34,9 @@ class Pixel_Manager
          */
         $this->options = $options;
         $this->options_obj = $this->get_options_object( $options );
-        $this->options_obj->shop->currency = get_woocommerce_currency();
+        if ( function_exists( 'get_woocommerce_currency' ) ) {
+            $this->options_obj->shop->currency = get_woocommerce_currency();
+        }
         /**
          * Set a few states
          */
@@ -48,7 +49,7 @@ class Pixel_Manager
          */
         add_action( 'wp_head', function () {
             $this->inject_wpm_opening();
-            if ( wpm_fs()->is__premium_only() && is_product() ) {
+            if ( wpm_fs()->is__premium_only() && ( new Environment_Check( $this->options ) )->is_woocommerce_active() && is_product() ) {
                 if ( $this->options_obj->facebook->microdata ) {
                     $this->microdata_product_id = ( new Facebook_Microdata( $this->options ) )->inject_schema( wc_get_product( get_the_ID() ) );
                 }
@@ -104,34 +105,38 @@ class Pixel_Manager
          * Process short codes
          */
         new Shortcodes( $this->options );
-        add_action(
-            'woocommerce_after_shop_loop_item',
-            [ $this, 'action_woocommerce_after_shop_loop_item' ],
-            10,
-            1
-        );
-        add_filter(
-            'woocommerce_blocks_product_grid_item_html',
-            [ $this, 'wc_add_date_to_gutenberg_block' ],
-            10,
-            3
-        );
-        add_action( 'wp_head', [ $this, 'woocommerce_inject_product_data_on_product_page' ] );
-        // do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
-        add_action(
-            'woocommerce_after_cart_item_name',
-            [ $this, 'woocommerce_after_cart_item_name' ],
-            10,
-            2
-        );
-        add_action(
-            'woocommerce_after_mini_cart_item_name',
-            [ $this, 'woocommerce_after_cart_item_name' ],
-            10,
-            2
-        );
-        add_action( 'woocommerce_mini_cart_contents', [ $this, 'woocommerce_mini_cart_contents' ] );
-        add_action( 'woocommerce_new_order', [ $this, 'wpm_woocommerce_new_order' ] );
+        
+        if ( ( new Environment_Check( $this->options ) )->is_woocommerce_active() ) {
+            add_action(
+                'woocommerce_after_shop_loop_item',
+                [ $this, 'action_woocommerce_after_shop_loop_item' ],
+                10,
+                1
+            );
+            add_filter(
+                'woocommerce_blocks_product_grid_item_html',
+                [ $this, 'wc_add_date_to_gutenberg_block' ],
+                10,
+                3
+            );
+            add_action( 'wp_head', [ $this, 'woocommerce_inject_product_data_on_product_page' ] );
+            // do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+            add_action(
+                'woocommerce_after_cart_item_name',
+                [ $this, 'woocommerce_after_cart_item_name' ],
+                10,
+                2
+            );
+            add_action(
+                'woocommerce_after_mini_cart_item_name',
+                [ $this, 'woocommerce_after_cart_item_name' ],
+                10,
+                2
+            );
+            add_action( 'woocommerce_mini_cart_contents', [ $this, 'woocommerce_mini_cart_contents' ] );
+            add_action( 'woocommerce_new_order', [ $this, 'wpm_woocommerce_new_order' ] );
+        }
+        
         /**
          * Run background processes
          */
@@ -140,6 +145,28 @@ class Pixel_Manager
     
     public function run_background_processes()
     {
+        
+        if ( wpm_fs()->is__premium_only() && ( new Environment_Check( $this->options ) )->is_woocommerce_active() ) {
+            
+            if ( is_cart() || is_checkout() ) {
+                if ( $this->options_obj->facebook->pixel_id && $this->options_obj->facebook->capi->token ) {
+                    ( new Facebook_CAPI( $this->options ) )->wpm_facebook_set_session_identifiers();
+                }
+                if ( $this->google->is_google_analytics_active() ) {
+                    ( new Google_MP( $this->options ) )->wpm_google_analytics_set_session_data();
+                }
+            }
+            
+            if ( is_order_received_page() ) {
+                
+                if ( $this->get_order_from_order_received_page() ) {
+                    $order = $this->get_order_from_order_received_page();
+                    ( new Google_Pixel_Manager( $this->options ) )->save_gclid_in_order__premium_only( $order );
+                }
+            
+            }
+        }
+    
     }
     
     public function wpm_woocommerce_new_order( $order_id )
@@ -242,15 +269,19 @@ class Pixel_Manager
                  *
                  * @noinspection PhpPossiblePolymorphicInvocationInspection
                  */
-                foreach ( $product->get_available_variations() as $key => $variation ) {
-                    $variable_product = wc_get_product( $variation['variation_id'] );
+                // Prevent processing of large amount of variations
+                // because get_available_variations() is very slow
+                if ( 64 > count( $product->get_children() ) ) {
+                    foreach ( $product->get_available_variations() as $key => $variation ) {
+                        $variable_product = wc_get_product( $variation['variation_id'] );
+                        
+                        if ( is_object( $variable_product ) ) {
+                            $this->get_product_data_layer_script( $variable_product, false, true );
+                        } else {
+                            $this->log_problematic_product_id( $variation['variation_id'] );
+                        }
                     
-                    if ( is_object( $variable_product ) ) {
-                        $this->get_product_data_layer_script( $variable_product, false, true );
-                    } else {
-                        $this->log_problematic_product_id( $variation['variation_id'] );
                     }
-                
                 }
             }
         }
@@ -319,8 +350,12 @@ class Pixel_Manager
         /**
          * Load remaining settings
          */
-        $data = array_merge( $data, $this->get_order_data() );
-        $data['shop'] = $this->get_shop_data();
+        
+        if ( ( new Environment_Check( $this->options ) )->is_woocommerce_active() ) {
+            $data = array_merge( $data, $this->get_order_data() );
+            $data['shop'] = $this->get_shop_data();
+        }
+        
         $data['general'] = $this->get_general_data();
         $data['user'] = $this->get_user_data();
         // Return and optionally modify the wpm data layer
@@ -367,7 +402,7 @@ class Pixel_Manager
         ];
         if ( $this->google->is_google_ads_active() ) {
             $data['ads'] = [
-                'conversionIds'            => (object) $this->google->get_google_ads_conversion_ids( is_order_received_page() ),
+                'conversionIds'            => (object) $this->google->get_google_ads_conversion_ids(),
                 'dynamic_remarketing'      => [
                 'status'                      => (bool) $this->options_obj->google->ads->dynamic_remarketing,
                 'id_type'                     => $this->get_dyn_r_id_type( 'google' ),
@@ -394,6 +429,7 @@ class Pixel_Manager
                 'measurement_id' => $this->options_obj->google->analytics->ga4->measurement_id,
                 'parameters'     => (object) $this->google->get_ga4_parameters( $this->options_obj->google->analytics->ga4->measurement_id ),
                 'mp_active'      => $this->options_obj->google->analytics->ga4->api_secret && wpm_fs()->is__premium_only(),
+                'debug_mode'     => $this->google->is_ga4_debug_mode_active(),
             ],
                 'id_type'   => $this->google->get_ga_id_type(),
                 'eec'       => (bool) $this->options_obj->google->analytics->eec,
@@ -426,7 +462,7 @@ class Pixel_Manager
         ],
             'capi'                => (bool) $this->options_obj->facebook->capi->token,
         ];
-        if ( wpm_fs()->is__premium_only() && is_product() && $this->options_obj->facebook->microdata ) {
+        if ( wpm_fs()->is__premium_only() && ( new Environment_Check( $this->options ) )->is_woocommerce_active() && is_product() && $this->options_obj->facebook->microdata ) {
             $data['microdata_product_id'] = $this->microdata_product_id;
         }
         return $data;
@@ -500,27 +536,33 @@ class Pixel_Manager
         
         if ( $order ) {
             $data['order'] = [
-                'id'                       => (int) $order->get_id(),
-                'number'                   => (string) $order->get_order_number(),
-                'affiliation'              => (string) get_bloginfo( 'name' ),
-                'currency'                 => (string) $this->get_order_currency( $order ),
-                'value_filtered'           => (double) $this->wpm_get_order_total( $order ),
-                'value_regular'            => (double) $order->get_total(),
-                'discount'                 => (double) $order->get_total_discount(),
-                'tax'                      => (double) $order->get_total_tax(),
-                'shipping'                 => (double) $order->get_shipping_total(),
-                'coupon'                   => implode( ',', $order->get_coupon_codes() ),
-                'aw_merchant_id'           => ( (int) $this->options['google']['ads']['aw_merchant_id'] ? (int) $this->options['google']['ads']['aw_merchant_id'] : '' ),
-                'aw_feed_country'          => (string) $this->get_visitor_country(),
-                'aw_feed_language'         => (string) $this->google->get_gmc_language(),
-                'new_customer'             => $this->is_new_customer( $order ),
-                'quantity'                 => (int) count( $this->wpm_get_order_items( $order ) ),
-                'items'                    => $this->get_front_end_order_items( $order ),
-                'clv_order_total'          => $this->get_clv_order_total_by_billing_email( $order->get_billing_email() ),
-                'clv_order_value_filtered' => $this->get_clv_value_filtered_by_billing_email( $order->get_billing_email() ),
-                'customer_id'              => $order->get_customer_id(),
-                'user_id'                  => $order->get_user_id(),
+                'id'               => (int) $order->get_id(),
+                'number'           => (string) $order->get_order_number(),
+                'affiliation'      => (string) get_bloginfo( 'name' ),
+                'currency'         => (string) $this->get_order_currency( $order ),
+                'value_filtered'   => (double) $this->wpm_get_order_total( $order ),
+                'value_regular'    => (double) $order->get_total(),
+                'discount'         => (double) $order->get_total_discount(),
+                'tax'              => (double) $order->get_total_tax(),
+                'shipping'         => (double) $order->get_shipping_total(),
+                'coupon'           => implode( ',', $order->get_coupon_codes() ),
+                'aw_merchant_id'   => ( (int) $this->options['google']['ads']['aw_merchant_id'] ? (int) $this->options['google']['ads']['aw_merchant_id'] : '' ),
+                'aw_feed_country'  => (string) $this->get_visitor_country(),
+                'aw_feed_language' => (string) $this->google->get_gmc_language(),
+                'new_customer'     => $this->is_new_customer( $order ),
+                'quantity'         => (int) count( $this->wpm_get_order_items( $order ) ),
+                'items'            => $this->get_front_end_order_items( $order ),
+                'customer_id'      => $order->get_customer_id(),
+                'user_id'          => $order->get_user_id(),
             ];
+            // Process customer lifetime value
+            
+            if ( $this->is_email( $order->get_billing_email() ) ) {
+                //				'customer_lifetime_value' => wc_get_customer_total_spent(1),
+                $data['order']['clv_order_total'] = $this->get_clv_order_total_by_billing_email( $order->get_billing_email() );
+                $data['order']['clv_order_value_filtered'] = $this->get_clv_value_filtered_by_billing_email( $order->get_billing_email() );
+            }
+            
             // set em (email)
             $data['order']['billing_email'] = trim( strtolower( $order->get_billing_email() ) );
             $data['order']['billing_email_hashed'] = hash( 'sha256', trim( strtolower( $order->get_billing_email() ) ) );
@@ -555,15 +597,70 @@ class Pixel_Manager
         return $data;
     }
     
+    /**
+     * We are controlling the entire output in all formats from here. Why?
+     * Because each pixel has different requirements for each data field.
+     * Hashed, not hashed, lower case, not lower case, phone with + or without +,
+     * etc.
+     *
+     * @return array
+     */
     protected function get_user_data()
     {
         $data = [];
         
         if ( is_user_logged_in() || is_order_received_page() ) {
+            $current_user = wp_get_current_user();
             $data['id'] = get_current_user_id();
-            $data['fb_external_id'] = hash( 'sha256', get_current_user_id() );
+            //			$data['fb_external_id'] = hash('sha256', get_current_user_id());
             $data['email'] = $this->get_user_email();
             $data['email_sha256'] = $this->get_user_email( 'sha256' );
+            $data['sha256']['email'] = $this->get_user_email( 'sha256' );
+            // plain user data
+            $data['plain']['email'] = $current_user->user_email;
+            $data['facebook']['email'] = hash( 'sha256', $current_user->user_email );
+            
+            if ( isset( $current_user->first_name ) ) {
+                $data['plain']['first_name'] = trim( $current_user->first_name );
+                $data['facebook']['first_name'] = trim( strtolower( $current_user->first_name ) );
+            }
+            
+            
+            if ( isset( $current_user->last_name ) ) {
+                $data['plain']['last_name'] = trim( $current_user->last_name );
+                $data['facebook']['last_name'] = trim( strtolower( $current_user->last_name ) );
+            }
+            
+            
+            if ( isset( $current_user->billing_phone ) ) {
+                $data['plain']['phone'] = trim( $current_user->billing_phone );
+                $data['facebook']['phone'] = str_replace( '+', '', trim( strtolower( $current_user->billing_phone ) ) );
+            }
+            
+            
+            if ( isset( $current_user->billing_postcode ) ) {
+                $data['plain']['postcode'] = trim( $current_user->billing_postcode );
+                $data['facebook']['postcode'] = trim( strtolower( $current_user->billing_postcode ) );
+            }
+            
+            
+            if ( isset( $current_user->billing_city ) ) {
+                $data['plain']['city'] = trim( $current_user->billing_city );
+                $data['facebook']['city'] = trim( strtolower( $current_user->billing_city ) );
+            }
+            
+            
+            if ( isset( $current_user->billing_state ) ) {
+                $data['plain']['state'] = trim( $current_user->billing_state );
+                $data['facebook']['state'] = preg_replace( '/[a-zA-Z]{2}-/', '', trim( strtolower( $current_user->billing_state ) ) );
+            }
+            
+            
+            if ( isset( $current_user->billing_country ) ) {
+                $data['plain']['country'] = trim( $current_user->billing_country );
+                $data['facebook']['country'] = trim( strtolower( $current_user->billing_country ) );
+            }
+        
         }
         
         return $data;
@@ -629,7 +726,7 @@ class Pixel_Manager
     
     public function inject_wpm_closing()
     {
-        if ( is_order_received_page() ) {
+        if ( ( new Environment_Check( $this->options ) )->is_woocommerce_active() && is_order_received_page() ) {
             
             if ( $this->get_order_from_order_received_page() ) {
                 $order = $this->get_order_from_order_received_page();

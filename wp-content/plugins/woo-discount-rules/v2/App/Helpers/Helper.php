@@ -332,9 +332,9 @@ class Helper
 
     public static function displayCompatibleCheckMessages()
     {
-        if (version_compare(WDR_VERSION, '2.3.13', '>=')) {
+        if (version_compare(WDR_VERSION, '2.4.1', '>=')) {
             if (defined('WDR_PRO_VERSION')) {
-                if (version_compare(WDR_PRO_VERSION, '2.3.13', '<')) {
+                if (version_compare(WDR_PRO_VERSION, '2.4.1', '<')) {
                     $url = admin_url() . "plugins.php";
                     $plugin_page = '<a target="_blank" href="' . $url . '">' . __('Update now', 'woo-discount-rules') . '</a>';
                     ?>

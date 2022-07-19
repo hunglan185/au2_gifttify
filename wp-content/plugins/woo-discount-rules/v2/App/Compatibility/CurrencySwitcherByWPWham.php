@@ -20,7 +20,9 @@ class CurrencySwitcherByWPWham extends Base
                     if (class_exists( 'Alg_WC_Currency_Switcher' ) ) {
                         if(function_exists('alg_wc_cs_get_currency_exchange_rate') && function_exists('alg_get_current_currency_code')){
                             $alg_wc_cs = alg_wc_cs_get_currency_exchange_rate(alg_get_current_currency_code());
-                            $price = $price / $alg_wc_cs;
+                            if($alg_wc_cs != 0){
+                                $price = $price / $alg_wc_cs;
+                            }
                         }
                     }
                 }

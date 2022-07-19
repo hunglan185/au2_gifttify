@@ -115,12 +115,12 @@ class Configuration
             $this->setConfig();
         }
         if (isset(self::$config[$key])) {
-            return self::$config[$key];
+            return wp_unslash(self::$config[$key]);
         } elseif (isset(self::$advanced_section_config[$key])){
-            return self::$advanced_section_config[$key];
+            return wp_unslash(self::$advanced_section_config[$key]);
         }elseif (isset(self::$default_config[$key])) {
             //Check config found in default config
-            return self::$default_config[$key];
+            return wp_unslash(self::$default_config[$key]);
         } else {
             return $default;
         }

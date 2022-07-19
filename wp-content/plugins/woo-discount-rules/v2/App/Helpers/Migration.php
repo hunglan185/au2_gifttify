@@ -9,7 +9,7 @@ class Migration
     protected $form;
     protected $rule;
     protected $migrated_option_key = 'awdr_migration_info';
-    protected $migration_count_on_a_set = 2;
+    protected $migration_count_on_a_set = -1;
 
     public function __construct()
     {
@@ -1052,7 +1052,8 @@ class Migration
     }
     
     protected function getDiscountTypeFromV1($discount_range){
-        if(isset($discount_range[0])){
+//        if(isset($discount_range[0])){
+        if(is_array($discount_range) && isset($discount_range[0])){
             $discount_type = $discount_range[0]->discount_type;
         } else {
             $discount_type = $discount_range->{0}->discount_type;

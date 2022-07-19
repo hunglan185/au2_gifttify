@@ -18,15 +18,20 @@ class Debug_Info {
 	}
 
 	public function get_debug_info() {
+
 		global $woocommerce, $wp_version, $current_user, $hook_suffix;
 
 		$html = '### Debug Information ###' . PHP_EOL . PHP_EOL;
 
-		$html .= '## System Environment ##' . PHP_EOL . PHP_EOL;
+		$html .= '## Pixel Manager Info ##' . PHP_EOL . PHP_EOL;
 
-		$html .= 'This plugin\'s version: ' . WPM_CURRENT_VERSION . PHP_EOL;
+		$html .= 'Version: ' . WPM_CURRENT_VERSION . PHP_EOL;
 
-		$html .= PHP_EOL;
+		$tier = wpm_fs()->is__premium_only() ? 'pro' : 'free';
+
+		$html .= 'Tier: ' . $tier . PHP_EOL;
+
+		$html .= PHP_EOL . '## System Environment ##' . PHP_EOL . PHP_EOL;
 
 		$html .= 'WordPress version: ' . $wp_version . PHP_EOL;
 		$html .= 'WooCommerce version: ' . $woocommerce->version . PHP_EOL;
@@ -179,9 +184,10 @@ class Debug_Info {
 	// Google and Facebook might block free proxy requests
 	private function wp_remote_get_response( $url ) {
 		$response = wp_remote_get($url, [
-			'timeout'             => 1,
+			'timeout'             => 4,
 			'sslverify'           => false,
 			'limit_response_size' => 5000,
+			'blocking'            => true,	// We need to wait to see if we get a server response 200
 		]);
 
 //        error_log(print_r($response, true));

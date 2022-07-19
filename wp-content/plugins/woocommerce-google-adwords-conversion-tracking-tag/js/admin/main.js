@@ -1,8 +1,11 @@
-import ask_for_rating from "./ask-for-rating.js"
-import environment_check from "./environment-check.js"
-import helpers from "./helpers.js"
-import script_blocker_warning from "./script-blocker-warning.js"
-import tabs from "./tabs.js"
+/**
+ * Combine all admin scripts
+ * (which only run on the wpm pages)
+ */
 
+// require("./environment-check")
+require("./helpers")
+require("./script-blocker-warning")
+require("./tabs")
 
 // console.log('Pixel Manager for WooCommerce admin script')

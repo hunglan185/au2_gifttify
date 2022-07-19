@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Google Listings and Ads plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Google Listings and Ads 1.13.2\n"
+"Project-Id-Version: Google Listings and Ads 1.13.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/google-listings-and-ads\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-05-25T16:42:26+01:00\n"
+"POT-Creation-Date: 2022-06-07T13:50:37+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: google-listings-and-ads\n"
@@ -1164,11 +1164,11 @@ msgstr ""
 msgid "This Merchant Center account already has a verified and claimed URL, %1$s"
 msgstr ""
 
-#: src/MerchantCenter/MerchantCenterService.php:270
+#: src/MerchantCenter/MerchantCenterService.php:274
 msgid "No contact information."
 msgstr ""
 
-#: src/MerchantCenter/MerchantCenterService.php:271
+#: src/MerchantCenter/MerchantCenterService.php:275
 msgid "Add store contact information"
 msgstr ""
 
@@ -1890,10 +1890,6 @@ msgstr ""
 
 #: js/build/index.js:2
 msgid "There was an error loading your merchant center product statistics."
-msgstr ""
-
-#: js/build/index.js:2
-msgid "There was an error loading your merchant center product review request status."
 msgstr ""
 
 #: js/build/index.js:2
@@ -2721,7 +2717,7 @@ msgid "My store website is live."
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Ensure your store website and products are online and accessible to your customers."
+msgid "Ensure your store website and products are online and accessible to your customers. <link>Read more</link>"
 msgstr ""
 
 #: js/build/index.js:21
@@ -2741,7 +2737,7 @@ msgid "My payment methods are visible on my website."
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Ensure customers have at least one valid payment method, such as credit card, direct bank transfer, or cash on delivery."
+msgid "Ensure customers have at least one valid payment method, such as credit card, direct bank transfer, or cash on delivery. <link>Read more</link>"
 msgstr ""
 
 #: js/build/index.js:21
@@ -2749,7 +2745,7 @@ msgid "My refund policy and terms of service are visible on my online store."
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Your site must provide a clear and conspicuous return policy and billing terms to customers."
+msgid "Your site must provide a clear and conspicuous return policy and billing terms to customers. <link>Read more</link>"
 msgstr ""
 
 #: js/build/index.js:21
@@ -2757,7 +2753,7 @@ msgid "My store’s phone number, email and/or address are visible on my website
 msgstr ""
 
 #: js/build/index.js:21
-msgid "Your website must display sufficient and accurate contact information to your customers, including a telephone number and/or email."
+msgid "Your website must display sufficient and accurate contact information to your customers, including a telephone number and/or email. <link>Read more</link>"
 msgstr ""
 
 #: js/build/index.js:21

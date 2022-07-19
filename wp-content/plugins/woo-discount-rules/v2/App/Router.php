@@ -173,7 +173,7 @@ class Router
                 add_action($position_to_show_bulk_table, array(self::$manage_discount, 'showBulkTableInPosition'));
             }
             $position_to_show_discount_bar = $manage_discount_class::$config->getConfig('position_to_show_discount_bar', 'woocommerce_before_add_to_cart_form');
-
+            $position_to_show_discount_bar = apply_filters('advanced_woo_discount_rules_custom_position_to_show_discount_bar', $position_to_show_discount_bar);
             add_action($position_to_show_discount_bar, array(self::$manage_discount, 'showAdvancedTableInPosition'));
 
             add_action('advanced_woo_discount_rules_load_discount_table', array(self::$manage_discount, 'showBulkTableInPositionManually'), 10);

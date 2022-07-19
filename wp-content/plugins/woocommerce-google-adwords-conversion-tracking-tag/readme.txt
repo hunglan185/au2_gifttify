@@ -2,9 +2,9 @@
 Contributors: alekv, wolfbaer
 Tags: woocommerce, google ads, google analytics, facebook pixel, conversion tracking, dynamic retargeting, remarketing, meta pixel, facebook conversion api, woocommerce google, woocommerce facebook
 Requires at least: 3.7
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 7.3
-Stable tag: 1.17.3
+Stable tag: 1.17.9
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -177,7 +177,7 @@ Therefore, we recommend admins of the shop to exclude their own shop from the bl
 
 = Where can I report a bug or suggest improvements? =
 
-Please post your problem in the Pixel Manager for WooCommerce Support forum: http://wordpress.org/support/plugin/woocommerce-google-adwords-conversion-tracking-tag
+Please post your problem in the Pixel Manager for WooCommerce Support forum: [Link](http://wordpress.org/support/plugin/woocommerce-google-adwords-conversion-tracking-tag)
 You can send the link to the front page of your shop too if you think it would be of help.
 
 == Screenshots ==
@@ -185,6 +185,46 @@ You can send the link to the front page of your shop too if you think it would b
 1. Settings page
 
 == Changelog ==
+
+= 1.17.9 = 07.06.2022
+
+* Fix: Fixed the Facebook browser pixel eternal ID for anonymous users
+* Fix: Replaced str_contains() with a backward compatible version for the admin notification check
+
+= 1.17.8 = 07.06.2022
+
+
+* Tweak: Optimized ViewItem event on variable product pages when no product is preselected. The user has now the choice to fire an ViewItem event without product.
+* Tweak: Optimized how, when and where admin notifications are displayed
+
+* Fix: Don't process CLV calculation if no billing email is available
+
+= 1.17.7 = 30.08.2022
+
+* Tweak: Bumped up WordPress version to 6.0
+* Tweak: Bumped up WoCommerce version to 6.5
+* Fix: Fixed documentation links that contain anchors
+* Fix: Fixed ask-for-rating scripts
+
+= 1.17.6 = 28.05.2022
+
+
+
+= 1.17.5 = 28.05.2022
+
+
+* Tweak: Added safeguard to check if wpmDataLayer.products exists before trying to filter it
+
+
+= 1.17.4 = 26.05.2022
+
+* New: Added GA4 session ID handling over the Measurement Protocol. This not documented by Google and is experimental.
+* Tweak: Added tier info into debug info
+* Tweak: Added more FB user information for logged in users
+* Tweak: Prevent slow processing of large amount of variation data for variable products with > 64 variations
+* Tweak: Increased server test timout to minimize false negatives
+* Fix: Workaround if $_server['HTTP_HOST'] is not set
+* Fix: Workaround if $_server['REMOTE_ADDR'] is not set
 
 = 1.17.3 = 19.05.2022
 

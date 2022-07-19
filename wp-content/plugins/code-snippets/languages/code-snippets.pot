@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-05-17 06:49+0000\n"
+"POT-Creation-Date: 2022-06-13 06:46+0000\n"
 "Report-Msgid-Bugs-To: https://github.com/sheabunge/code-snippets/issues\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
@@ -378,11 +378,11 @@ msgstr ""
 msgid "%s [CLONE]"
 msgstr ""
 
-#: php/class-plugin.php:301, php/class-snippet.php:373
+#: php/class-plugin.php:301, php/class-snippet.php:379
 msgid "Functions"
 msgstr ""
 
-#: php/class-plugin.php:302, php/class-snippet.php:374, php/class-snippet.php:499
+#: php/class-plugin.php:302, php/class-snippet.php:380, php/class-snippet.php:505
 msgid "Content"
 msgstr ""
 
@@ -394,69 +394,69 @@ msgstr ""
 msgid "Content snippets are bits of reusable PHP and HTML content that can be inserted into posts and pages."
 msgstr ""
 
-#: php/class-snippet.php:375
+#: php/class-snippet.php:381
 msgid "Styles"
 msgstr ""
 
-#: php/class-snippet.php:376
+#: php/class-snippet.php:382
 msgid "Scripts"
 msgstr ""
 
 #. translators: %d: snippet ID
-#: php/class-snippet.php:434
+#: php/class-snippet.php:440
 msgid "Untitled #%d"
 msgstr ""
 
-#: php/class-snippet.php:491
+#: php/class-snippet.php:497
 msgid "Global function"
 msgstr ""
 
-#: php/class-snippet.php:493
+#: php/class-snippet.php:499
 msgid "Admin function"
 msgstr ""
 
-#: php/class-snippet.php:495
+#: php/class-snippet.php:501
 msgid "Front-end function"
 msgstr ""
 
-#: php/class-snippet.php:497
+#: php/class-snippet.php:503
 msgid "Single-use function"
 msgstr ""
 
-#: php/class-snippet.php:501
+#: php/class-snippet.php:507
 msgid "Head content"
 msgstr ""
 
-#: php/class-snippet.php:503
+#: php/class-snippet.php:509
 msgid "Footer content"
 msgstr ""
 
-#: php/class-snippet.php:505
+#: php/class-snippet.php:511
 msgid "Admin styles"
 msgstr ""
 
-#: php/class-snippet.php:507
+#: php/class-snippet.php:513
 msgid "Front-end styles"
 msgstr ""
 
-#: php/class-snippet.php:509
+#: php/class-snippet.php:515
 msgid "Head styles"
 msgstr ""
 
-#: php/class-snippet.php:511
+#: php/class-snippet.php:517
 msgid "Footer styles"
 msgstr ""
 
-#: php/class-snippet.php:611
+#: php/class-snippet.php:617
 msgid "Y/m/d"
 msgstr ""
 
-#: php/class-snippet.php:609
+#: php/class-snippet.php:615
 msgid "%s ago"
 msgstr ""
 
 #. translators: 1: date format, 2: time format
-#: php/class-snippet.php:619
+#: php/class-snippet.php:625
 msgctxt "date and time format"
 msgid "%1$s \a\t %2$s"
 msgstr ""

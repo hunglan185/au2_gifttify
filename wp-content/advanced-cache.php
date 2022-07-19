@@ -8,9 +8,9 @@ defined( 'ABSPATH' ) || exit;
 
 define( 'WP_ROCKET_ADVANCED_CACHE', true );
 
-$rocket_path        = '/var/www/au2.gifttify.com/wp-content/plugins/wp-rocket/';
-$rocket_config_path = '/var/www/au2.gifttify.com/wp-content/wp-rocket-config/';
-$rocket_cache_path  = '/var/www/au2.gifttify.com/wp-content/cache/wp-rocket/';
+$rocket_path        = '/var/www/creattify.com/wp-content/plugins/wp-rocket/';
+$rocket_config_path = '/var/www/creattify.com/wp-content/wp-rocket-config/';
+$rocket_cache_path  = '/var/www/creattify.com/wp-content/cache/wp-rocket/';
 
 if (
 	version_compare( phpversion(), '7.1', '<' )

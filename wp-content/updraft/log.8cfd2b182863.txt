@@ -1,0 +1,717 @@
+0000.007 (0) Opened log file at time: Mon, 18 Jul 2022 14:17:56 +0000 on https://australia.thecreattify.com
+0000.015 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.22.8.25 WP: 6.0 PHP: 8.0.19 (fpm-fcgi, Linux ip-172-31-56-55 5.13.0-1031-aws #35~20.04.1-Ubuntu SMP Mon Jun 13 22:30:30 UTC 2022 x86_64) MySQL: 8.0.29-0ubuntu0.20.04.3 (max packet size=67108864) WPLANG: en_US Server: nginx/1.18.0 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 20.5M | 78M) multisite: N openssl: OpenSSL 1.1.1f  31 Mar 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.020 (0) Free space on disk containing Updraft's temporary directory: 64106 MB
+0000.031 (0) Tasks: Backup files:  (schedule: manual) Backup DB: 1 (schedule: daily)
+0000.039 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.054 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1658067203, seconds_ago=86673)
+0000.077 (0) Set semaphore last lock (d) time to 2022-07-18 14:17:56
+0000.083 (0) Semaphore lock (d) complete
+0000.115 (0) Backup run: resumption=0, nonce=8cfd2b182863, file_nonce=8cfd2b182863 begun at=1658153876 (0s ago), job type=backup
+0000.136 (0) Scheduling a resumption (1) after 300 seconds (1658154176) in case this run gets aborted
+0000.161 (0) This backup run is not intended for files - skipping
+0000.171 (0) Beginning creation of database dump (WordPress DB)
+0000.178 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.193 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.227 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8mb4 */;\n (truncated - 1618 bytes total)
+0000.241 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.317 (0) Table wp_options: Total expected rows (approximate): 5761
+0000.466 (0) Table wp_options: Rows added in this batch (next record: 922736): 5718 (uncompressed bytes in this segment=3461490) in 0.19 seconds
+0000.496 (0) Table wp_options: finishing file(s) (2, 556.8 KB)
+0000.511 (0) Table wp_users: Total expected rows (approximate): 9578
+0000.629 (0) Table wp_users: binary mysqldump finished (writes: 40, bytes 1418832, return code 0) in 0.11 seconds
+0000.641 (0) Table wp_users: finishing file(s) (1, 557.6 KB)
+0000.660 (0) Table wp_usermeta: Total expected rows (approximate): 315009
+0000.674 (0) [Warning] Table wp_usermeta has very many rows (315009) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0001.927 (0) Table wp_usermeta: binary mysqldump finished (writes: 44, bytes 13199403, return code 0) in 1.25 seconds
+0001.954 (0) Table wp_usermeta: finishing file(s) (1, 2391.7 KB)
+0001.970 (0) Table wp_actionscheduler_actions: Total expected rows (approximate): 67854
+0002.833 (0) Table wp_actionscheduler_actions: binary mysqldump finished (writes: 68, bytes 23273426, return code 0) in 0.86 seconds
+0002.845 (0) Table wp_actionscheduler_actions: finishing file(s) (1, 1099 KB)
+0002.864 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 5
+0002.870 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.883 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: 68420): 5 (uncompressed bytes in this segment=835) in 0.02 seconds
+0002.901 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.5 KB)
+0002.919 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 10
+0002.925 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0002.933 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=952) in 0.02 seconds
+0002.953 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.5 KB)
+0002.971 (0) Table wp_actionscheduler_logs: Total expected rows (approximate): 201814
+0002.984 (0) [Warning] Table wp_actionscheduler_logs has very many rows (201814) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0003.775 (0) Table wp_actionscheduler_logs: binary mysqldump finished (writes: 50, bytes 17818059, return code 0) in 0.78 seconds
+0003.794 (0) Table wp_actionscheduler_logs: finishing file(s) (1, 1494.2 KB)
+0003.821 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0003.833 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=721) in 0.02 seconds
+0003.856 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0003.872 (0) Table wp_comments: Total expected rows (approximate): 10736
+0003.974 (0) Table wp_comments: binary mysqldump finished (writes: 49, bytes 2569391, return code 0) in 0.10 seconds
+0003.990 (0) Table wp_comments: finishing file(s) (1, 119.5 KB)
+0004.013 (0) Table wp_itsec_bans: Total expected rows (via COUNT): 0
+0004.028 (0) Table wp_itsec_bans: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=982) in 0.02 seconds
+0004.051 (0) Table wp_itsec_bans: finishing file(s) (2, 0.4 KB)
+0004.087 (0) Table wp_itsec_dashboard_events: Total expected rows (via COUNT): 64
+0004.093 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0004.109 (0) Table wp_itsec_dashboard_events: Rows added in this batch (next record: 184): 64 (uncompressed bytes in this segment=4496) in 0.03 seconds
+0004.132 (0) Table wp_itsec_dashboard_events: finishing file(s) (2, 1 KB)
+0004.160 (0) Table wp_itsec_distributed_storage: Total expected rows (via COUNT): 0
+0004.174 (0) Table wp_itsec_distributed_storage: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=973) in 0.02 seconds
+0004.202 (0) Table wp_itsec_distributed_storage: finishing file(s) (2, 0.4 KB)
+0004.240 (0) Table wp_itsec_fingerprints: Total expected rows (via COUNT): 0
+0004.246 (0) Table wp_itsec_fingerprints: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1321) in 0.03 seconds
+0004.271 (0) Table wp_itsec_fingerprints: finishing file(s) (2, 0.5 KB)
+0004.292 (0) Table wp_itsec_geolocation_cache: Total expected rows (via COUNT): 0
+0004.299 (0) Table wp_itsec_geolocation_cache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=999) in 0.01 seconds
+0004.315 (0) Table wp_itsec_geolocation_cache: finishing file(s) (2, 0.4 KB)
+0004.334 (0) Table wp_itsec_lockouts: Total expected rows (via COUNT): 14
+0004.339 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0004.350 (0) Table wp_itsec_lockouts: Rows added in this batch (next record: 14): 14 (uncompressed bytes in this segment=9592) in 0.02 seconds
+0004.369 (0) Table wp_itsec_lockouts: finishing file(s) (2, 1.2 KB)
+0004.443 (0) Table wp_itsec_logs: Total expected rows (via COUNT): 275
+0004.449 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0004.470 (0) Table wp_itsec_logs: Rows added in this batch (next record: 275): 275 (uncompressed bytes in this segment=443968) in 0.08 seconds
+0004.498 (0) Table wp_itsec_logs: finishing file(s) (2, 30.6 KB)
+0004.520 (0) Table wp_itsec_mutexes: Total expected rows (via COUNT): 0
+0004.531 (0) Table wp_itsec_mutexes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=631) in 0.02 seconds
+0004.549 (0) Table wp_itsec_mutexes: finishing file(s) (2, 0.4 KB)
+0004.566 (0) Table wp_itsec_opaque_tokens: Total expected rows (approximate): 0
+0004.574 (0) Table wp_itsec_opaque_tokens: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=855) in 0.01 seconds
+0004.593 (0) Table wp_itsec_opaque_tokens: finishing file(s) (2, 0.4 KB)
+0004.618 (0) Table wp_itsec_temp: Total expected rows (via COUNT): 340
+0004.624 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0004.638 (0) Table wp_itsec_temp: Rows added in this batch (next record: 340): 340 (uncompressed bytes in this segment=32917) in 0.03 seconds
+0004.656 (0) Table wp_itsec_temp: finishing file(s) (2, 4.3 KB)
+0004.674 (0) Table wp_itsec_user_groups: Total expected rows (approximate): 0
+0004.687 (0) Table wp_itsec_user_groups: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=1126) in 0.02 seconds
+0004.705 (0) Table wp_itsec_user_groups: finishing file(s) (2, 0.5 KB)
+0004.728 (0) Table wp_links: Total expected rows (via COUNT): 0
+0004.734 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1496) in 0.01 seconds
+0004.753 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0004.769 (0) Table wp_postmeta: Total expected rows (approximate): 641620
+0004.779 (0) [Warning] Table wp_postmeta has very many rows (641620) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0010.985 (0) Table wp_postmeta: binary mysqldump finished (writes: 182, bytes 156073695, return code 0) in 6.20 seconds
+0011.010 (0) Table wp_postmeta: finishing file(s) (1, 10481.4 KB)
+0011.032 (0) Table wp_posts: Total expected rows (approximate): 65105
+0012.180 (0) Table wp_posts: binary mysqldump finished (writes: 75, bytes 23311074, return code 0) in 1.14 seconds
+0012.191 (0) Table wp_posts: finishing file(s) (1, 2461.1 KB)
+0012.216 (0) Table wp_snippets: Total expected rows (via COUNT): 10
+0012.223 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0012.233 (0) Table wp_snippets: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=7432) in 0.03 seconds
+0012.255 (0) Table wp_snippets: finishing file(s) (2, 2.4 KB)
+0012.269 (0) Table wp_term_relationships: Total expected rows (approximate): 95167
+0012.458 (0) Table wp_term_relationships: binary mysqldump finished (writes: 31, bytes 1488259, return code 0) in 0.19 seconds
+0012.470 (0) Table wp_term_relationships: finishing file(s) (1, 249.9 KB)
+0012.496 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 1061
+0012.511 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 8789): 1061 (uncompressed bytes in this segment=89703) in 0.03 seconds
+0012.535 (0) Table wp_term_taxonomy: finishing file(s) (2, 10.1 KB)
+0012.583 (0) Table wp_termmeta: Total expected rows (approximate): 7716
+0012.637 (0) Table wp_termmeta: Rows added in this batch (next record: 9593): 8866 (uncompressed bytes in this segment=420208) in 0.09 seconds
+0012.661 (0) Table wp_termmeta: finishing file(s) (2, 52.1 KB)
+0012.677 (0) Table wp_terms: Total expected rows (approximate): 1019
+0012.695 (0) Table wp_terms: Rows added in this batch (next record: 8789): 1061 (uncompressed bytes in this segment=67603) in 0.02 seconds
+0012.713 (0) Table wp_terms: finishing file(s) (2, 14.1 KB)
+0012.731 (0) Table wp_wc_category_lookup: Total expected rows (approximate): 717
+0012.743 (0) Table wp_wc_category_lookup: Rows added in this batch (next record: 1000): 721 (uncompressed bytes in this segment=11079) in 0.01 seconds
+0012.760 (0) Table wp_wc_category_lookup: finishing file(s) (2, 3.4 KB)
+0012.774 (0) Table wp_wc_product_meta_lookup: Total expected rows (approximate): 87133
+0013.139 (0) Table wp_wc_product_meta_lookup: binary mysqldump finished (writes: 54, bytes 9150388, return code 0) in 0.36 seconds
+0013.150 (0) Table wp_wc_product_meta_lookup: finishing file(s) (1, 724.8 KB)
+0013.166 (0) Table wp_wc_reserved_stock: Total expected rows (approximate): 0
+0013.174 (0) Table wp_wc_reserved_stock: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=657) in 0.01 seconds
+0013.188 (0) Table wp_wc_reserved_stock: finishing file(s) (2, 0.4 KB)
+0013.206 (0) Table wp_wc_tax_rate_classes: Total expected rows (via COUNT): 2
+0013.211 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0013.222 (0) Table wp_wc_tax_rate_classes: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=852) in 0.02 seconds
+0013.241 (0) Table wp_wc_tax_rate_classes: finishing file(s) (2, 0.4 KB)
+0013.256 (0) Table wp_woocommerce_order_itemmeta: Total expected rows (approximate): 185714
+0013.267 (0) [Warning] Table wp_woocommerce_order_itemmeta has very many rows (185714) - we hope your web hosting company gives you enough resources to dump out that table in the backup. If not, you will need to either remove data from this table, or contact your hosting company to request more resources.
+0013.900 (0) Table wp_woocommerce_order_itemmeta: binary mysqldump finished (writes: 38, bytes 7031039, return code 0) in 0.63 seconds
+0013.919 (0) Table wp_woocommerce_order_itemmeta: finishing file(s) (1, 1034.2 KB)
+0013.947 (0) Table wp_woocommerce_payment_tokenmeta: Total expected rows (via COUNT): 0
+0013.961 (0) Table wp_woocommerce_payment_tokenmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=834) in 0.03 seconds
+0013.985 (0) Table wp_woocommerce_payment_tokenmeta: finishing file(s) (2, 0.4 KB)
+0014.016 (0) Table wp_wpr_rucss_resources: Total expected rows (via COUNT): 0
+0014.027 (0) Table wp_wpr_rucss_resources: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1241) in 0.02 seconds
+0014.051 (0) Table wp_wpr_rucss_resources: finishing file(s) (2, 0.5 KB)
+0014.080 (0) Table wp_wpr_rucss_used_css: Total expected rows (via COUNT): 0
+0014.086 (0) Table wp_wpr_rucss_used_css: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1379) in 0.02 seconds
+0014.109 (0) Table wp_wpr_rucss_used_css: finishing file(s) (2, 0.5 KB)
+0014.126 (0) Table wp_as3cf_items: Total expected rows (approximate): 38646
+0014.828 (0) Table wp_as3cf_items: binary mysqldump finished (writes: 64, bytes 18631386, return code 0) in 0.70 seconds
+0014.840 (0) Table wp_as3cf_items: finishing file(s) (1, 1543.3 KB)
+0014.864 (0) Table wp_e_events: Total expected rows (via COUNT): 0
+0014.870 (0) Table wp_e_events: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=547) in 0.01 seconds
+0014.891 (0) Table wp_e_events: finishing file(s) (2, 0.4 KB)
+0014.917 (0) Table wp_e_submissions: Total expected rows (via COUNT): 0
+0014.925 (0) Table wp_e_submissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2254) in 0.02 seconds
+0014.948 (0) Table wp_e_submissions: finishing file(s) (2, 0.7 KB)
+0014.971 (0) Table wp_e_submissions_actions_log: Total expected rows (via COUNT): 0
+0014.979 (0) Table wp_e_submissions_actions_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1243) in 0.01 seconds
+0015.001 (0) Table wp_e_submissions_actions_log: finishing file(s) (2, 0.5 KB)
+0015.032 (0) Table wp_e_submissions_values: Total expected rows (via COUNT): 0
+0015.038 (0) Table wp_e_submissions_values: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=716) in 0.02 seconds
+0015.066 (0) Table wp_e_submissions_values: finishing file(s) (2, 0.4 KB)
+0015.089 (0) Table wp_gla_budget_recommendations: Total expected rows (approximate): 4230
+0015.125 (0) Table wp_gla_budget_recommendations: Rows added in this batch (next record: 4230): 4230 (uncompressed bytes in this segment=131489) in 0.04 seconds
+0015.144 (0) Table wp_gla_budget_recommendations: finishing file(s) (2, 33 KB)
+0015.167 (0) Table wp_gla_merchant_issues: Total expected rows (via COUNT): 0
+0015.173 (0) Table wp_gla_merchant_issues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1359) in 0.01 seconds
+0015.192 (0) Table wp_gla_merchant_issues: finishing file(s) (2, 0.5 KB)
+0015.211 (0) Table wp_gla_shipping_rates: Total expected rows (via COUNT): 0
+0015.218 (0) Table wp_gla_shipping_rates: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=924) in 0.01 seconds
+0015.240 (0) Table wp_gla_shipping_rates: finishing file(s) (2, 0.4 KB)
+0015.260 (0) Table wp_gla_shipping_times: Total expected rows (via COUNT): 0
+0015.266 (0) Table wp_gla_shipping_times: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=602) in 0.01 seconds
+0015.288 (0) Table wp_gla_shipping_times: finishing file(s) (2, 0.4 KB)
+0015.320 (0) Table wp_mailpoet_custom_fields: Total expected rows (via COUNT): 0
+0015.329 (0) Table wp_mailpoet_custom_fields: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=893) in 0.02 seconds
+0015.366 (0) Table wp_mailpoet_custom_fields: finishing file(s) (2, 0.4 KB)
+0015.387 (0) Table wp_mailpoet_dynamic_segment_filters: Total expected rows (via COUNT): 0
+0015.395 (0) Table wp_mailpoet_dynamic_segment_filters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=958) in 0.01 seconds
+0015.417 (0) Table wp_mailpoet_dynamic_segment_filters: finishing file(s) (2, 0.4 KB)
+0015.441 (0) Table wp_mailpoet_feature_flags: Total expected rows (via COUNT): 0
+0015.448 (0) Table wp_mailpoet_feature_flags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=762) in 0.01 seconds
+0015.472 (0) Table wp_mailpoet_feature_flags: finishing file(s) (2, 0.4 KB)
+0015.502 (0) Table wp_mailpoet_forms: Total expected rows (via COUNT): 0
+0015.513 (0) Table wp_mailpoet_forms: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1018) in 0.02 seconds
+0015.542 (0) Table wp_mailpoet_forms: finishing file(s) (2, 0.4 KB)
+0015.589 (0) Table wp_mailpoet_log: Total expected rows (via COUNT): 0
+0015.595 (0) Table wp_mailpoet_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=671) in 0.03 seconds
+0015.624 (0) Table wp_mailpoet_log: finishing file(s) (2, 0.4 KB)
+0015.645 (0) Table wp_mailpoet_mapping_to_external_entities: Total expected rows (approximate): 0
+0015.656 (0) Table wp_mailpoet_mapping_to_external_entities: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=775) in 0.01 seconds
+0015.675 (0) Table wp_mailpoet_mapping_to_external_entities: finishing file(s) (2, 0.4 KB)
+0015.699 (0) Table wp_mailpoet_newsletter_links: Total expected rows (via COUNT): 0
+0015.705 (0) Table wp_mailpoet_newsletter_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=974) in 0.01 seconds
+0015.729 (0) Table wp_mailpoet_newsletter_links: finishing file(s) (2, 0.4 KB)
+0015.758 (0) Table wp_mailpoet_newsletter_option: Total expected rows (via COUNT): 0
+0015.763 (0) Table wp_mailpoet_newsletter_option: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=875) in 0.02 seconds
+0015.795 (0) Table wp_mailpoet_newsletter_option: finishing file(s) (2, 0.4 KB)
+0015.819 (0) Table wp_mailpoet_newsletter_option_fields: Total expected rows (via COUNT): 22
+0015.824 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0015.840 (0) Table wp_mailpoet_newsletter_option_fields: Rows added in this batch (next record: 22): 22 (uncompressed bytes in this segment=2430) in 0.03 seconds
+0015.858 (0) Table wp_mailpoet_newsletter_option_fields: finishing file(s) (2, 0.7 KB)
+0015.887 (0) Table wp_mailpoet_newsletter_posts: Total expected rows (via COUNT): 0
+0015.900 (0) Table wp_mailpoet_newsletter_posts: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=747) in 0.03 seconds
+0015.920 (0) Table wp_mailpoet_newsletter_posts: finishing file(s) (2, 0.4 KB)
+0015.939 (0) Table wp_mailpoet_newsletter_segment: Total expected rows (via COUNT): 0
+0015.948 (0) Table wp_mailpoet_newsletter_segment: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=787) in 0.01 seconds
+0015.967 (0) Table wp_mailpoet_newsletter_segment: finishing file(s) (2, 0.4 KB)
+0016.020 (0) Table wp_mailpoet_newsletter_templates: Total expected rows (via COUNT): 76
+0016.026 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.105 (0) Table wp_mailpoet_newsletter_templates: Rows added in this batch (next record: 76): 76 (uncompressed bytes in this segment=1114937) in 0.12 seconds
+0016.133 (0) Table wp_mailpoet_newsletter_templates: finishing file(s) (2, 67 KB)
+0016.160 (0) Table wp_mailpoet_newsletters: Total expected rows (via COUNT): 0
+0016.177 (0) Table wp_mailpoet_newsletters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=2010) in 0.03 seconds
+0016.204 (0) Table wp_mailpoet_newsletters: finishing file(s) (2, 0.6 KB)
+0016.223 (0) Table wp_mailpoet_scheduled_task_subscribers: Total expected rows (approximate): 0
+0016.231 (0) Table wp_mailpoet_scheduled_task_subscribers: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=922) in 0.01 seconds
+0016.252 (0) Table wp_mailpoet_scheduled_task_subscribers: finishing file(s) (2, 0.4 KB)
+0016.280 (0) Table wp_mailpoet_scheduled_tasks: Total expected rows (via COUNT): 201
+0016.286 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.302 (0) Table wp_mailpoet_scheduled_tasks: Rows added in this batch (next record: 201): 201 (uncompressed bytes in this segment=34653) in 0.03 seconds
+0016.327 (0) Table wp_mailpoet_scheduled_tasks: finishing file(s) (2, 3.7 KB)
+0016.347 (0) Table wp_mailpoet_segments: Total expected rows (via COUNT): 3
+0016.358 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.378 (0) Table wp_mailpoet_segments: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1765) in 0.04 seconds
+0016.397 (0) Table wp_mailpoet_segments: finishing file(s) (2, 0.7 KB)
+0016.424 (0) Table wp_mailpoet_sending_queues: Total expected rows (via COUNT): 0
+0016.436 (0) Table wp_mailpoet_sending_queues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1325) in 0.02 seconds
+0016.465 (0) Table wp_mailpoet_sending_queues: finishing file(s) (2, 0.5 KB)
+0016.521 (0) Table wp_mailpoet_settings: Total expected rows (via COUNT): 20
+0016.527 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0016.540 (0) Table wp_mailpoet_settings: Rows added in this batch (next record: 1215): 20 (uncompressed bytes in this segment=3964) in 0.06 seconds
+0016.565 (0) Table wp_mailpoet_settings: finishing file(s) (2, 1.4 KB)
+0016.585 (0) Table wp_mailpoet_statistics_bounces: Total expected rows (via COUNT): 0
+0016.596 (0) Table wp_mailpoet_statistics_bounces: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=688) in 0.01 seconds
+0016.616 (0) Table wp_mailpoet_statistics_bounces: finishing file(s) (2, 0.4 KB)
+0016.680 (0) Table wp_mailpoet_statistics_clicks: Total expected rows (via COUNT): 0
+0016.687 (0) Table wp_mailpoet_statistics_clicks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1097) in 0.05 seconds
+0016.705 (0) Table wp_mailpoet_statistics_clicks: finishing file(s) (2, 0.5 KB)
+0016.724 (0) Table wp_mailpoet_statistics_forms: Total expected rows (via COUNT): 0
+0016.732 (0) Table wp_mailpoet_statistics_forms: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=694) in 0.01 seconds
+0016.752 (0) Table wp_mailpoet_statistics_forms: finishing file(s) (2, 0.4 KB)
+0016.774 (0) Table wp_mailpoet_statistics_newsletters: Total expected rows (via COUNT): 0
+0016.781 (0) Table wp_mailpoet_statistics_newsletters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=815) in 0.01 seconds
+0016.801 (0) Table wp_mailpoet_statistics_newsletters: finishing file(s) (2, 0.4 KB)
+0016.823 (0) Table wp_mailpoet_statistics_opens: Total expected rows (via COUNT): 0
+0016.829 (0) Table wp_mailpoet_statistics_opens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1051) in 0.01 seconds
+0016.848 (0) Table wp_mailpoet_statistics_opens: finishing file(s) (2, 0.5 KB)
+0016.868 (0) Table wp_mailpoet_statistics_unsubscribes: Total expected rows (via COUNT): 0
+0016.875 (0) Table wp_mailpoet_statistics_unsubscribes: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1054) in 0.01 seconds
+0016.893 (0) Table wp_mailpoet_statistics_unsubscribes: finishing file(s) (2, 0.5 KB)
+0016.924 (0) Table wp_mailpoet_statistics_woocommerce_purchases: Total expected rows (via COUNT): 0
+0016.930 (0) Table wp_mailpoet_statistics_woocommerce_purchases: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1270) in 0.02 seconds
+0017.010 (0) Table wp_mailpoet_statistics_woocommerce_purchases: finishing file(s) (2, 0.5 KB)
+0017.029 (0) Table wp_mailpoet_stats_notifications: Total expected rows (via COUNT): 0
+0017.035 (0) Table wp_mailpoet_stats_notifications: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=819) in 0.01 seconds
+0017.054 (0) Table wp_mailpoet_stats_notifications: finishing file(s) (2, 0.4 KB)
+0017.074 (0) Table wp_mailpoet_subscriber_custom_field: Total expected rows (via COUNT): 0
+0017.080 (0) Table wp_mailpoet_subscriber_custom_field: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=916) in 0.01 seconds
+0017.098 (0) Table wp_mailpoet_subscriber_custom_field: finishing file(s) (2, 0.4 KB)
+0017.117 (0) Table wp_mailpoet_subscriber_ips: Total expected rows (approximate): 0
+0017.125 (0) Table wp_mailpoet_subscriber_ips: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=615) in 0.01 seconds
+0017.142 (0) Table wp_mailpoet_subscriber_ips: finishing file(s) (2, 0.4 KB)
+0017.156 (0) Table wp_mailpoet_subscriber_segment: Total expected rows (approximate): 19500
+0017.228 (0) Table wp_mailpoet_subscriber_segment: binary mysqldump finished (writes: 35, bytes 1367979, return code 0) in 0.07 seconds
+0017.240 (0) Table wp_mailpoet_subscriber_segment: finishing file(s) (1, 121 KB)
+0017.257 (0) Table wp_mailpoet_subscribers: Total expected rows (approximate): 9582
+0017.437 (0) Table wp_mailpoet_subscribers: binary mysqldump finished (writes: 60, bytes 2608564, return code 0) in 0.18 seconds
+0017.449 (0) Table wp_mailpoet_subscribers: finishing file(s) (1, 631.2 KB)
+0017.470 (0) Table wp_mailpoet_user_agents: Total expected rows (via COUNT): 0
+0017.475 (0) Table wp_mailpoet_user_agents: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=797) in 0.01 seconds
+0017.494 (0) Table wp_mailpoet_user_agents: finishing file(s) (2, 0.4 KB)
+0017.521 (0) Table wp_mailpoet_user_flags: Total expected rows (via COUNT): 0
+0017.527 (0) Table wp_mailpoet_user_flags: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=845) in 0.01 seconds
+0017.546 (0) Table wp_mailpoet_user_flags: finishing file(s) (2, 0.4 KB)
+0017.567 (0) Table wp_nextend2_image_storage: Total expected rows (via COUNT): 3
+0017.573 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.585 (0) Table wp_nextend2_image_storage: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=2016) in 0.02 seconds
+0017.606 (0) Table wp_nextend2_image_storage: finishing file(s) (2, 0.7 KB)
+0017.625 (0) Table wp_nextend2_section_storage: Total expected rows (via COUNT): 2
+0017.631 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.638 (0) Table wp_nextend2_section_storage: Rows added in this batch (next record: 10001): 2 (uncompressed bytes in this segment=1374) in 0.01 seconds
+0017.656 (0) Table wp_nextend2_section_storage: finishing file(s) (2, 0.6 KB)
+0017.678 (0) Table wp_nextend2_smartslider3_generators: Total expected rows (via COUNT): 0
+0017.698 (0) Table wp_nextend2_smartslider3_generators: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=780) in 0.02 seconds
+0017.715 (0) Table wp_nextend2_smartslider3_generators: finishing file(s) (2, 0.4 KB)
+0017.755 (0) Table wp_nextend2_smartslider3_sliders: Total expected rows (via COUNT): 2
+0017.761 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.781 (0) Table wp_nextend2_smartslider3_sliders: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=41968) in 0.05 seconds
+0017.801 (0) Table wp_nextend2_smartslider3_sliders: finishing file(s) (2, 4.8 KB)
+0017.819 (0) Table wp_nextend2_smartslider3_sliders_xref: Total expected rows (approximate): 0
+0017.831 (0) Table wp_nextend2_smartslider3_sliders_xref: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=720) in 0.01 seconds
+0017.850 (0) Table wp_nextend2_smartslider3_sliders_xref: finishing file(s) (2, 0.4 KB)
+0017.887 (0) Table wp_nextend2_smartslider3_slides: Total expected rows (via COUNT): 5
+0017.892 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0017.903 (0) Table wp_nextend2_smartslider3_slides: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=55270) in 0.04 seconds
+0017.923 (0) Table wp_nextend2_smartslider3_slides: finishing file(s) (2, 4.2 KB)
+0017.946 (0) Table wp_s2w_error_product_images: Total expected rows (via COUNT): 558
+0017.963 (0) Table wp_s2w_error_product_images: Rows added in this batch (next record: 1480): 558 (uncompressed bytes in this segment=139907) in 0.03 seconds
+0017.986 (0) Table wp_s2w_error_product_images: finishing file(s) (2, 10.1 KB)
+0018.005 (0) Table wp_social_users: Total expected rows (via COUNT): 0
+0018.017 (0) Table wp_social_users: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=809) in 0.02 seconds
+0018.035 (0) Table wp_social_users: finishing file(s) (2, 0.4 KB)
+0018.058 (0) Table wp_wc_admin_note_actions: Total expected rows (via COUNT): 54
+0018.063 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.075 (0) Table wp_wc_admin_note_actions: Rows added in this batch (next record: 3206): 54 (uncompressed bytes in this segment=10037) in 0.03 seconds
+0018.097 (0) Table wp_wc_admin_note_actions: finishing file(s) (2, 2.4 KB)
+0018.121 (0) Table wp_wc_admin_notes: Total expected rows (via COUNT): 48
+0018.126 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.138 (0) Table wp_wc_admin_notes: Rows added in this batch (next record: 69): 48 (uncompressed bytes in this segment=22853) in 0.02 seconds
+0018.160 (0) Table wp_wc_admin_notes: finishing file(s) (2, 5.9 KB)
+0018.174 (0) Table wp_wc_customer_lookup: Total expected rows (approximate): 9457
+0018.266 (0) Table wp_wc_customer_lookup: binary mysqldump finished (writes: 41, bytes 1222288, return code 0) in 0.09 seconds
+0018.279 (0) Table wp_wc_customer_lookup: finishing file(s) (1, 346.4 KB)
+0018.299 (0) Table wp_wc_download_log: Total expected rows (via COUNT): 0
+0018.311 (0) Table wp_wc_download_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=936) in 0.02 seconds
+0018.329 (0) Table wp_wc_download_log: finishing file(s) (2, 0.5 KB)
+0018.353 (0) Table wp_wc_gpf_render_cache: Total expected rows (via COUNT): 0
+0018.358 (0) Table wp_wc_gpf_render_cache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=723) in 0.01 seconds
+0018.382 (0) Table wp_wc_gpf_render_cache: finishing file(s) (2, 0.4 KB)
+0018.401 (0) Table wp_wc_order_coupon_lookup: Total expected rows (approximate): 395
+0018.410 (0) Table wp_wc_order_coupon_lookup: Rows added in this batch (next record: 1000): 395 (uncompressed bytes in this segment=18784) in 0.01 seconds
+0018.425 (0) Table wp_wc_order_coupon_lookup: finishing file(s) (2, 4.5 KB)
+0018.441 (0) Table wp_wc_order_product_lookup: Total expected rows (approximate): 14190
+0018.542 (0) Table wp_wc_order_product_lookup: binary mysqldump finished (writes: 43, bytes 1000233, return code 0) in 0.10 seconds
+0018.555 (0) Table wp_wc_order_product_lookup: finishing file(s) (1, 168.5 KB)
+0018.571 (0) Table wp_wc_order_stats: Total expected rows (approximate): 10672
+0018.660 (0) Table wp_wc_order_stats: binary mysqldump finished (writes: 42, bytes 1043020, return code 0) in 0.08 seconds
+0018.672 (0) Table wp_wc_order_stats: finishing file(s) (1, 164.4 KB)
+0018.690 (0) Table wp_wc_order_tax_lookup: Total expected rows (approximate): 6
+0018.697 (0) Table wp_wc_order_tax_lookup: Rows added in this batch (next record: 1000): 7 (uncompressed bytes in this segment=1206) in 0.01 seconds
+0018.713 (0) Table wp_wc_order_tax_lookup: finishing file(s) (2, 0.5 KB)
+0018.729 (0) Table wp_wc_product_attributes_lookup: Total expected rows (approximate): 45501
+0018.884 (0) Table wp_wc_product_attributes_lookup: binary mysqldump finished (writes: 34, bytes 1613204, return code 0) in 0.15 seconds
+0018.898 (0) Table wp_wc_product_attributes_lookup: finishing file(s) (1, 204.5 KB)
+0018.918 (0) Table wp_wc_product_download_directories: Total expected rows (via COUNT): 3
+0018.923 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0018.934 (0) Table wp_wc_product_download_directories: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=1021) in 0.02 seconds
+0018.951 (0) Table wp_wc_product_download_directories: finishing file(s) (2, 0.5 KB)
+0018.968 (0) Table wp_wc_rate_limits: Total expected rows (via COUNT): 0
+0018.979 (0) Table wp_wc_rate_limits: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=710) in 0.01 seconds
+0018.997 (0) Table wp_wc_rate_limits: finishing file(s) (2, 0.4 KB)
+0019.016 (0) Table wp_wc_webhooks: Total expected rows (via COUNT): 0
+0019.021 (0) Table wp_wc_webhooks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1325) in 0.01 seconds
+0019.040 (0) Table wp_wc_webhooks: finishing file(s) (2, 0.5 KB)
+0019.064 (0) Table wp_wdr_order_discounts: Total expected rows (via COUNT): 1
+0019.070 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.081 (0) Table wp_wdr_order_discounts: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=992) in 0.03 seconds
+0019.106 (0) Table wp_wdr_order_discounts: finishing file(s) (2, 0.5 KB)
+0019.135 (0) Table wp_wdr_order_item_discounts: Total expected rows (via COUNT): 1
+0019.142 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.149 (0) Table wp_wdr_order_item_discounts: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1459) in 0.03 seconds
+0019.180 (0) Table wp_wdr_order_item_discounts: finishing file(s) (2, 0.6 KB)
+0019.207 (0) Table wp_wdr_rules: Total expected rows (via COUNT): 6
+0019.213 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.221 (0) Table wp_wdr_rules: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=5612) in 0.02 seconds
+0019.239 (0) Table wp_wdr_rules: finishing file(s) (2, 1.2 KB)
+0019.267 (0) Table wp_woocommerce_api_keys: Total expected rows (via COUNT): 1
+0019.272 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.278 (0) Table wp_woocommerce_api_keys: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1432) in 0.02 seconds
+0019.301 (0) Table wp_woocommerce_api_keys: finishing file(s) (2, 0.6 KB)
+0019.320 (0) Table wp_woocommerce_attribute_taxonomies: Total expected rows (via COUNT): 15
+0019.326 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.332 (0) Table wp_woocommerce_attribute_taxonomies: Rows added in this batch (next record: 15): 15 (uncompressed bytes in this segment=2019) in 0.02 seconds
+0019.350 (0) Table wp_woocommerce_attribute_taxonomies: finishing file(s) (2, 0.7 KB)
+0019.370 (0) Table wp_woocommerce_downloadable_product_permissions: Total expected rows (via COUNT): 0
+0019.382 (0) Table wp_woocommerce_downloadable_product_permissions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1606) in 0.02 seconds
+0019.398 (0) Table wp_woocommerce_downloadable_product_permissions: finishing file(s) (2, 0.5 KB)
+0019.414 (0) Table wp_woocommerce_gpf_google_taxonomy: Total expected rows (approximate): 5349
+0019.504 (0) Table wp_woocommerce_gpf_google_taxonomy: Rows added in this batch (next record: 6000): 5595 (uncompressed bytes in this segment=987295) in 0.09 seconds
+0019.522 (0) Table wp_woocommerce_gpf_google_taxonomy: finishing file(s) (2, 87.1 KB)
+0019.546 (0) Table wp_woocommerce_log: Total expected rows (via COUNT): 0
+0019.552 (0) Table wp_woocommerce_log: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=781) in 0.01 seconds
+0019.575 (0) Table wp_woocommerce_log: finishing file(s) (2, 0.4 KB)
+0019.591 (0) Table wp_woocommerce_order_items: Total expected rows (approximate): 25225
+0019.687 (0) Table wp_woocommerce_order_items: binary mysqldump finished (writes: 32, bytes 1828326, return code 0) in 0.09 seconds
+0019.700 (0) Table wp_woocommerce_order_items: finishing file(s) (1, 155.5 KB)
+0019.722 (0) Table wp_woocommerce_payment_tokens: Total expected rows (via COUNT): 0
+0019.727 (0) Table wp_woocommerce_payment_tokens: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=899) in 0.01 seconds
+0019.745 (0) Table wp_woocommerce_payment_tokens: finishing file(s) (2, 0.4 KB)
+0019.768 (0) Table wp_woocommerce_sessions: Total expected rows (via COUNT): 1
+0019.773 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.784 (0) Table wp_woocommerce_sessions: Rows added in this batch (next record: 1492): 1 (uncompressed bytes in this segment=2605) in 0.02 seconds
+0019.810 (0) Table wp_woocommerce_sessions: finishing file(s) (2, 0.9 KB)
+0019.828 (0) Table wp_woocommerce_shipping_zone_locations: Total expected rows (via COUNT): 7
+0019.833 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.839 (0) Table wp_woocommerce_shipping_zone_locations: Rows added in this batch (next record: 1279): 7 (uncompressed bytes in this segment=1197) in 0.01 seconds
+0019.861 (0) Table wp_woocommerce_shipping_zone_locations: finishing file(s) (2, 0.5 KB)
+0019.878 (0) Table wp_woocommerce_shipping_zone_methods: Total expected rows (via COUNT): 4
+0019.884 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.890 (0) Table wp_woocommerce_shipping_zone_methods: Rows added in this batch (next record: 6): 4 (uncompressed bytes in this segment=976) in 0.01 seconds
+0019.909 (0) Table wp_woocommerce_shipping_zone_methods: finishing file(s) (2, 0.5 KB)
+0019.926 (0) Table wp_woocommerce_shipping_zones: Total expected rows (via COUNT): 1
+0019.931 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0019.937 (0) Table wp_woocommerce_shipping_zones: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=738) in 0.01 seconds
+0019.956 (0) Table wp_woocommerce_shipping_zones: finishing file(s) (2, 0.4 KB)
+0019.975 (0) Table wp_woocommerce_tax_rate_locations: Total expected rows (via COUNT): 0
+0019.986 (0) Table wp_woocommerce_tax_rate_locations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=884) in 0.01 seconds
+0020.003 (0) Table wp_woocommerce_tax_rate_locations: finishing file(s) (2, 0.4 KB)
+0020.020 (0) Table wp_woocommerce_tax_rates: Total expected rows (approximate): 1265
+0020.038 (0) Table wp_woocommerce_tax_rates: Rows added in this batch (next record: 1265): 1265 (uncompressed bytes in this segment=70124) in 0.02 seconds
+0020.058 (0) Table wp_woocommerce_tax_rates: finishing file(s) (2, 8.6 KB)
+0020.077 (0) Table wp_woot_tables: Total expected rows (via COUNT): 0
+0020.083 (0) Table wp_woot_tables: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1355) in 0.01 seconds
+0020.103 (0) Table wp_woot_tables: finishing file(s) (2, 0.5 KB)
+0020.123 (0) Table wp_woot_tables_columns: Total expected rows (via COUNT): 0
+0020.128 (0) Table wp_woot_tables_columns: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1212) in 0.01 seconds
+0020.144 (0) Table wp_woot_tables_columns: finishing file(s) (2, 0.5 KB)
+0020.189 (0) Table wp_woot_tables_meta: Total expected rows (via COUNT): 0
+0020.201 (0) Table wp_woot_tables_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=866) in 0.04 seconds
+0020.218 (0) Table wp_woot_tables_meta: finishing file(s) (2, 0.4 KB)
+0020.236 (0) Table wp_woot_vocabulary: Total expected rows (via COUNT): 0
+0020.247 (0) Table wp_woot_vocabulary: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=607) in 0.01 seconds
+0020.265 (0) Table wp_woot_vocabulary: finishing file(s) (2, 0.4 KB)
+0020.291 (0) Table wp_wpforms_tasks_meta: Total expected rows (via COUNT): 4
+0020.297 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.309 (0) Table wp_wpforms_tasks_meta: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1014) in 0.03 seconds
+0020.334 (0) Table wp_wpforms_tasks_meta: finishing file(s) (2, 0.5 KB)
+0020.363 (0) Table wp_wpmailsmtp_debug_events: Total expected rows (via COUNT): 8
+0020.372 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.380 (0) Table wp_wpmailsmtp_debug_events: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=2611) in 0.03 seconds
+0020.400 (0) Table wp_wpmailsmtp_debug_events: finishing file(s) (2, 0.7 KB)
+0020.427 (0) Table wp_wpmailsmtp_emails_log: Total expected rows (via COUNT): 102
+0020.433 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.449 (0) Table wp_wpmailsmtp_emails_log: Rows added in this batch (next record: 102): 102 (uncompressed bytes in this segment=75724) in 0.03 seconds
+0020.475 (0) Table wp_wpmailsmtp_emails_log: finishing file(s) (2, 9.7 KB)
+0020.500 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 36
+0020.505 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.518 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: 36): 36 (uncompressed bytes in this segment=3626) in 0.03 seconds
+0020.543 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.9 KB)
+0020.564 (0) Table wp_wpmelon_advbedit_temp: Total expected rows (via COUNT): 260
+0020.569 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.587 (0) Table wp_wpmelon_advbedit_temp: Rows added in this batch (next record: 148163): 260 (uncompressed bytes in this segment=6814) in 0.03 seconds
+0020.611 (0) Table wp_wpmelon_advbedit_temp: finishing file(s) (2, 1.2 KB)
+0020.632 (0) Table wp_yith_wcwl: Total expected rows (via COUNT): 2
+0020.642 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.654 (0) Table wp_yith_wcwl: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=924) in 0.03 seconds
+0020.675 (0) Table wp_yith_wcwl: finishing file(s) (2, 0.5 KB)
+0020.696 (0) Table wp_yith_wcwl_lists: Total expected rows (via COUNT): 2
+0020.702 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0020.708 (0) Table wp_yith_wcwl_lists: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1083) in 0.02 seconds
+0020.727 (0) Table wp_yith_wcwl_lists: finishing file(s) (2, 0.5 KB)
+0020.733 (0) PHP event: code E_WARNING: filemtime(): stat failed for /var/www/creattify.com/wp-content/updraft/backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz (line 1836, wp-content/plugins/updraftplus/backup.php)
+0020.739 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_options.table.tmpr922737.gz (1/125/fopen): adding to final database dump
+0020.752 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_options.table.gz (2/125/fopen): adding to final database dump
+0020.758 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_users.table.gz (3/125/fopen): adding to final database dump
+0020.771 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_usermeta.table.gz (4/125/fopen): adding to final database dump
+0020.804 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_actionscheduler_actions.table.gz (5/125/fopen): adding to final database dump
+0020.822 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_actionscheduler_claims.table.tmpr68421.gz (6/125/fopen): adding to final database dump
+0020.827 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_actionscheduler_claims.table.gz (7/125/fopen): adding to final database dump
+0020.833 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_actionscheduler_groups.table.tmpr11.gz (8/125/fopen): adding to final database dump
+0020.838 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_actionscheduler_groups.table.gz (9/125/fopen): adding to final database dump
+0020.845 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_actionscheduler_logs.table.gz (10/125/fopen): adding to final database dump
+0020.866 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_commentmeta.table.tmpr0.gz (11/125/fopen): adding to final database dump
+0020.872 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_commentmeta.table.gz (12/125/fopen): adding to final database dump
+0020.877 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_comments.table.gz (13/125/fopen): adding to final database dump
+0020.883 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_bans.table.tmpr0.gz (14/125/fopen): adding to final database dump
+0020.889 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_bans.table.gz (15/125/fopen): adding to final database dump
+0020.894 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_dashboard_events.table.tmpr185.gz (16/125/fopen): adding to final database dump
+0020.900 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_dashboard_events.table.gz (17/125/fopen): adding to final database dump
+0020.905 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_distributed_storage.table.tmpr0.gz (18/125/fopen): adding to final database dump
+0020.911 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_distributed_storage.table.gz (19/125/fopen): adding to final database dump
+0020.917 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_fingerprints.table.tmpr0.gz (20/125/fopen): adding to final database dump
+0020.925 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_fingerprints.table.gz (21/125/fopen): adding to final database dump
+0020.929 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_geolocation_cache.table.tmpr0.gz (22/125/fopen): adding to final database dump
+0020.935 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_geolocation_cache.table.gz (23/125/fopen): adding to final database dump
+0020.940 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_lockouts.table.tmpr15.gz (24/125/fopen): adding to final database dump
+0020.945 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_lockouts.table.gz (25/125/fopen): adding to final database dump
+0020.951 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_logs.table.tmpr276.gz (26/125/fopen): adding to final database dump
+0020.957 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_logs.table.gz (27/125/fopen): adding to final database dump
+0020.962 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_mutexes.table.tmpr0.gz (28/125/fopen): adding to final database dump
+0020.967 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_mutexes.table.gz (29/125/fopen): adding to final database dump
+0020.972 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_opaque_tokens.table.tmpr1.gz (30/125/fopen): adding to final database dump
+0020.977 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_opaque_tokens.table.gz (31/125/fopen): adding to final database dump
+0020.982 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_temp.table.tmpr341.gz (32/125/fopen): adding to final database dump
+0020.987 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_temp.table.gz (33/125/fopen): adding to final database dump
+0020.992 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_user_groups.table.tmpr1001.gz (34/125/fopen): adding to final database dump
+0020.997 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_itsec_user_groups.table.gz (35/125/fopen): adding to final database dump
+0021.002 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_links.table.tmpr0.gz (36/125/fopen): adding to final database dump
+0021.007 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_links.table.gz (37/125/fopen): adding to final database dump
+0021.012 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_postmeta.table.gz (38/125/fopen): adding to final database dump
+0021.129 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_posts.table.gz (39/125/fopen): adding to final database dump
+0021.161 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_snippets.table.tmpr11.gz (40/125/fopen): adding to final database dump
+0021.167 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_snippets.table.gz (41/125/fopen): adding to final database dump
+0021.173 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_term_relationships.table.gz (42/125/fopen): adding to final database dump
+0021.183 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_term_taxonomy.table.tmpr8790.gz (43/125/fopen): adding to final database dump
+0021.189 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_term_taxonomy.table.gz (44/125/fopen): adding to final database dump
+0021.193 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_termmeta.table.tmpr9594.gz (45/125/fopen): adding to final database dump
+0021.200 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_termmeta.table.gz (46/125/fopen): adding to final database dump
+0021.205 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_terms.table.tmpr8790.gz (47/125/fopen): adding to final database dump
+0021.212 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_terms.table.gz (48/125/fopen): adding to final database dump
+0021.218 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_category_lookup.table.tmpr1001.gz (49/125/fopen): adding to final database dump
+0021.225 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_category_lookup.table.gz (50/125/fopen): adding to final database dump
+0021.234 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_product_meta_lookup.table.gz (51/125/fopen): adding to final database dump
+0021.252 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_reserved_stock.table.tmpr1.gz (52/125/fopen): adding to final database dump
+0021.257 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_reserved_stock.table.gz (53/125/fopen): adding to final database dump
+0021.266 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_tax_rate_classes.table.tmpr3.gz (54/125/fopen): adding to final database dump
+0021.276 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_tax_rate_classes.table.gz (55/125/fopen): adding to final database dump
+0021.282 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_order_itemmeta.table.gz (56/125/fopen): adding to final database dump
+0021.304 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_payment_tokenmeta.table.tmpr0.gz (57/125/fopen): adding to final database dump
+0021.310 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_payment_tokenmeta.table.gz (58/125/fopen): adding to final database dump
+0021.317 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpr_rucss_resources.table.tmpr0.gz (59/125/fopen): adding to final database dump
+0021.323 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpr_rucss_resources.table.gz (60/125/fopen): adding to final database dump
+0021.328 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpr_rucss_used_css.table.tmpr0.gz (61/125/fopen): adding to final database dump
+0021.335 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpr_rucss_used_css.table.gz (62/125/fopen): adding to final database dump
+0021.341 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_as3cf_items.table.gz (63/125/fopen): adding to final database dump
+0021.370 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_events.table.tmpr0.gz (64/125/fopen): adding to final database dump
+0021.377 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_events.table.gz (65/125/fopen): adding to final database dump
+0021.382 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_submissions.table.tmpr0.gz (66/125/fopen): adding to final database dump
+0021.390 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_submissions.table.gz (67/125/fopen): adding to final database dump
+0021.399 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_submissions_actions_log.table.tmpr0.gz (68/125/fopen): adding to final database dump
+0021.404 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_submissions_actions_log.table.gz (69/125/fopen): adding to final database dump
+0021.409 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_submissions_values.table.tmpr0.gz (70/125/fopen): adding to final database dump
+0021.417 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_e_submissions_values.table.gz (71/125/fopen): adding to final database dump
+0021.422 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_budget_recommendations.table.tmpr4231.gz (72/125/fopen): adding to final database dump
+0021.428 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_budget_recommendations.table.gz (73/125/fopen): adding to final database dump
+0021.434 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_merchant_issues.table.tmpr0.gz (74/125/fopen): adding to final database dump
+0021.439 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_merchant_issues.table.gz (75/125/fopen): adding to final database dump
+0021.444 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_shipping_rates.table.tmpr0.gz (76/125/fopen): adding to final database dump
+0021.449 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_shipping_rates.table.gz (77/125/fopen): adding to final database dump
+0021.455 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_shipping_times.table.tmpr0.gz (78/125/fopen): adding to final database dump
+0021.460 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_gla_shipping_times.table.gz (79/125/fopen): adding to final database dump
+0021.465 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_custom_fields.table.tmpr0.gz (80/125/fopen): adding to final database dump
+0021.471 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_custom_fields.table.gz (81/125/fopen): adding to final database dump
+0021.478 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_dynamic_segment_filters.table.tmpr0.gz (82/125/fopen): adding to final database dump
+0021.484 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_dynamic_segment_filters.table.gz (83/125/fopen): adding to final database dump
+0021.489 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_feature_flags.table.tmpr0.gz (84/125/fopen): adding to final database dump
+0021.494 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_feature_flags.table.gz (85/125/fopen): adding to final database dump
+0021.499 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_forms.table.tmpr0.gz (86/125/fopen): adding to final database dump
+0021.504 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_forms.table.gz (87/125/fopen): adding to final database dump
+0021.510 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_log.table.tmpr0.gz (88/125/fopen): adding to final database dump
+0021.515 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_log.table.gz (89/125/fopen): adding to final database dump
+0021.520 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_mapping_to_external_entities.table.tmpr1.gz (90/125/fopen): adding to final database dump
+0021.525 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_mapping_to_external_entities.table.gz (91/125/fopen): adding to final database dump
+0021.528 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_links.table.tmpr0.gz (92/125/fopen): adding to final database dump
+0021.534 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_links.table.gz (93/125/fopen): adding to final database dump
+0021.539 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_option.table.tmpr0.gz (94/125/fopen): adding to final database dump
+0021.544 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_option.table.gz (95/125/fopen): adding to final database dump
+0021.549 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_option_fields.table.tmpr23.gz (96/125/fopen): adding to final database dump
+0021.554 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_option_fields.table.gz (97/125/fopen): adding to final database dump
+0021.559 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_posts.table.tmpr0.gz (98/125/fopen): adding to final database dump
+0021.565 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_posts.table.gz (99/125/fopen): adding to final database dump
+0021.575 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_segment.table.tmpr0.gz (100/125/fopen): adding to final database dump
+0021.580 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_segment.table.gz (101/125/fopen): adding to final database dump
+0021.586 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_templates.table.tmpr77.gz (102/125/fopen): adding to final database dump
+0021.592 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletter_templates.table.gz (103/125/fopen): adding to final database dump
+0021.596 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletters.table.tmpr0.gz (104/125/fopen): adding to final database dump
+0021.602 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_newsletters.table.gz (105/125/fopen): adding to final database dump
+0021.608 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_scheduled_task_subscribers.table.tmpr1.gz (106/125/fopen): adding to final database dump
+0021.613 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_scheduled_task_subscribers.table.gz (107/125/fopen): adding to final database dump
+0021.617 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_scheduled_tasks.table.tmpr202.gz (108/125/fopen): adding to final database dump
+0021.622 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_scheduled_tasks.table.gz (109/125/fopen): adding to final database dump
+0021.628 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_segments.table.tmpr4.gz (110/125/fopen): adding to final database dump
+0021.636 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_segments.table.gz (111/125/fopen): adding to final database dump
+0021.641 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_sending_queues.table.tmpr0.gz (112/125/fopen): adding to final database dump
+0021.648 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_sending_queues.table.gz (113/125/fopen): adding to final database dump
+0021.654 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_settings.table.tmpr1216.gz (114/125/fopen): adding to final database dump
+0021.660 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_settings.table.gz (115/125/fopen): adding to final database dump
+0021.666 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_bounces.table.tmpr0.gz (116/125/fopen): adding to final database dump
+0021.672 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_bounces.table.gz (117/125/fopen): adding to final database dump
+0021.678 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_clicks.table.tmpr0.gz (118/125/fopen): adding to final database dump
+0021.684 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_clicks.table.gz (119/125/fopen): adding to final database dump
+0021.689 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_forms.table.tmpr0.gz (120/125/fopen): adding to final database dump
+0021.694 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_forms.table.gz (121/125/fopen): adding to final database dump
+0021.699 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_newsletters.table.tmpr0.gz (122/125/fopen): adding to final database dump
+0021.705 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_newsletters.table.gz (123/125/fopen): adding to final database dump
+0021.710 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_opens.table.tmpr0.gz (124/125/fopen): adding to final database dump
+0021.716 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_opens.table.gz (125/125/fopen): adding to final database dump
+0021.722 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_unsubscribes.table.tmpr0.gz (126/125/fopen): adding to final database dump
+0021.728 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_unsubscribes.table.gz (127/125/fopen): adding to final database dump
+0021.734 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_woocommerce_purchases.table.tmpr0.gz (128/125/fopen): adding to final database dump
+0021.740 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_statistics_woocommerce_purchases.table.gz (129/125/fopen): adding to final database dump
+0021.746 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_stats_notifications.table.tmpr0.gz (130/125/fopen): adding to final database dump
+0021.753 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_stats_notifications.table.gz (131/125/fopen): adding to final database dump
+0021.759 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_subscriber_custom_field.table.tmpr0.gz (132/125/fopen): adding to final database dump
+0021.766 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_subscriber_custom_field.table.gz (133/125/fopen): adding to final database dump
+0021.773 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_subscriber_ips.table.tmpr1.gz (134/125/fopen): adding to final database dump
+0021.779 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_subscriber_ips.table.gz (135/125/fopen): adding to final database dump
+0021.785 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_subscriber_segment.table.gz (136/125/fopen): adding to final database dump
+0021.791 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_subscribers.table.gz (137/125/fopen): adding to final database dump
+0021.805 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_user_agents.table.tmpr0.gz (138/125/fopen): adding to final database dump
+0021.811 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_user_agents.table.gz (139/125/fopen): adding to final database dump
+0021.817 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_user_flags.table.tmpr0.gz (140/125/fopen): adding to final database dump
+0021.823 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_mailpoet_user_flags.table.gz (141/125/fopen): adding to final database dump
+0021.828 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_image_storage.table.tmpr4.gz (142/125/fopen): adding to final database dump
+0021.834 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_image_storage.table.gz (143/125/fopen): adding to final database dump
+0021.841 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_section_storage.table.tmpr10002.gz (144/125/fopen): adding to final database dump
+0021.849 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_section_storage.table.gz (145/125/fopen): adding to final database dump
+0021.854 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_generators.table.tmpr0.gz (146/125/fopen): adding to final database dump
+0021.861 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_generators.table.gz (147/125/fopen): adding to final database dump
+0021.869 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_sliders.table.tmpr3.gz (148/125/fopen): adding to final database dump
+0021.877 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_sliders.table.gz (149/125/fopen): adding to final database dump
+0021.883 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_sliders_xref.table.tmpr1001.gz (150/125/fopen): adding to final database dump
+0021.892 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_sliders_xref.table.gz (151/125/fopen): adding to final database dump
+0021.899 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_slides.table.tmpr6.gz (152/125/fopen): adding to final database dump
+0021.907 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_nextend2_smartslider3_slides.table.gz (153/125/fopen): adding to final database dump
+0021.914 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_s2w_error_product_images.table.tmpr1481.gz (154/125/fopen): adding to final database dump
+0021.921 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_s2w_error_product_images.table.gz (155/125/fopen): adding to final database dump
+0021.929 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_social_users.table.tmpr0.gz (156/125/fopen): adding to final database dump
+0021.935 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_social_users.table.gz (157/125/fopen): adding to final database dump
+0021.944 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_admin_note_actions.table.tmpr3207.gz (158/125/fopen): adding to final database dump
+0021.949 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_admin_note_actions.table.gz (159/125/fopen): adding to final database dump
+0021.957 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_admin_notes.table.tmpr70.gz (160/125/fopen): adding to final database dump
+0021.964 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_admin_notes.table.gz (161/125/fopen): adding to final database dump
+0021.969 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_customer_lookup.table.gz (162/125/fopen): adding to final database dump
+0021.978 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_download_log.table.tmpr0.gz (163/125/fopen): adding to final database dump
+0021.983 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_download_log.table.gz (164/125/fopen): adding to final database dump
+0021.988 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_gpf_render_cache.table.tmpr0.gz (165/125/fopen): adding to final database dump
+0021.994 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_gpf_render_cache.table.gz (166/125/fopen): adding to final database dump
+0022.000 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_order_coupon_lookup.table.tmpr1001.gz (167/125/fopen): adding to final database dump
+0022.005 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_order_coupon_lookup.table.gz (168/125/fopen): adding to final database dump
+0022.011 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_order_product_lookup.table.gz (169/125/fopen): adding to final database dump
+0022.019 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_order_stats.table.gz (170/125/fopen): adding to final database dump
+0022.026 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_order_tax_lookup.table.tmpr1001.gz (171/125/fopen): adding to final database dump
+0022.032 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_order_tax_lookup.table.gz (172/125/fopen): adding to final database dump
+0022.037 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_product_attributes_lookup.table.gz (173/125/fopen): adding to final database dump
+0022.045 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_product_download_directories.table.tmpr4.gz (174/125/fopen): adding to final database dump
+0022.049 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_product_download_directories.table.gz (175/125/fopen): adding to final database dump
+0022.054 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_rate_limits.table.tmpr0.gz (176/125/fopen): adding to final database dump
+0022.060 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_rate_limits.table.gz (177/125/fopen): adding to final database dump
+0022.066 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_webhooks.table.tmpr0.gz (178/125/fopen): adding to final database dump
+0022.071 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wc_webhooks.table.gz (179/125/fopen): adding to final database dump
+0022.075 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wdr_order_discounts.table.tmpr2.gz (180/125/fopen): adding to final database dump
+0022.081 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wdr_order_discounts.table.gz (181/125/fopen): adding to final database dump
+0022.088 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wdr_order_item_discounts.table.tmpr2.gz (182/125/fopen): adding to final database dump
+0022.093 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wdr_order_item_discounts.table.gz (183/125/fopen): adding to final database dump
+0022.098 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wdr_rules.table.tmpr7.gz (184/125/fopen): adding to final database dump
+0022.103 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wdr_rules.table.gz (185/125/fopen): adding to final database dump
+0022.108 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_api_keys.table.tmpr2.gz (186/125/fopen): adding to final database dump
+0022.114 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_api_keys.table.gz (187/125/fopen): adding to final database dump
+0022.120 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_attribute_taxonomies.table.tmpr16.gz (188/125/fopen): adding to final database dump
+0022.126 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_attribute_taxonomies.table.gz (189/125/fopen): adding to final database dump
+0022.132 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_downloadable_product_permissions.table.tmpr0.gz (190/125/fopen): adding to final database dump
+0022.137 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_downloadable_product_permissions.table.gz (191/125/fopen): adding to final database dump
+0022.144 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_gpf_google_taxonomy.table.tmpr6001.gz (192/125/fopen): adding to final database dump
+0022.151 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_gpf_google_taxonomy.table.gz (193/125/fopen): adding to final database dump
+0022.156 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_log.table.tmpr0.gz (194/125/fopen): adding to final database dump
+0022.161 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_log.table.gz (195/125/fopen): adding to final database dump
+0022.168 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_order_items.table.gz (196/125/fopen): adding to final database dump
+0022.175 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_payment_tokens.table.tmpr0.gz (197/125/fopen): adding to final database dump
+0022.181 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_payment_tokens.table.gz (198/125/fopen): adding to final database dump
+0022.187 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_sessions.table.tmpr1493.gz (199/125/fopen): adding to final database dump
+0022.199 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_sessions.table.gz (200/125/fopen): adding to final database dump
+0022.205 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_shipping_zone_locations.table.tmpr1280.gz (201/125/fopen): adding to final database dump
+0022.211 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_shipping_zone_locations.table.gz (202/125/fopen): adding to final database dump
+0022.216 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_shipping_zone_methods.table.tmpr7.gz (203/125/fopen): adding to final database dump
+0022.221 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_shipping_zone_methods.table.gz (204/125/fopen): adding to final database dump
+0022.228 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_shipping_zones.table.tmpr2.gz (205/125/fopen): adding to final database dump
+0022.237 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_shipping_zones.table.gz (206/125/fopen): adding to final database dump
+0022.242 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_tax_rate_locations.table.tmpr0.gz (207/125/fopen): adding to final database dump
+0022.247 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_tax_rate_locations.table.gz (208/125/fopen): adding to final database dump
+0022.253 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_tax_rates.table.tmpr1266.gz (209/125/fopen): adding to final database dump
+0022.261 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woocommerce_tax_rates.table.gz (210/125/fopen): adding to final database dump
+0022.267 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_tables.table.tmpr0.gz (211/125/fopen): adding to final database dump
+0022.273 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_tables.table.gz (212/125/fopen): adding to final database dump
+0022.279 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_tables_columns.table.tmpr0.gz (213/125/fopen): adding to final database dump
+0022.284 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_tables_columns.table.gz (214/125/fopen): adding to final database dump
+0022.290 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_tables_meta.table.tmpr0.gz (215/125/fopen): adding to final database dump
+0022.296 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_tables_meta.table.gz (216/125/fopen): adding to final database dump
+0022.302 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_vocabulary.table.tmpr0.gz (217/125/fopen): adding to final database dump
+0022.307 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_woot_vocabulary.table.gz (218/125/fopen): adding to final database dump
+0022.312 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpforms_tasks_meta.table.tmpr5.gz (219/125/fopen): adding to final database dump
+0022.318 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpforms_tasks_meta.table.gz (220/125/fopen): adding to final database dump
+0022.323 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmailsmtp_debug_events.table.tmpr9.gz (221/125/fopen): adding to final database dump
+0022.328 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmailsmtp_debug_events.table.gz (222/125/fopen): adding to final database dump
+0022.332 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmailsmtp_emails_log.table.tmpr103.gz (223/125/fopen): adding to final database dump
+0022.338 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmailsmtp_emails_log.table.gz (224/125/fopen): adding to final database dump
+0022.343 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr37.gz (225/125/fopen): adding to final database dump
+0022.348 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmailsmtp_tasks_meta.table.gz (226/125/fopen): adding to final database dump
+0022.354 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmelon_advbedit_temp.table.tmpr148164.gz (227/125/fopen): adding to final database dump
+0022.360 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_wpmelon_advbedit_temp.table.gz (228/125/fopen): adding to final database dump
+0022.365 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_yith_wcwl.table.tmpr3.gz (229/125/fopen): adding to final database dump
+0022.370 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_yith_wcwl.table.gz (230/125/fopen): adding to final database dump
+0022.375 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_yith_wcwl_lists.table.tmpr3.gz (231/125/fopen): adding to final database dump
+0022.381 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db-table-wp_yith_wcwl_lists.table.gz (232/125/fopen): adding to final database dump
+0022.389 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz: finished writing out complete database file (24906.5 KB)
+0022.682 (0) Total database tables backed up: 125 (backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz, size: 25504372, sha1: 025dd8503a17f9b178e2572f36e2652873cc7108, sha256: 4bb2f2e679ee7ea698a9cf20e8b9446d0e3d1134e798df388497721bd1eeb4a1)
+0022.711 (0) backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz: db: This file has not yet been successfully uploaded: will queue
+0022.723 (0) Saving backup history. Total backup size: 24.3 MB
+0022.741 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0022.772 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0022.780 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-4c70371fce46fbf6dc0c75c0eaaaa18a)
+0022.827 (0) Amazon S3: upload (US): backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz (chunks: 5) -> s3://backup.au.gifttify.com/backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz
+0022.878 (0) Amazon S3: chunked upload: got multipart ID: f3KK7AOIr2a6Bs6lklndAoZjtu47tcJ2WSqaZk7lGdM3ZmdKyhZb_4KtPsNCx_UF8ZPNKCb3hgsNq0Fxywo3KNDLPXpFX4kNAzVwKTXyF5lW8fZMi6n4K7XBNP6rBLU_
+0023.088 (0) S3 chunked upload: 20 % uploaded (1, 99b250913b3030bf4086f1440ad848e8)
+0023.265 (0) S3 chunked upload: 40 % uploaded (2, 1df0a60b138150f187bb51b842f07432)
+0023.522 (0) S3 chunked upload: 60 % uploaded (3, be87ff912153ff14838a1aca1cbd57c7)
+0023.696 (0) S3 chunked upload: 80 % uploaded (4, 3c02cf68a48696ee0d135187371df539)
+0023.920 (0) S3 chunked upload: 100 % uploaded (5, 88bebcb09533ef230de5b1c5e9d6519b)
+0023.940 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0024.091 (0) Amazon S3: upload (db0): re-assembly succeeded
+0024.097 (0) Recording as successfully uploaded: backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz
+0024.116 (0) Deleting local file: backup_2022-07-19-0017_The_Creattify_Australia_8cfd2b182863-db.gz: OK
+0024.134 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0024.142 (0) These backup set(s) were imported from a remote location, so will not be counted or pruned. Skipping: 1653563820
+0024.148 (0) Number of backup sets in history: 5; groups (db): 1
+0024.154 (0) Examining (for databases) backup set with group_id=0, nonce=8cfd2b182863, datestamp=1658153876 (Jul 18 2022 14:17:56)
+0024.161 (0) This backup set is the backup set just made, so will not be deleted.
+0024.161 (0) Examining (for databases) backup set with group_id=0, nonce=38bcbf787a7b, datestamp=1658067203 (Jul 17 2022 14:13:23)
+0024.161 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0024.167 (0) Examining (for databases) backup set with group_id=0, nonce=7cc37dcbaff1, datestamp=1657980809 (Jul 16 2022 14:13:29)
+0024.167 (0) 1657980809: db: this set includes a database (backup_2022-07-17-0013_The_Creattify_Australia_7cc37dcbaff1-db.gz); db count is now 2
+0024.167 (0) 1657980809: db: over retain limit (2); will delete this database
+0024.167 (0) Delete file: backup_2022-07-17-0013_The_Creattify_Australia_7cc37dcbaff1-db.gz, service=s3
+0024.176 (0) Amazon S3: Delete remote: bucket=backup.au.gifttify.com, URI=backup_2022-07-17-0013_The_Creattify_Australia_7cc37dcbaff1-db.gz
+0024.234 (0) This backup set is now empty; will remove from history
+0024.241 (0) Deleting log file (log.7cc37dcbaff1.txt)
+0024.266 (0) Examining (for databases) backup set with group_id=0, nonce=7b72933ef7e0, datestamp=1654053255 (Jun 01 2022 03:14:15)
+0024.267 (0) This backup set (1654053255) was an 'Always Keep' backup, so it will not be pruned. Skipping.
+0024.267 (0) Number of backup sets in history: 4; groups (files): 1
+0024.273 (0) Examining (for files) backup set with nonce=8cfd2b182863, datestamp=1658153876 (Jul 18 2022 14:17:56)
+0024.273 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0024.280 (0) Examining (for files) backup set with nonce=38bcbf787a7b, datestamp=1658067203 (Jul 17 2022 14:13:23)
+0024.280 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0024.280 (0) Examining (for files) backup set with nonce=7b72933ef7e0, datestamp=1654053255 (Jun 01 2022 03:14:15)
+0024.280 (0) This backup set (1654053255) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0024.280 (0) This backup set (1654053255) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0024.280 (0) This backup set (1654053255) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0024.280 (0) This backup set (1654053255) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0024.280 (0) This backup set (1654053255) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0024.280 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0024.287 (0) Retain: saving new backup history (sets now: 4) and finishing retain operation
+0024.305 (0) Resume backup (8cfd2b182863, 0): finish run
+0024.329 (0) Decremented the semaphore (d) by 1
+0024.342 (0) Semaphore (d) unlocked
+0024.348 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0024.368 (0) No report will be sent to this address, as it is configured to receive them only when there are errors or warnings: accou...
+0024.374 (0) The backup apparently succeeded and is now complete

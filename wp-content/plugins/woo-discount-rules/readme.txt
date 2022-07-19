@@ -4,7 +4,7 @@ Donate link: https://flycart.org/
 Tags: woocommerce, coupons, discounts, dynamic pricing, Buy One Get One Free, pricing deals, bulk discount, discount
 Requires at least: 4.4.1
 Tested up to: 5.9
-Stable tag: 2.3.13
+Stable tag: 2.4.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -335,6 +335,23 @@ Note : Enable recursive checkbox if the discounts should be applied in sequentia
 * Dutch Translation - [@mvdburg1971](https://profiles.wordpress.org/mvdburg1971) - Michael van der Burg
 
 == Changelog ==
+
+= 2.4.1 - 17/05/22 =
+* Improvement: Added template override path for Bulk table.
+* Improvement: Removed backslash while using single quote on promotion message.
+* Improvement: Event: advanced_woo_discount_rules_allowed_html_elements_and_attributes.
+* Improvement: Load rule id on discount table info for BXGY and Set discount.
+* Improvement: V1 to v2 migration limit.
+* Fix: Table compare issue.
+* Fix: Division by zero.
+* Fix: Warning on get cart.
+
+= 2.4.0 - 06/04/22 =
+* Deprecated: V1 layout.
+* Fix: Calculating discount for out of stock product variant.
+* Fix: Custom taxonomy query while process on-sale page.
+* Fix: Multiple messages on having BXGY cheapest rules.
+* Improvement - Event advanced_woo_discount_rules_cart_strikeout_quantity_html.
 
 = 2.3.13 - 09/02/22 =
 * Feature - Apply coupon through URL option.

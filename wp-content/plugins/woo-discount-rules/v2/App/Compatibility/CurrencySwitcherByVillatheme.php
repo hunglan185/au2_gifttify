@@ -32,7 +32,9 @@ class CurrencySwitcherByVillatheme extends Base
                             return $price;
                         }
                         if ( $price ) {
-                            $price = $price / $selected_currencies[ $current_currency ]['rate'];
+                            if($selected_currencies[ $current_currency ]['rate'] != 0){
+                                $price = $price / $selected_currencies[ $current_currency ]['rate'];
+                            }
                         }
                     }
                 }

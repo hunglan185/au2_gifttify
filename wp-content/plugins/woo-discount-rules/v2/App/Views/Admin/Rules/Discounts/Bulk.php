@@ -67,7 +67,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                            class="bulk_value_selector awdr_value_selector"
                            placeholder="<?php _e('Label', 'woo-discount-rules'); ?>" min="0"
                            value="<?php if (isset($range_value->label) && !empty($range_value->label)) {
-                               echo $range_value->label;
+                               echo wp_unslash($range_value->label);
                            } ?>">
                     <span class="wdr_desc_text"><?php _e('Title column For Bulk Table', 'woo-discount-rules'); ?></span>
                 </div>

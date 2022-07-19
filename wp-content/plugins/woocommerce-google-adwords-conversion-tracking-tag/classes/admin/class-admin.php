@@ -134,13 +134,24 @@ class Admin
     {
         //add_options_page('WPM Plugin Page', 'WPM Plugin Menu', 'manage_options', 'wpm', array($this, 'wpm_plugin_options_page'));
         add_submenu_page(
-            'woocommerce',
+            $this->get_submenu_parent_slug(),
             esc_html__( 'Pixel Manager', 'woocommerce-google-adwords-conversion-tracking-tag' ),
             esc_html__( 'Pixel Manager', 'woocommerce-google-adwords-conversion-tracking-tag' ),
             'manage_options',
             'wpm',
             [ $this, 'wpm_plugin_options_page' ]
         );
+    }
+    
+    protected function get_submenu_parent_slug()
+    {
+        
+        if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+            return 'woocommerce';
+        } else {
+            return 'options-general.php';
+        }
+    
     }
     
     // add the admin settings and such

@@ -1480,6 +1480,8 @@ class Rule
                 'h1' => array('class' => array()),
                 'h2' => array('class' => array()),
             );
+            // Since v2.4.1
+            $allowed_html = apply_filters( 'advanced_woo_discount_rules_allowed_html_elements_and_attributes', $allowed_html);
             return wp_kses($html, $allowed_html);
         }
         return $value;

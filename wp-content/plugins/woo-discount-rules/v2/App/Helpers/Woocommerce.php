@@ -24,6 +24,7 @@ class Woocommerce
     static $checkout_post = null;
 
     protected static $products = array();
+    protected static $product_variations = array();
 
     static function productTypeIs($product, $type)
     {
@@ -489,7 +490,9 @@ class Woocommerce
         if (function_exists('WC')) {
             if(isset(WC()->cart) && WC()->cart != null){
                 if (method_exists(WC()->cart, 'get_cart')) {
-                    $cart = WC()->cart->get_cart();
+                    if (did_action('wp_loaded')) {
+                        $cart = WC()->cart->get_cart();
+                    }
                 }
             }
         }
@@ -867,7 +870,7 @@ class Woocommerce
     static function printNotice($message, $type)
     {
         if (function_exists('wc_print_notice')) {
-            wc_print_notice($message, $type);
+            wc_print_notice(wp_unslash($message), $type);
         }
     }
 
@@ -1687,12 +1690,17 @@ class Woocommerce
      * @return array
      */
     public static function availableProductVariations($product){
+        $product_id = self::getProductId($product);
+        if(isset(self::$product_variations[$product_id])){
+            return self::$product_variations[$product_id];
+        }
         $available_variations = array();
         $is_variable_product = self::productTypeIs($product, 'variable');
         if(!empty($product))
             if ($is_variable_product && method_exists($product, 'get_available_variations')){
                 $available_variations = $product->get_available_variations();
             }
+        self::$product_variations[$product_id] = $available_variations;
         return $available_variations;
     }
 

@@ -98,7 +98,7 @@ If a customer buys  2 of Product A - Small,  4 of Product A - Medium,  6 of Prod
             <div class="simple_discount_value wdr-input-filed-hight apply_fee_coupon_label" style="<?php echo (isset($bulk_adj_as_cart) && !empty($bulk_adj_as_cart)) ? '' : 'display: none;' ?> <?php echo ($is_enabled_rtl) ? 'padding-top: 0px !important;' : ''; ?>">
                 <input name="bulk_adjustments[cart_label]"
                        type="text"
-                       value="<?php echo (isset($bulk_adj_as_cart_label)) ? $bulk_adj_as_cart_label : ''; ?>"
+                       value="<?php echo (isset($bulk_adj_as_cart_label)) ? wp_unslash($bulk_adj_as_cart_label) : ''; ?>"
                        placeholder="<?php esc_attr('Discount Label', 'woo-discount-rules'); ?>">
             </div>
         </div>

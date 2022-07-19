@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 
 $operator = isset($options->operator) ? $options->operator : 'less_than';
 $subtotal_promotion_from = isset($options->subtotal_promotion_from) ? $options->subtotal_promotion_from : false;
-$subtotal_promotion_message = isset($options->subtotal_promotion_message) ? $options->subtotal_promotion_message : false;
+$subtotal_promotion_message = isset($options->subtotal_promotion_message) ? wp_unslash($options->subtotal_promotion_message) : false;
 echo ($render_saved_condition == true) ? '' : '<div class="wdr-subtotal-promo-messeage-main">';
 if($render_saved_condition != true && isset($i)){
     $i = '{i}';

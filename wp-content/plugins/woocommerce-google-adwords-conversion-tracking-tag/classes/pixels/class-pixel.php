@@ -32,7 +32,9 @@ class Pixel {
 		$this->options     = $options;
 		$this->options_obj = $this->get_options_object($options);
 
-		$this->options_obj->shop->currency = get_woocommerce_currency();
+		if (function_exists('get_woocommerce_currency')) {
+			$this->options_obj->shop->currency = get_woocommerce_currency();
+		}
 
 		$this->order_total_logic   = $this->options['shop']['order_total_logic'];
 		$this->add_cart_data       = (bool) $this->options['google']['ads']['aw_merchant_id'];

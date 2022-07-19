@@ -10,17 +10,17 @@
  * Developer URI:        https://sweetcode.com
  * Text Domain:          woocommerce-google-adwords-conversion-tracking-tag
  * Domain path:          /languages
- * * Version:              1.17.3
+ * * Version:              1.17.9
  *
  * WC requires at least: 3.7
- * WC tested up to:      6.4
+ * WC tested up to:      6.5
  *
  * License:              GNU General Public License v3.0
  * License URI:          http://www.gnu.org/licenses/gpl-3.0.html
  *
  *
  **/
-const  WPM_CURRENT_VERSION = '1.17.3' ;
+const  WPM_CURRENT_VERSION = '1.17.9' ;
 // TODO export settings function
 // TODO add option checkbox on uninstall and ask if user wants to delete options from db
 
@@ -93,7 +93,13 @@ if ( function_exists( 'wpm_fs' ) ) {
         do_action( 'wpm_fs_loaded' );
         function wpm_fs_settings_url()
         {
-            return admin_url( 'admin.php?page=wpm&section=main&subsection=google-ads' );
+            
+            if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+                return admin_url( 'admin.php?page=wpm&section=main&subsection=google-ads' );
+            } else {
+                return admin_url( 'options-general.php?page=wpm&section=main&subsection=google-ads' );
+            }
+        
         }
         
         wpm_fs()->add_filter( 'connect_url', 'wpm_fs_settings_url' );
@@ -150,20 +156,40 @@ if ( function_exists( 'wpm_fs' ) ) {
                 $this->environment_check->flush_cache_on_plugin_changes();
                 register_activation_hook( __FILE__, [ $this, 'plugin_activated' ] );
                 register_deactivation_hook( __FILE__, [ $this, 'plugin_deactivated' ] );
-                //				$this->init();
-                add_action( 'woocommerce_init', [ $this, 'init' ] );
+                
+                if ( $this->is_woocommerce_active() ) {
+                    add_action( 'woocommerce_init', [ $this, 'init' ] );
+                } else {
+                    add_action( 'init', [ $this, 'init' ] );
+                }
+            
             } else {
                 add_action( 'admin_menu', [ $this, 'add_empty_admin_page' ], 99 );
                 add_action( 'admin_notices', [ $this, 'requirements_error' ] );
-                //				error_log('The Pixel Manager for WooCommerce requires the WooCommerce plugin to be active.');
             }
         
         }
         
-        private function are_requirements_met()
+        protected function is_woocommerce_active()
+        {
+            return is_plugin_active( 'woocommerce/woocommerce.php' );
+        }
+        
+        protected function are_requirements_met()
         {
             
-            if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+            if ( $this->is_wpm_woocommerce_requirement_disabled() ) {
+                return true;
+            } else {
+                return $this->is_woocommerce_active();
+            }
+        
+        }
+        
+        protected function is_wpm_woocommerce_requirement_disabled()
+        {
+            
+            if ( defined( 'WPM_EXPERIMENTAL_DISABLE_WOOCOMMERCE_REQUIREMENT' ) && true === WPM_EXPERIMENTAL_DISABLE_WOOCOMMERCE_REQUIREMENT ) {
                 return true;
             } else {
                 return false;
@@ -175,8 +201,8 @@ if ( function_exists( 'wpm_fs' ) ) {
         {
             add_submenu_page(
                 'woocommerce',
-                esc_html__( 'Pixel Manager for WooCommerce', 'woocommerce-google-adwords-conversion-tracking-tag' ),
-                esc_html__( 'Pixel Manager for WooCommerce', 'woocommerce-google-adwords-conversion-tracking-tag' ),
+                esc_html__( 'Pixel Manager', 'woocommerce-google-adwords-conversion-tracking-tag' ),
+                esc_html__( 'Pixel Manager', 'woocommerce-google-adwords-conversion-tracking-tag' ),
                 'manage_options',
                 'wpm',
                 function () {
@@ -228,8 +254,17 @@ if ( function_exists( 'wpm_fs' ) ) {
         
         public function environment_check_admin_notices()
         {
-            //			if (apply_filters('wpm_show_admin_alerts', apply_filters_deprecated('wooptpm_show_admin_alerts', [true], '1.13.0', 'wpm_show_admin_alerts'))) {
-            //				$this->environment_check->check_active_off_site_payment_gateways();
+            if ( apply_filters( 'wpm_show_admin_alerts', apply_filters_deprecated(
+                'wooptpm_show_admin_alerts',
+                [ true ],
+                '1.13.0',
+                'wpm_show_admin_alerts'
+            ) ) ) {
+                $this->environment_check->check_active_off_site_payment_gateways();
+            }
+            // https://developer.wordpress.org/reference/hooks/admin_notices/#comment-5163
+            //			if (defined('DISABLE_NAG_NOTICES') && DISABLE_NAG_NOTICES) {
+            //				// do some stuff
             //			}
         }
         
@@ -302,11 +337,20 @@ if ( function_exists( 'wpm_fs' ) ) {
             update_option( WPM_DB_OPTIONS_NAME, $this->options );
         }
         
-        // adds a link on the plugins page for the wgdr settings
-        // ! Can't be required. Must be in the main plugin file.
+        /**
+         * Adds a link on the plugins page for the settings
+         * ! It can't be required. Must be in the main plugin file!
+         */
         public function wpm_settings_link( $links )
         {
-            $links[] = '<a href="' . admin_url( 'admin.php?page=wpm' ) . '">Settings</a>';
+            
+            if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+                $admin_page = 'admin.php';
+            } else {
+                $admin_page = 'options-general.php';
+            }
+            
+            $links[] = '<a href="' . admin_url( $admin_page . '?page=wpm' ) . '">Settings</a>';
             return $links;
         }
         
@@ -331,9 +375,9 @@ if ( function_exists( 'wpm_fs' ) ) {
                 }
             
             } );
-            // don't reshow trial message for 10 years
+            // re-show trial message after n seconds
             wpm_fs()->add_filter( 'reshow_trial_after_every_n_sec', function () {
-                return 60 * 60 * 24 * 7 * 52 * 10;
+                return MONTH_IN_SECONDS * 6;
             } );
         }
         

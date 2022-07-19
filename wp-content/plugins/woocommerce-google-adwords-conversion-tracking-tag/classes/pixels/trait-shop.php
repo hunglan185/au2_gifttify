@@ -270,10 +270,9 @@ trait Trait_Shop
     
     protected function is_localhost()
     {
-        $_server = filter_input_array( INPUT_SERVER, FILTER_SANITIZE_FULL_SPECIAL_CHARS );
         // If the IP is local, return true, else false
         // https://stackoverflow.com/a/13818647/4688612
-        return !filter_var( $_server['REMOTE_ADDR'], FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_IPV6 | FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE );
+        return !filter_var( WC_Geolocation::get_ip_address(), FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_IPV6 | FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE );
     }
     
     protected function get_user_email( $algo = null )
@@ -407,9 +406,9 @@ trait Trait_Shop
     {
         
         if ( metadata_exists( 'post', $order_id, '_wpm_customer_user' ) ) {
-            return get_post_meta( $order_id, '_wpm_customer_user', true );
+            return (int) get_post_meta( $order_id, '_wpm_customer_user', true );
         } else {
-            return get_post_meta( $order_id, '_customer_user', true );
+            return (int) get_post_meta( $order_id, '_customer_user', true );
         }
     
     }
@@ -421,8 +420,25 @@ trait Trait_Shop
         //		error_log(print_r($_server['HTTP_HOST'], true));
         //		error_log('get_site_url(): ' . parse_url(get_site_url(), PHP_URL_HOST));
         //		error_log('parse url https://www.exampel.com : ' . parse_url('https://www.exampel.com', PHP_URL_HOST));
+        // Servers like Siteground don't seem to always provide $_server['HTTP_HOST']
+        // In that case we need to pretend that we're on the same server
+        if ( !isset( $_server['HTTP_HOST'] ) ) {
+            return true;
+        }
         
         if ( wp_parse_url( get_site_url(), PHP_URL_HOST ) === $_server['HTTP_HOST'] ) {
+            return true;
+        } else {
+            return false;
+        }
+    
+    }
+    
+    // https://stackoverflow.com/a/60199374/4688612
+    protected function is_iframe()
+    {
+        
+        if ( isset( $_SERVER['HTTP_SEC_FETCH_DEST'] ) && 'iframe' === $_SERVER['HTTP_SEC_FETCH_DEST'] ) {
             return true;
         } else {
             return false;
@@ -500,8 +516,15 @@ trait Trait_Shop
     {
         // TODO find out why I did this weird transformation and simplify it
         $options_obj = json_decode( wp_json_encode( $options ) );
-        $options_obj->shop->currency = get_woocommerce_currency();
+        if ( function_exists( 'get_woocommerce_currency' ) ) {
+            $options_obj->shop->currency = get_woocommerce_currency();
+        }
         return $options_obj;
+    }
+    
+    protected function is_email( $email )
+    {
+        return filter_var( $email, FILTER_VALIDATE_EMAIL );
     }
 
 }

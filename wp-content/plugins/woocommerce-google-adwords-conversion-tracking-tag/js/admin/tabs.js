@@ -190,3 +190,4 @@ wpmGetPageId = () => {
 
 	return urlParams.get("page")
 }
+

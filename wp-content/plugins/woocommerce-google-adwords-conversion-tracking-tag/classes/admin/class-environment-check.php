@@ -28,9 +28,40 @@ class Environment_Check {
 			// get all active payment gateways
 //            add_action('plugins_loaded', [$this, 'get_active_payment_gateways_after_plugins_loaded']);
 
-			//check for active off-site payment gateways
-//            $this->check_active_off_site_payment_gateways();
+			add_action('admin_enqueue_scripts', [$this, 'wpm_notification_scripts']);
 		}
+	}
+
+	public function is_allowed_notification_page( $page ) {
+
+		$allowed_pages = ['page_wpm', 'index.php', 'dashboard'];
+
+		foreach ($allowed_pages as $allowed_page) {
+			if (strpos($page, $allowed_page) !== false) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	public function is_not_allowed_notification_page( $page ) {
+		return !$this->is_allowed_notification_page($page);
+	}
+
+	public function wpm_notification_scripts( $hook_suffix ) {
+
+		if ($this->is_not_allowed_notification_page($hook_suffix)) {
+			return;
+		}
+
+		wp_enqueue_script(
+			'wpm-notification',
+			WPM_PLUGIN_DIR_PATH . 'js/admin/environment-check.js',
+			['jquery'],
+			WPM_CURRENT_VERSION,
+			false
+		);
 	}
 
 	public function run_incompatible_plugins_checks() {
@@ -314,6 +345,10 @@ class Environment_Check {
 
 	public function check_active_off_site_payment_gateways() {
 
+		if ($this->is_not_allowed_notification_page(get_current_screen()->id)) {
+			return;
+		}
+
 		$wpm_notifications = get_option(WPM_DB_NOTIFICATIONS_NAME);
 
 		if (
@@ -541,6 +576,10 @@ class Environment_Check {
 		}
 	}
 
+	public function is_woocommerce_active() {
+		return is_plugin_active('woocommerce/woocommerce.php');
+	}
+
 	public function is_wp_super_cache_active() {
 		// TODO find out if there is a pro version with different folder and file name
 
@@ -560,7 +599,10 @@ class Environment_Check {
 	public function is_wpml_woocommerce_multi_currency_active() {
 		global $woocommerce_wpml;
 
-		if (is_plugin_active('woocommerce-multilingual/wpml-woocommerce.php') && is_object($woocommerce_wpml->multi_currency)) {
+		if (
+			is_plugin_active('woocommerce-multilingual/wpml-woocommerce.php') &&
+			is_object($woocommerce_wpml->multi_currency)
+		) {
 			return true;
 		} else {
 			return false;
@@ -568,7 +610,10 @@ class Environment_Check {
 	}
 
 	public function is_woo_discount_rules_active() {
-		if (is_plugin_active('woo-discount-rules/woo-discount-rules.php') || is_plugin_active('woo-discount-rules-pro/woo-discount-rules-pro.php')) {
+		if (
+			is_plugin_active('woo-discount-rules/woo-discount-rules.php') ||
+			is_plugin_active('woo-discount-rules-pro/woo-discount-rules-pro.php')
+		) {
 			return true;
 		} else {
 			return false;

@@ -44,7 +44,7 @@ $is_pro = \Wdr\App\Helpers\Helper::hasPro();
                 <div class="simple_discount_value wdr-input-filed-hight apply_fee_coupon_label" style="<?php echo (isset($product_adjustments->apply_as_cart_rule) && !empty($product_adjustments->apply_as_cart_rule)) ? '' : 'display: none;' ?> <?php echo ($is_enabled_rtl) ? 'padding-top: 0px !important;' : ''; ?>">
                     <input name="product_adjustments[cart_label]"
                            type="text"
-                           value="<?php echo (isset($product_adjustments->cart_label)) ? $product_adjustments->cart_label : ''; ?>"
+                           value="<?php echo (isset($product_adjustments->cart_label)) ? wp_unslash($product_adjustments->cart_label) : ''; ?>"
                            placeholder="<?php esc_attr('Discount Label', 'woo-discount-rules'); ?>">
                 </div>
             </div>

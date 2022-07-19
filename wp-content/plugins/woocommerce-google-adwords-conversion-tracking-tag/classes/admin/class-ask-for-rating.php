@@ -7,9 +7,11 @@ if (!defined('ABSPATH')) {
 }
 
 class Ask_For_Rating {
+
 	private $option_name = WPM_DB_RATINGS;
 
 	public function __construct() {
+
 //	    $options = get_option($this->option_name);
 //	    $options['conversions_count'] = 8;
 //	    $options['rating_threshold'] = 10;
@@ -18,7 +20,7 @@ class Ask_For_Rating {
 //	    update_option($this->option_name,$options);
 
 		// ask for a rating in a plugin notice
-//        add_action('admin_enqueue_scripts', [$this, 'wpm_rating_script']);
+		add_action('admin_enqueue_scripts', [$this, 'wpm_rating_script']);
 		add_action('wp_ajax_wpm_dismissed_notice_handler', [$this, 'ajax_rating_notice_handler']);
 		add_action('admin_notices', [$this, 'ask_for_rating_notices_if_not_asked_before']);
 	}
@@ -57,6 +59,7 @@ class Ask_For_Rating {
 	}
 
 	private function show_admin_notifications() {
+
 		$show_admin_notifications = apply_filters_deprecated('wooptpm_show_admin_notifications', [true], '1.13.0', 'wpm_show_admin_notifications');
 
 		// Allow users to disable admin notifications for the plugin
@@ -64,6 +67,7 @@ class Ask_For_Rating {
 	}
 
 	public function ask_for_rating_notices_if_not_asked_before() {
+
 		if (current_user_can('administrator') && $this->show_admin_notifications()) {
 
 			$wpm_ratings = get_option($this->option_name);
@@ -86,8 +90,10 @@ class Ask_For_Rating {
 					update_option($this->option_name, $wpm_ratings);
 				}
 
-				if (( false === $wpm_ratings['rating_done'] && $conversions_count > $wpm_ratings['rating_threshold'] ) || ( defined('WPM_ALWAYS_AKS_FOR_RATING') && true === WPM_ALWAYS_AKS_FOR_RATING )) {
-
+				if (
+					( false === $wpm_ratings['rating_done'] && $conversions_count > $wpm_ratings['rating_threshold'] ) ||
+					( defined('WPM_ALWAYS_AKS_FOR_RATING') && true === WPM_ALWAYS_AKS_FOR_RATING )
+				) {
 					$this->ask_for_rating_notices($conversions_count);
 				}
 			} else {
@@ -114,26 +120,29 @@ class Ask_For_Rating {
 	public function ask_for_rating_notices( $conversions_count ) {
 		?>
 		<div class="notice notice-success wpm-rating-success-notice" style="display: none">
-			<div style="color:#02830b;font-weight: bold">
+			<div style="color:#02830b; margin-top:10px">
 
 				<span>
 						<?php
 						printf(
 						/* translators: %d: the amount of purchase conversions that have been measured */
-							esc_html__('Hey, I noticed that you tracked more than %d purchase conversions with the Google Ads Conversion Tracking plugin - that\'s awesome! Could you please do me a BIG favour and give it a 5-star rating on WordPress? Just to help us spread the word and boost our motivation.', 'woocommerce-google-adwords-conversion-tracking-tag'),
+							esc_html__('Hey, I noticed that you tracked more than %d purchase conversions with the Pixel Manager for WooCommerce plugin - that\'s awesome! Could you please do me a BIG favour and give it a 5-star rating on WordPress? It will help to spread the word and boost our motivation.', 'woocommerce-google-adwords-conversion-tracking-tag'),
 							esc_html__($conversions_count)
 						);
 						?>
 
 				</span>
 				<br>
-				<span>- Aleksandar</span>
-			</div>
-			<div style="font-weight: bold;">
+				<div style="margin-top:5px;">
 
-				<ul style="list-style-type: disc ;padding-left:20px">
+				<span >- Aleksandar (Lead developer)</span>
+				</div>
+			</div>
+			<div style="">
+
+				<ul style="list-style-type: disc ;padding-left:20px;">
 					<li>
-						<a id="wpm-rate-it" href="#">
+						<a id="wpm-rate-it" href="#" style="font-weight: bold;">
 							<?php esc_html_e('Ok, you deserve it', 'woocommerce-google-adwords-conversion-tracking-tag'); ?>
 						</a>
 					</li>
